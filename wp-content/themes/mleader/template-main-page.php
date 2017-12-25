@@ -57,13 +57,17 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="form-block">
+                    <div id="main-form" class="form-block">
                         <div class="form">
                             <p class="h2-title-white">Остались вопросы? Напишите нам и наши менеджеры помогут Вам!</p>
+                            <div class="i-take-block">
+                                <input id="i-take-body" type="checkbox">
+                                <label for="i-take-body">Я принимаю условия соглашения на обработку персональных</label>
+                            </div>
                             <input type="text" id="name" placeholder="Ваше Имя">
                             <input type="text" id="phone" placeholder="Ваш телефон">
                             <textarea id="message" placeholder="Вопрос"></textarea>
-                            <input class="button" onclick="SendForm();" type="submit" value="Задать вопрос">
+                            <input class="button" onclick="SendForm();" type="submit" value="Задать вопрос" id="submit1" disabled>
                         </div>
                     </div>
                 </div>

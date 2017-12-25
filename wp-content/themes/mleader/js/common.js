@@ -71,4 +71,23 @@ $(document).ready(function() {
 
     $(".fancybox").fancybox();
 
+
+
+    // Плавный скролл до якоря
+
+    $("a.ancLinks").click(function () {
+        var elementClick = $(this).attr("href");
+        var destination = $(elementClick).offset().top;
+        $('html,body').animate( { scrollTop: destination }, 1100 );
+        return false;
+    });
+
+    $('#i-take-body').click(function() {
+        if($(this).is(':checked')) {
+            $('#submit1, #submit2').prop('disabled', false).addClass('active-button');
+        } else {
+            $('#submit1, #submit2').prop('disabled', true).removeClass('active-button');
+        }
+    });
+
 });

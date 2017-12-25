@@ -10,6 +10,12 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+	.i-take-block {
+		max-width: 280px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.main-contacts .form textarea {
 		float: none;
 		margin: 0 auto 10px auto;
