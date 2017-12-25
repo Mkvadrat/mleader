@@ -45,17 +45,22 @@ body {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-direction: row;
-  -webkit-justify-content: space-between;
+  -webkit-justify-content: flex-start;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-bottom: 0;
 }
 
 .description-category li {
-  width: 198px;
+  width: 190px;
   padding-left: 0;
   margin-bottom: 25px;
+  margin-right: 25px;
+}
+
+.description-category li:nth-child(4n) {
+  margin-right: 0;
 }
 
 .description-category li:before {
@@ -77,9 +82,10 @@ body {
 .description-category .block-photo {
   display: block;
   width: 100%;
-  height: 162px;
+  height: 155px;
   border: 1px solid #eaeaea;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .description-category .block-photo img {
@@ -716,6 +722,7 @@ textarea:focus:-ms-input-placeholder {
 .main .grey-padding-block .our-advantage img {
   float: left;
   margin-right: 25px;
+  min-width: 56px;
 }
 
 .main .grey-padding-block .our-advantage p, .main .grey-padding-block .our-advantage .main-contacts p a, .main-contacts p .main .grey-padding-block .our-advantage a {
@@ -1093,7 +1100,8 @@ textarea:focus:-ms-input-placeholder {
 .main-contacts .form input[type="tel"],
 .main-contacts .form textarea {
   display: block;
-  width: 280px;
+  max-width: 280px;
+  width: 100%;
   height: 30px;
   background-color: white;
   border: 1px solid #eaeaea;
@@ -1116,7 +1124,7 @@ textarea:focus:-ms-input-placeholder {
   height: 70px;
   resize: none;
   float: right;
-  margin-top: -90px;
+  margin-top: -80px;
 }
 
 .main-contacts .form input[type="submit"] {
@@ -1268,3 +1276,57 @@ textarea:focus:-ms-input-placeholder {
 /*----------------------------------------------*/
 /*-------------- end main-projects -------------*/
 /*----------------------------------------------*/
+
+
+#toTop {
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+}
+
+#toTop i {
+  font-size: 60px;
+  color: #9b4d4d;
+}
+
+.mmenu-button {
+  display: none;
+  position: fixed;
+  top: 70px;
+  left: 30px;
+  width: 30px;
+  height: 35px;
+  font-size: 34px;
+  color: #7d2222;
+  z-index: 100;
+  outline: none;
+}
+
+.mmenu-button:focus,
+.mmenu-button:hover {
+  color: #7d2222;
+}
+
+.mmenu-button i {
+    text-shadow: 1px 0px 0px rgba(255, 255, 255),
+    0px 1px 0px rgba(255, 255, 255),
+    -1px 0px 0px rgba(255, 255, 255),
+    0px -1px 0px rgba(255, 255, 255),
+    1px 1px 0px rgba(255, 255, 255),
+    1px -1px 0px rgba(255, 255, 255),
+    -1px -1px 0px rgba(255, 255, 255),
+    -1px 1px 0px rgba(255, 255, 255);
+}
+
+.mm-title {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #323232 !important;
+}
