@@ -15,7 +15,6 @@ $(document).ready(function() {
     });
 
 	// PARALAX
-
     $(document).ready(function(){
         $window = $(window);
         $('body[data-type="background"]').each(function(){
@@ -29,7 +28,6 @@ $(document).ready(function() {
     });
 
     // MMENU
-
     $(function() {
         $('nav#menu').mmenu({
             extensions  : [ 'fx-listitems-slide', 'fx-panels-zoom', 'fx-listitems-slide', 'multiline', 'shadow-page', 'shadow-panels', 'listview-large', 'pagedim-black' ]
@@ -41,7 +39,6 @@ $(document).ready(function() {
     });
 
     // slider
-
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
@@ -68,13 +65,11 @@ $(document).ready(function() {
     });
 
     // fancybox
-
     $(".fancybox").fancybox();
-
-
+    
+     $("[data-fancybox]").fancybox();
 
     // Плавный скролл до якоря
-
     $("a.ancLinks").click(function () {
         var elementClick = $(this).attr("href");
         var destination = $(elementClick).offset().top;
