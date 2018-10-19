@@ -282,6 +282,20 @@ class Mixin_NextGen_Gallery_Validation
             $this->object->path = M_NextGen_Data::strip_html($this->object->path);
             $this->object->path = str_replace(array('"', "''", ">", "<"), array('', '', '', ''), $this->object->path);
         }
+        // Ensure that the gallery path is restriected to $fs->get_document_root('galleries')
+        $fs = C_Fs::get_instance();
+        $root = $fs->get_document_root('galleries');
+        $gallery_abspath = $fs->get_absolute_path($fs->join_paths($root, $this->object->path));
+        if ($gallery_abspath[0] != DIRECTORY_SEPARATOR) {
+            $gallery_abspath = DIRECTORY_SEPARATOR . $gallery_abspath;
+        }
+        if (strpos($gallery_abspath, $root) === FALSE) {
+            $this->object->add_error(sprintf(__("Gallery path must be located in %s", 'nggallery'), $root), 'gallerypath');
+            $storage = C_Gallery_Storage::get_instance();
+            $this->object->path = $storage->get_upload_relpath($this->object);
+            unset($storage);
+        }
+        $this->object->path = trailingslashit($this->object->path);
         $this->object->validates_presence_of('title');
         $this->object->validates_presence_of('name');
         $this->object->validates_uniqueness_of('slug');
@@ -1248,7 +1262,7 @@ class Mixin_GalleryStorage_Driver_Base extends Mixin
                 // Ensure that fullsize dimensions are added to metadata array
                 $dimensions = getimagesize($abs_filename);
                 $full_meta = array('width' => $dimensions[0], 'height' => $dimensions[1], 'md5' => $this->object->get_image_checksum($image, 'full'));
-                if (!isset($image->meta_data) or is_string($image->meta_data) && strlen($image->meta_data) == 0) {
+                if (!isset($image->meta_data) or is_string($image->meta_data) && strlen($image->meta_data) == 0 or is_bool($image->meta_data)) {
                     $image->meta_data = array();
                 }
                 $image->meta_data = array_merge($image->meta_data, $full_meta);
@@ -1374,8 +1388,12 @@ class Mixin_GalleryStorage_Driver_Base extends Mixin
                                     // Ensure that fullsize dimensions are added to metadata array
                                     $dimensions = getimagesize($abs_filename);
                                     $full_meta = array('width' => $dimensions[0], 'height' => $dimensions[1]);
-                                    if (!isset($image->meta_data) or is_string($image->meta_data) && strlen($image->meta_data) == 0) {
+                                    if (!isset($image->meta_data) || is_string($image->meta_data) && strlen($image->meta_data) === 0) {
                                         $image->meta_data = array();
+                                    } else {
+                                        if (is_string($image->meta_data)) {
+                                            // TODO: We should probably unserialize in this circumstance
+                                        }
                                     }
                                     $image->meta_data = array_merge($image->meta_data, $full_meta);
                                     $image->meta_data['full'] = $full_meta;
@@ -3878,7 +3896,8 @@ class Mixin_NggLegacy_GalleryStorage_Driver extends Mixin
         $title = '<a href="' . admin_url() . 'admin.php?page=nggallery-manage-gallery&mode=edit&gid=' . $gallery_id . '" >';
         $title .= $gallery->title;
         $title .= '</a>';
-        echo '<hr/>' . sprintf(__('Copied %1$s picture(s) to gallery %2$s .', 'nggallery'), count($new_image_pids), $title);
+        echo '<div class="updated fade " id="message"><p>' . sprintf(__('Copied %1$s picture(s) to gallery %2$s .', 'nggallery'), count($new_image_pids), $title) . '</p></div>';
+        // echo '<hr/>' . sprintf(__('Copied %1$s picture(s) to gallery %2$s .', 'nggallery'), count($new_image_pids), $title);
         return $new_image_pids;
     }
     /**

@@ -4,13 +4,15 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mrtor
 Tags: seo, all in one seo, google, twitter, page, image seo, social, search engine optimization, sitemap, WordPress SEO, meta, meta description, xml sitemap, google sitemap, sitemaps, robots meta, yahoo, bing, news sitemaps, multisite, canonical, nofollow, noindex, keywords, description, webmaster tools, google webmaster tools, google analytics
 Requires at least: 4.4
 Tested up to: 4.9
-Stable tag: 2.4.5.1
+Stable tag: 2.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The original SEO plugin for WordPress, downloaded over 30,000,000 times since 2007.
+The original WordPress SEO plugin, downloaded over 45,000,000 times since 2007.
 
 == Description ==
+
+###The original WordPress SEO plugin, downloaded over 45,000,000 times since 2007.
 
 Use **All in One SEO Pack** to optimize your WordPress site for SEO. It's easy and works out of the box for beginners, and has advanced features and an API for developers.
 
@@ -48,7 +50,7 @@ https://www.youtube.com/watch?v=46MR4FboMaA
 
 == Changelog ==
 
-All in One SEO Pack [Changelog](http://semperfiwebdesign.com/documentation/all-in-one-seo-pack/all-in-one-seo-pack-release-history/)
+All in One SEO Pack [Changelog](https://semperfiwebdesign.com/all-in-one-seo-pack-release-history/)
 
 == Frequently Asked Questions ==
 

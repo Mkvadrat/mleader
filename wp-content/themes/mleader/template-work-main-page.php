@@ -26,7 +26,8 @@ get_header();
 					<?php endwhile; endif; ?>
 					
 					<p class="button-wrap">
-                        <a class="button back" href="javascript:void(0)">Назад</a>
+						<a class="button backward" href="javascript:void(0)">Назад</a>
+						<a class="button" href="#">Задать вопрос</a>
                     </p>
                 </div>
             </div>
@@ -37,7 +38,7 @@ get_header();
 	
 	<script type="text/javascript">
 	jQuery(document).ready(function(){
-		jQuery('.back').click(function(){
+		jQuery('.button.backward').click(function(){
 			parent.history.back();
 			return false;
 		});
