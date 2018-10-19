@@ -113,6 +113,10 @@ $(document).ready(function() {
         $('#submit9').prop('disabled', true);
     });
     
+    $(window).load(function(){
+        $('#submit10').prop('disabled', true);
+    });
+    
     $('input[name=\'user_avl_a[]\']').click(function() {
         if($(this).is(':checked')) {
             $('#submit1').prop('disabled', false).addClass('active-button');
@@ -182,6 +186,14 @@ $(document).ready(function() {
             $('#submit9').prop('disabled', false).addClass('active-button');
         } else {
             $('#submit9').prop('disabled', true).removeClass('active-button');
+        }
+    });
+    
+    $('input[name=\'user_avl_j[]\']').click(function() {
+        if($(this).is(':checked')) {
+            $('#submit10').prop('disabled', false).addClass('active-button');
+        } else {
+            $('#submit10').prop('disabled', true).removeClass('active-button');
         }
     });
 });
