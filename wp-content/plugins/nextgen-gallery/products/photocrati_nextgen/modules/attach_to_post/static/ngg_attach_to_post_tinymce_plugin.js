@@ -51,13 +51,13 @@
 			editor.addButton('NextGEN_AttachToPost', {
 				title:	'ngg_attach_to_post.title',
 				cmd:	'ngg_attach_to_post',
-				image:	plugin_url+'/atp_button.png'
+				image:	plugin_url+'/igw_button.png'
 			});
 
 			/**
 			 * Listen for click events to our placeholder
 			 */
-            editor.on('mouseup', function(e) {
+            editor.on('mouseup touchend', function(e) {
 				tinymce.extend(self, {
 					editor: editor,
 					plugin: editor.plugins.NextGEN_AttachToPost
@@ -105,57 +105,61 @@
 			 * Find each shortcode and replace it with the placeholder, rendered using an underscore template
 			 * in templates/tinymce_placeholder.php
 			 */
-			editor.on('BeforeSetContent', function(event){
-				var shortcode_opening_tag = '[ngg_images ';
-				while (event.content.indexOf(shortcode_opening_tag)>=0) {
-					var start_of_shortcode = event.content.indexOf(shortcode_opening_tag);
-					var index = start_of_shortcode+shortcode_opening_tag.length;
-					var found_attribute_assignment = false;
-					var current_attribute_enclosure = null;
-					var last_found_char = false;
-					var content_length = event.content.length;
-					while (true) {
-						var char = event.content[index];
-						if (char == '"' || char == "'" && last_found_char == '=') {
-							// Is this the closing quote for an already found attribute assignment?
-							if (found_attribute_assignment && current_attribute_enclosure == char) {
-								found_attribute_assignment = false;
-								current_attribute_enclosure = null;
-							}
-							else {
-								found_attribute_assignment = true;
-								current_attribute_enclosure = char;
-							}
-						}
-						else if (char == ']') {
-							// we've found a shortcode closing tag. But, we need to ensure
-							// that this ] isn't within the value of a shortcode attribute
-							if (!found_attribute_assignment) {
-								break; //exit loop - we've found the shortcode
-							}
-						}
+			editor.on('BeforeSetContent', function(event) {
+				function handle_shortcode(shortcode_opening_tag) {
+                    while (event.content.indexOf(shortcode_opening_tag) >= 0) {
+                        var start_of_shortcode = event.content.indexOf(shortcode_opening_tag);
+                        var index = start_of_shortcode + shortcode_opening_tag.length;
+                        var found_attribute_assignment = false;
+                        var current_attribute_enclosure = null;
+                        var last_found_char = false;
+                        var content_length = event.content.length;
+                        while (true) {
+                            var char = event.content[index];
+                            if (char == '"' || char == "'" && last_found_char == '=') {
+                                // Is this the closing quote for an already found attribute assignment?
+                                if (found_attribute_assignment && current_attribute_enclosure == char) {
+                                    found_attribute_assignment = false;
+                                    current_attribute_enclosure = null;
+                                }
+                                else {
+                                    found_attribute_assignment = true;
+                                    current_attribute_enclosure = char;
+                                }
+                            }
+                            else if (char == ']') {
+                                // we've found a shortcode closing tag. But, we need to ensure
+                                // that this ] isn't within the value of a shortcode attribute
+                                if (!found_attribute_assignment) {
+                                    break; //exit loop - we've found the shortcode
+                                }
+                            }
 
-						last_found_char = char;
+                            last_found_char = char;
 
-						if (index == content_length) {
-							break;
-						}
+                            if (index == content_length) {
+                                break;
+                            }
 
-						index++;
-					}
+                            index++;
+                        }
 
-					// Replace the shortcode with a placeholder
-					var match = event.content.substring(start_of_shortcode, ++index);
-					var shortcode = match.substring(1, match.length-1);
-					shortcode = shortcode.replace('[', '&#91;');
-					shortcode = shortcode.replace(']', '&#93;');
+                        // Replace the shortcode with a placeholder
+                        var match = event.content.substring(start_of_shortcode, ++index);
+                        var shortcode = match.substring(1, match.length-1);
+                        shortcode = shortcode.replace('[', '&#91;');
+                        shortcode = shortcode.replace(']', '&#93;');
 
-					var template = _.template($('#ngg-igw-placeholder').html());
-					event.content = event.content.replace(match, template($.extend(ngg_igw_i18n, {
-						shortcode: shortcode,
-						ref: _.now()
-					})));
+                        var template = _.template($('#ngg-igw-placeholder').html());
+                        event.content = event.content.replace(match, template($.extend(ngg_igw_i18n, {
+                            shortcode: shortcode,
+                            ref: _.now()
+                        })));
+                    }
 				}
+
+				handle_shortcode('[ngg_images ');
+				handle_shortcode('[ngg ');
 			});
 
             /**
@@ -212,17 +216,23 @@
 			win = $(win);
 			var winWidth    = win.width();
 			var winHeight   = win.height();
-			var popupWidth  = 1200;
-			var popupHeight = 600;
+			var popupWidth  = 1600;
+			var popupHeight = 1200;
 			var minWidth    = 800;
 			var minHeight   = 600;
 			var maxWidth    = winWidth  - (winWidth  * 0.05);
-			var maxHeight   = winHeight - (winHeight * 0.05);
+			var maxHeight   = winHeight - (winHeight * 0.1);
 
-			if (maxWidth    < minWidth)  { maxWidth    = winWidth - 10;  }
-			if (maxHeight   < minHeight) { maxHeight   = winHeight - 10; }
+			if (maxWidth    < minWidth)  { maxWidth    = winWidth - 20;  }
+			if (maxHeight   < minHeight) { maxHeight   = winHeight - 40; }
 			if (popupWidth  > maxWidth)  { popupWidth  = maxWidth;  }
 			if (popupHeight > maxHeight) { popupHeight = maxHeight; }
+
+			// for mobile devices: dismiss the keyboard by blurring any input with focus
+            document.activeElement.blur();
+            Array.prototype.forEach.call(document.querySelectorAll('input, textarea'), function(it) {
+                it.blur();
+            });
 
 			// Open a window, occupying 90% of the screen real estate
 			this.editor.windowManager.open({

@@ -137,11 +137,11 @@ body {
 }
 
 .description-category li:hover img {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1) translateX(-50%);
+  -moz-transform: scale(1.1) translateX(-50%);
+  -ms-transform: scale(1.1) translateX(-50%);
+  -o-transform: scale(1.1) translateX(-50%);
+  transform: scale(1.1) translateX(-50%);
 }
 
 .description-category li:hover a {
@@ -158,13 +158,16 @@ body {
 }
 
 .description-category .block-photo img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 155px;
   -webkit-transition: 1s;
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .description-category .title {
@@ -616,7 +619,7 @@ textarea:focus:-ms-input-placeholder {
 .header nav ul {
   position: relative;
   z-index: 1;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   background-color: #c90016;
   display: -webkit-box;
   display: -webkit-flex;
@@ -638,7 +641,7 @@ textarea:focus:-ms-input-placeholder {
 
 .header nav ul a {
   display: block;
-  padding: 15px 30px;
+  padding: 15px 20px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -681,7 +684,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .header nav ul li:hover ul {
-  height: 336px;
+  height: auto /* 336px */;
 }
 
 /*----------------------------------------------*/
@@ -849,7 +852,7 @@ textarea:focus:-ms-input-placeholder {
   margin-bottom: 20px;
 }
 
-.form-line-main:before {
+/* .form-line-main:before {
   content: "";
   display: block;
   position: absolute;
@@ -858,7 +861,7 @@ textarea:focus:-ms-input-placeholder {
   width: 100%;
   height: 193px;
   background-color: #8c3333;
-}
+} */
 
 .form-line-main .form-block {
   background-color: #ae4242;
@@ -880,7 +883,7 @@ textarea:focus:-ms-input-placeholder {
 
 .form-line-main .form input[type="text"],
 .form-line-main .form input[type="tel"] {
-  display: block;
+  display: inline-block;
   width: 280px;
   height: 30px;
   padding: 5px 15px;
@@ -918,7 +921,9 @@ textarea:focus:-ms-input-placeholder {
   width: 172px;
   margin: 20px auto;
 }
-
+.form-line-main .form input[type="submit"]:disabled {
+  opacity: .3;
+}
 .form-line-main .form input[type="submit"]:hover {
   background-color: #dea22c;
 }
@@ -1144,6 +1149,7 @@ textarea:focus:-ms-input-placeholder {
 
 .main-contacts .h2-title, .main-contacts .h2-title-white {
   padding-bottom: 40px;
+  color: #000;
 }
 
 .main-contacts p a {
@@ -1176,7 +1182,7 @@ textarea:focus:-ms-input-placeholder {
 .main-contacts .form input[type="text"],
 .main-contacts .form input[type="tel"],
 .main-contacts .form textarea {
-  display: block;
+  display: inline-block;
   max-width: 280px;
   width: 100%;
   height: 30px;
@@ -1201,7 +1207,11 @@ textarea:focus:-ms-input-placeholder {
   height: 70px;
   resize: none;
   float: right;
-  margin-top: -80px;
+  margin-top: -90px;
+}
+
+.main-contacts .form label {
+  color: #000;
 }
 
 .main-contacts .form input[type="submit"] {
@@ -1215,19 +1225,23 @@ textarea:focus:-ms-input-placeholder {
   text-align: center;
   font-size: 18px;
   font-weight: 400;
-  line-height: 44px;
+  line-height: normal;
   color: #fff;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  padding: 10px;
 }
 
 .main-contacts .form input[type="submit"]:hover {
   background-color: #8d2f2f;
 }
-
+.main-contacts .form input[type="submit"]:disabled {
+  opacity: .3;
+  pointer-events: none;
+}
 /*----------------------------------------------*/
 /*------------- end main-contacts --------------*/
 /*----------------------------------------------*/
@@ -1465,7 +1479,7 @@ textarea:focus:-ms-input-placeholder {
   transition: 0.3s;
 }
 
-.i-take-block input[type=checkbox]:checked + label:after {
+.i-take-block label.checked:after {
   opacity: 1;
 }
 
@@ -1609,4 +1623,27 @@ textarea:focus:-ms-input-placeholder {
   padding: 10px;
   max-height: 200px;
 }
+<<<<<<< HEAD
 /*----- 15.10.2018 -----*/
+=======
+/*----- 15.10.2018 -----*/
+
+.two_colons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.two_colons>div {
+  width: 30%;
+}
+.two_colons>div.img img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.two_colons>div+div {
+  padding-left: 30px;
+  width: 70%;
+}
+>>>>>>> b726ced9b668bb772eeeca8c25effad8485345c9

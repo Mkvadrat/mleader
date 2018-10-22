@@ -76,13 +76,144 @@ $(document).ready(function() {
         $('html,body').animate( { scrollTop: destination }, 1100 );
         return false;
     });
-
-    $('#i-take-body').click(function() {
+    
+    $(window).load(function(){
+        $('#submit1').prop('disabled', true);
+    });
+    
+    $(window).load(function(){
+        $('#submit2').prop('disabled', true);
+    });
+    
+    $(window).load(function(){
+        $('#submit3').prop('disabled', true);
+    });
+    
+    $(window).load(function(){
+        $('#submit4').prop('disabled', true);
+    });
+    
+    $(window).load(function(){
+        $('#submit5').prop('disabled', true);
+    });
+    
+    $(window).load(function(){
+        $('#submit6').prop('disabled', true);
+    });
+    
+    $(window).load(function(){
+        $('#submit7').prop('disabled', true);
+    });
+    
+    $(window).load(function(){
+        $('#submit8').prop('disabled', true);
+    });
+    
+    $(window).load(function(){
+        $('#submit9').prop('disabled', true);
+    });
+    
+    $(window).load(function(){
+        $('#submit10').prop('disabled', true);
+    });
+    
+    $('input[name=\'user_avl_a[]\']').click(function() {
         if($(this).is(':checked')) {
-            $('#submit1, #submit2').prop('disabled', false).addClass('active-button');
+            $('#submit1').prop('disabled', false).addClass('active-button');
+            $(this).parent('label').addClass('checked');
         } else {
-            $('#submit1, #submit2').prop('disabled', true).removeClass('active-button');
+            $('#submit1').prop('disabled', true).removeClass('active-button');
+            $(this).parent('label').removeClass();
         }
     });
-
+    
+    $('input[name=\'user_avl_b[]\']').click(function() {
+        if($(this).is(':checked')) {
+            $('#submit2').prop('disabled', false).addClass('active-button');
+            $(this).parent('label').addClass('checked');
+        } else {
+            $('#submit2').prop('disabled', true).removeClass('active-button');
+            $(this).parent('label').removeClass();
+        }
+    });
+    
+    $('input[name=\'user_avl_c[]\']').click(function() {
+        if($(this).is(':checked')) {
+            $('#submit3').prop('disabled', false).addClass('active-button');
+            $(this).parent('label').addClass('checked');
+        } else {
+            $('#submit3').prop('disabled', true).removeClass('active-button');
+            $(this).parent('label').removeClass();
+        }
+    });
+    
+    $('input[name=\'user_avl_d[]\']').click(function() {
+        if($(this).is(':checked')) {
+            $('#submit4').prop('disabled', false).addClass('active-button');
+            $(this).parent('label').addClass('checked');
+        } else {
+            $('#submit4').prop('disabled', true).removeClass('active-button');
+            $(this).parent('label').removeClass();
+        }
+    });
+    
+    $('input[name=\'user_avl_e[]\']').click(function() {
+        if($(this).is(':checked')) {
+            $('#submit5').prop('disabled', false).addClass('active-button');
+            $(this).parent('label').addClass('checked');
+        } else {
+            $('#submit5').prop('disabled', true).removeClass('active-button');
+            $(this).parent('label').removeClass();
+        }
+    });
+    
+    $('input[name=\'user_avl_f[]\']').click(function() {
+        if($(this).is(':checked')) {
+            $('#submit6').prop('disabled', false).addClass('active-button');
+            $(this).parent('label').addClass('checked');
+        } else {
+            $('#submit6').prop('disabled', true).removeClass('active-button');
+            $(this).parent('label').removeClass();
+        }
+    });
+    
+    $('input[name=\'user_avl_g[]\']').click(function() {
+        if($(this).is(':checked')) {
+            $('#submit7').prop('disabled', false).addClass('active-button');
+            $(this).parent('label').addClass('checked');
+        } else {
+            $('#submit7').prop('disabled', true).removeClass('active-button');
+            $(this).parent('label').removeClass();
+        }
+    });
+    
+    $('input[name=\'user_avl_h[]\']').click(function() {
+        if($(this).is(':checked')) {
+            $('#submit8').prop('disabled', false).addClass('active-button');
+            $(this).parent('label').addClass('checked');
+        } else {
+            $('#submit8').prop('disabled', true).removeClass('active-button');
+            $(this).parent('label').removeClass();
+        }
+    });
+    
+    $('input[name=\'user_avl_i[]\']').click(function() {
+        if($(this).is(':checked')) {
+            $('#submit9').prop('disabled', false).addClass('active-button');
+            $(this).parent('label').addClass('checked');
+        } else {
+            $('#submit9').prop('disabled', true).removeClass('active-button');
+            $(this).parent('label').removeClass();
+        }
+    });
+    
+    $('input[name=\'user_avl_j[]\']').click(function() {
+        if($(this).is(':checked')) {
+            $('#submit10').prop('disabled', false).addClass('active-button');
+            $(this).parent('label').addClass('checked');
+        } else {
+            $('#submit10').prop('disabled', true).removeClass('active-button');
+            $(this).parent('label').removeClass();
+        }
+    });
 });

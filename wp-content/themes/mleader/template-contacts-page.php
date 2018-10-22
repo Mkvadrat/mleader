@@ -54,17 +54,12 @@ get_header();
 
                 <div class="col-md-12">
                     <div class="grey-padding-block grey-padding-block-form">
-                        <div class="form" id="contacts-form">
-                            <p class="h3-title">Форма обратной связи</p>
-                            <div class="i-take-block">
-                                <input id="i-take-body" type="checkbox">
-                                <label for="i-take-body">Я принимаю условия соглашения на обработку персональных</label>
-                            </div>
-                            <input type="text" id="name" placeholder="Ваше Имя">
-                            <input type="text" id="phone" placeholder="Ваш телефон">
-                            <textarea id="message" placeholder="Вопрос"></textarea>
-                            <input type="submit" onclick="SendForm();" value="Отправить" id="submit1" disabled>
-                        </div>
+                        <?php
+                            $forms_a = get_field('contact_form_contact_page');
+                            if($forms_a){
+                                echo do_shortcode('[contact-form-7 id=" ' . $forms_a->ID . ' "]'); 
+							}
+                        ?>
                     </div>
                 </div>
             </div>

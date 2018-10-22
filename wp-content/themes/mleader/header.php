@@ -128,6 +128,27 @@ Version: 1.0
                     <div class="col-md-6">
 						<?php echo getMeta('contact_block_b_main_page'); ?>
                     </div>
+                                        
+                    <div id="callback" style="display:none;">
+                        <div class="container-fluid form-line-main">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div id="main-form" class="form-block">
+                                            <?php
+                                                $forms_a = get_field('contact_form_header_main_page');
+                                                if($forms_a){
+                                                    echo do_shortcode('[contact-form-7 id=" ' . $forms_a->ID . ' "]'); 
+                                                }
+                                            ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                     <div class="col-md-12">
                         <?php
 							if (has_nav_menu('header_menu')){
