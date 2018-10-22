@@ -50,7 +50,11 @@ get_header();
 							?>
                         </ul>
 
-                        <p><a class="get-more back" href="javascript:void(0)">Назад к списку материалов</a></p>
+                        <p class="button-wrap">
+                            <a class="button backward back" href="javascript:void(0)">Назад</a>
+                            <a class="button" href="#">Задать вопрос</a>
+                        </p>
+                        <!-- <p><a class="get-more back" href="javascript:void(0)">Назад к списку материалов</a></p> -->
                     </div>
                 </div>
             </div>
