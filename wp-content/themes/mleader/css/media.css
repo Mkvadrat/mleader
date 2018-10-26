@@ -335,6 +335,32 @@
 		padding: 16px 50px 16px 80px;
 	}
 
+	.grey-padding-block .description {
+		width: 100%;
+	}
+
+	.main .grey-padding-block .h1-title,
+	.main-work .grey-padding-block .h1-title {
+		padding-top: 150px;
+	}
+
+	.grey-padding-block .img-block {
+		width: 100%;
+		height: 150px;
+	}
+
+	.grey-padding-block .img-block::before {
+		display: none;
+	}
+
+	.list-links li a {
+		font-size: 16px;
+	}
+
+	.list-links li a:hover {
+		padding: 16px 50px 16px 80px;
+	}
+
 	.form-line-main::before {
 		display: none;
 	}
