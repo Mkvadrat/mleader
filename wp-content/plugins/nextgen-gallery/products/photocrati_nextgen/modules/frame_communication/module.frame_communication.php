@@ -22,7 +22,7 @@ class M_Frame_Communication extends C_Base_Module
 			'photocrati-frame_communication',
 			'Frame/iFrame Inter-Communication',
 			'Provides a means for HTML frames to share server-side events with each other',
-			'3.0.0',
+			'0.5',
             'https://www.imagely.com/wordpress-gallery-plugin/nextgen-gallery/',
             'Imagely',
             'https://www.imagely.com',
@@ -46,29 +46,11 @@ class M_Frame_Communication extends C_Base_Module
 
 	function _register_hooks()
 	{
-		add_action('init', array($this, 'register_script'));
-		add_filter('ngg_admin_script_handles', array($this, 'add_script_to_ngg_pages'));
-		add_action('ngg_enqueue_frame_event_publisher_script', array($this, 'enqueue_script'));
+		add_action('init', array($this, 'enqueue_admin_scripts'));
+
 	}
 
-	function add_script_to_ngg_pages($scripts)
-	{
-		$scripts['frame_event_publisher'] = $this->module_version;
-		return $scripts;
-	}
-
-	function enqueue_script()
-	{
-		wp_enqueue_script('frame_event_publisher');
-		wp_localize_script(
-			'frame_event_publisher',
-			'frame_event_publisher_domain',
-			array(parse_url(site_url(), PHP_URL_HOST))
-		);
-	}
-
-
-	function register_script()
+	function enqueue_admin_scripts()
 	{
 		$router = C_Router::get_instance();
 
@@ -76,8 +58,18 @@ class M_Frame_Communication extends C_Base_Module
 			'frame_event_publisher',
 			$router->get_static_url('photocrati-frame_communication#frame_event_publisher.js'),
 			array('jquery'),
-			$this->module_version
+			NGG_SCRIPT_VERSION
 		);
+
+		if (is_admin())
+		{
+			wp_enqueue_script('frame_event_publisher');
+			wp_localize_script(
+				'frame_event_publisher',
+				'frame_event_publisher_domain',
+				array(parse_url(site_url(), PHP_URL_HOST))
+			);
+		}
 	}
 
     function get_type_list()

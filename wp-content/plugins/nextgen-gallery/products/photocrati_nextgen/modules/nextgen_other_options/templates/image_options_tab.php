@@ -4,10 +4,8 @@
 	?>
 	<tr>
 		<td class="column1">
-			<label 	for="gallery_path"
-					title="<?php echo esc_attr($gallery_path_help); ?>"
-               		class="tooltip">
-					<?php esc_html_e($gallery_path_label)?>
+			<label for="gallery_path">
+				<?php esc_html_e($gallery_path_label)?>
 			</label>
 		</td>
 		<td colspan="2">
@@ -18,6 +16,9 @@
                 data-original-value='<?php echo esc_attr($gallery_path); ?>'
 				value="<?php echo esc_attr($gallery_path) ?>"
 			/>
+			<p class="description">
+				<?php esc_html_e($gallery_path_help)?>
+			</p>
 		</td>
 	</tr>
 	<?php 
@@ -25,10 +26,8 @@
 	?>
 	<tr>
 		<td>
-			<label 	for="delete_images" 
-					title="<?php echo esc_attr($delete_image_files_help); ?>"
-               		class="tooltip">
-					<?php esc_html_e($delete_image_files_label) ?>
+			<label for="delete_images">
+				<?php esc_html_e($delete_image_files_label) ?>
 			</label>
 		</td>
 		<td colspan="2">
@@ -46,15 +45,14 @@
                        value="0"
                        <?php checked(0, $delete_image_files); ?>/>
                 <label for="delete_images_no"><?php _e('No'); ?></label>
+                <?php esc_html_e($delete_image_files_help); ?>
 			</p>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<label 	for="automatic_resize" 
-					title="<?php echo esc_attr($automatic_resize_help); ?>"
-               		class="tooltip">
-					<?php esc_html_e($automatic_resize_label)?>
+			<label for="automatic_resize">
+				<?php esc_html_e($automatic_resize_label)?>
 			</label>
 		</td>
 		<td colspan="2">
@@ -72,15 +70,14 @@
                        value="0"
                     <?php checked(0, $automatic_resize ? 1 : 0); ?>/>
                 <label for="automatic_resize_no"><?php _e('No'); ?></label>
+                <?php esc_html_e($automatic_resize_help); ?>
             </p>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<label 	for="resize_images" 
-					title="<?php echo esc_attr($resize_images_help); ?>"
-               		class="tooltip">
-					<?php esc_html_e($resize_images_label) ?>
+			<label for="resize_images">
+				<?php esc_html_e($resize_images_label) ?>
 			</label>
 		</td>
 		<td class="column2">
@@ -114,6 +111,12 @@
 			</div>
 		</td>
 	</tr>
+	<tr class="description_row">
+		<td class="column1"></td>
+		<td colspan="2">
+			<p class="description"><?php esc_html_e($resize_images_help) ?></p>
+		</td>
+	</tr>
 	<tr>
 		<td>
 			<label for="backup_images">
@@ -121,6 +124,9 @@
 			</label>
 		</td>
 		<td colspan="2">
+			<label for="backup_images_yes">
+				<?php esc_html_e($backup_images_yes_label)?>
+			</label>
 			<input
 				id="backup_images_yes"
 				name="image_options[imgBackup]"
@@ -128,10 +134,10 @@
 				type="radio"
 				<?php checked(1, $backup_images ? 1 : 0)?>
 			/>
-			<label for="backup_images_yes">
-				<?php esc_html_e($backup_images_yes_label)?>
-			</label>
 			&nbsp;
+			<label for="backup_images_no">
+				<?php esc_html_e($backup_images_no_label)?>
+			</label>
 			<input
 				id="backup_images_no"
 				name="image_options[imgBackup]"
@@ -139,9 +145,6 @@
 				type="radio"
 				<?php checked(0, $backup_images ? 1 : 0)?>
 			/>
-			<label for="backup_images_no">
-				<?php esc_html_e($backup_images_no_label)?>
-			</label>
 		</td>
 	</tr>
 	<tr id="sorting_options_row">
@@ -174,10 +177,8 @@
 	</tr>
 	<tr>
 		<td>
-			<label 	for="show_related_images" 
-					title="<?php echo esc_attr($show_related_images_help); ?>"
-               		class="tooltip">
-					<?php esc_html_e($show_related_images_label)?>
+			<label for="show_related_images">
+				<?php esc_html_e($show_related_images_label)?>
 			</label>
 		</td>
 		<td colspan="2">
@@ -195,6 +196,7 @@
                        value="0"
                        <?php checked(0, $show_related_images); ?>/>
                 <label for="show_related_images_no"><?php _e('No'); ?></label>
+                <?php esc_html_e($show_related_images_help); ?>
 			</p>
 		</td>
 	</tr>
@@ -247,7 +249,7 @@
 					<?php esc_html_e($related_images_heading_label) ?>
 				</label>
 			</td>
-			<td colspan="2">
+			<td>
 				<input id="related_images_heading" type="text" name="image_options[relatedHeading]"
 							 value="<?php echo esc_attr($related_images_heading)?>"/>
 			</td>

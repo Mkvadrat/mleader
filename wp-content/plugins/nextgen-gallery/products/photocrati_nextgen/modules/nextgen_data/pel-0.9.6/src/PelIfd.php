@@ -217,14 +217,8 @@ class PelIfd implements \IteratorAggregate, \ArrayAccess
                         $type = PelIfd::INTEROPERABILITY;
                     }
 
-                    $ifd = new PelIfd($type);
-                    try {
-                        $ifd->load($d, $o);
-                        $this->sub[$type] = $ifd;
-                    } catch (PelDataWindowOffsetException $e) {
-                        Pel::maybeThrow(new PelIfdException($e->getMessage()));
-                    }
-
+                    $this->sub[$type] = new PelIfd($type);
+                    $this->sub[$type]->load($d, $o);
                     break;
                 case PelTag::JPEG_INTERCHANGE_FORMAT:
                     $thumb_offset = $d->getLong($offset + 12 * $i + 8);
@@ -525,11 +519,7 @@ class PelIfd implements \IteratorAggregate, \ArrayAccess
             }
 
             /* Now set the thumbnail normally. */
-            try {
-                $this->setThumbnail($d->getClone($offset, $length));
-            } catch (PelDataWindowWindowException $e) {
-                Pel::maybeThrow(new PelIfdException($e->getMessage()));
-            }
+            $this->setThumbnail($d->getClone($offset, $length));
         }
     }
 

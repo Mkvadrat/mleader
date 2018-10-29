@@ -18,7 +18,7 @@ class M_NextGen_Settings extends C_Base_Module
 			'photocrati-nextgen_settings',
 			'NextGEN Gallery Settings',
 			'Provides central management for NextGEN Gallery settings',
-			'3.0.0.2',
+			'0.16',
 			'https://www.imagely.com/wordpress-gallery-plugin/nextgen-gallery/',
 			'Imagely',
 			'https://www.imagely.com'
@@ -62,6 +62,7 @@ class C_NextGen_Settings_Installer
 		$this->_local_settings = array(
 			'gallerypath'	 => 'wp-content'.DIRECTORY_SEPARATOR.'gallery'.DIRECTORY_SEPARATOR,
 			'deleteImg'      => TRUE,              // delete Images
+			'swfUpload'      => TRUE,              // activate the batch upload
 			'usePermalinks'  => FALSE,             // use permalinks for parameters
 			'permalinkSlug'  => 'nggallery',       // the default slug for permalinks
 			'graphicLibrary' => 'gd',              // default graphic library
@@ -82,49 +83,49 @@ class C_NextGen_Settings_Installer
 			'thumbquality' => 100,  // Thumb Quality
 
 			// Image Settings
-			'imgWidth'      => 1800,   // Image Width
-			'imgHeight'     => 1200,   // Image height
+			'imgWidth'      => 800,   // Image Width
+			'imgHeight'     => 600,   // Image height
 			'imgQuality'    => 100,   // Image Quality
 			'imgBackup'     => True,  // Create a backup
-			'imgAutoResize' => True, // Resize after upload
+			'imgAutoResize' => False, // Resize after upload
 
 			// Gallery Settings
-			'galImages'         => '24', // Number of images per page
+			'galImages'         => '20', // Number of images per page
 			'galPagedGalleries' => 0,    // Number of galleries per page (in a album)
 			'galColumns'        => 0,    // Number of columns for the gallery
-			'galShowSlide'      => False, // Show slideshow
-			'galTextSlide'      => __('View Slideshow', 'nggallery'), // Text for slideshow
-			'galTextGallery'    => __('View Thumbnails', 'nggallery'), // Text for gallery
+			'galShowSlide'      => True, // Show slideshow
+			'galTextSlide'      => __('[Show slideshow]', 'nggallery'), // Text for slideshow
+			'galTextGallery'    => __('[Show thumbnails]', 'nggallery'), // Text for gallery
 			'galShowOrder'      => 'gallery',   // Show order
 			'galSort'           => 'sortorder', // Sort order
 			'galSortDir'        => 'ASC',       // Sort direction
 			'galNoPages'        => True,        // use no subpages for gallery
 			'galImgBrowser'     => 0,       // Show ImageBrowser => instead effect
 			'galHiddenImg'      => 0,       // For paged galleries we can hide image
-			'galAjaxNav'        => 1,       // AJAX Navigation for Shutter effect
+			'galAjaxNav'        => 0,       // AJAX Navigation for Shutter effect
 
 			// Thumbnail Effect
-			'thumbEffect'  => 'simplelightbox', // select effect
-			'thumbCode'    => 'class="ngg-simplelightbox" rel="%GALLERY_NAME%"',
+			'thumbEffect'  => 'fancybox', // select effect
+			'thumbCode'    => 'class="ngg-fancybox" rel="%GALLERY_NAME%"',
 			'thumbEffectContext'  => 'nextgen_images', // select effect
 
 			// Watermark settings
-			'wmPos'    => 'midCenter',            // Postion
-			'wmXpos'   => 15,                     // X Pos
+			'wmPos'    => 'botRight',             // Postion
+			'wmXpos'   => 5,                      // X Pos
 			'wmYpos'   => 5,                      // Y Pos
-			'wmType'   => 'text',                 // Type : 'image' / 'text'
+			'wmType'   => 'image',                // Type : 'image' / 'text'
 			'wmPath'   => '',                     // Path to image
 			'wmFont'   => 'arial.ttf',            // Font type
-			'wmSize'   => 30,                     // Font Size
+			'wmSize'   => 10,                     // Font Size
 			'wmText'   => get_option('blogname'), // Text
-			'wmColor'  => 'ffffff',               // Font Color
-			'wmOpaque' => '33',                   // Font Opaque
+			'wmColor'  => '000000',               // Font Color
+			'wmOpaque' => '100',                  // Font Opaque
 
 			// Image Rotator settings
 			'slideFX'      => 'fade',
-			'irWidth'      => 750,
-			'irHeight'     => 500,
-			'irRotatetime' => 5,
+			'irWidth'      => 600,
+			'irHeight'     => 400,
+			'irRotatetime' => 10,
 
 			// CSS Style
 			'activateCSS' => 1, // activate the CSS file

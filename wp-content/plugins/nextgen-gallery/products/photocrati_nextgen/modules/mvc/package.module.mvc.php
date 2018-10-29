@@ -430,7 +430,7 @@ class Mixin_MVC_Controller_Instance_Methods extends Mixin
      */
     function render()
     {
-        if (!headers_sent() || defined('DOING_AJAX')) {
+        if (!headers_sent()) {
             header('Content-Type: ' . $this->object->_content_type . '; charset=' . get_option('blog_charset'), true);
         }
     }
@@ -488,7 +488,7 @@ class Mixin_Mvc_View_Instance_Methods extends Mixin
     {
         $retval = array();
         foreach ($this->object->_params as $key => $value) {
-            if (strpos($key, '_template') === 0) {
+            if (strpos($key, '_template') !== FALSE) {
                 $value = $this->object->get_template_abspath($value);
             }
             $retval[$key] = $value;
@@ -505,7 +505,7 @@ class Mixin_Mvc_View_Instance_Methods extends Mixin
         if (!$value) {
             $value = $this->object->_template;
         }
-        if (strpos($value, DIRECTORY_SEPARATOR) !== FALSE && @file_exists($value)) {
+        if ($value[0] == '/' && @file_exists($value)) {
             // key is already abspath
         } else {
             $value = $this->object->find_template_abspath($value);

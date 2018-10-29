@@ -1,9 +1,7 @@
 <table>
     <tr>
         <td class="column1">
-            <label  for="mediarss_activated" 
-                    title="<?php echo esc_attr($mediarss_activated_help); ?>"
-                    class="tooltip">
+            <label for="mediarss_activated">
                 <?php esc_html_e($mediarss_activated_label)?>
             </label>
         </td>
@@ -29,13 +27,14 @@
                 value="0"
                 <?php checked(FALSE, $mediarss_activated ? TRUE : FALSE)?>
                 />
+            <p class="description">
+                <?php esc_html_e($mediarss_activated_help)?>
+            </p>
         </td>
     </tr>
     <tr>
         <td class="column1">
-            <label  for="galleries_in_feeds"  
-                    title="<?php echo esc_attr($galleries_in_feeds_help); ?>"
-                    class="tooltip">
+            <label for="galleries_in_feeds">
                 <?php esc_html_e($galleries_in_feeds_label)?>
             </label>
         </td>
@@ -61,6 +60,9 @@
                 value="0"
                 <?php checked(FALSE, $galleries_in_feeds ? TRUE : FALSE)?>
                 />
+            <p class="description">
+                <?php esc_html_e($galleries_in_feeds_help)?>
+            </p>
         </td>
     </tr>
     <tr>
@@ -70,7 +72,7 @@
         <td>
             <input type='submit'
                    name="action_proxy"
-                   class="button delete button-primary"
+                   class="button delete button-secondary"
                    data-proxy-value="cache"
                    data-confirm="<?php echo $cache_confirmation; ?>"
                    value='<?php echo $cache_label; ?>'

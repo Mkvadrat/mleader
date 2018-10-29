@@ -19,7 +19,7 @@ class M_NextGen_Pagination extends C_Base_Module
             'photocrati-nextgen_pagination',
             "Pagination",
             "Provides pagination for display types",
-            '3.0.0.2',
+            '0.4',
             "https://www.imagely.com/wordpress-gallery-plugin/nextgen-gallery/",
             "Imagely",
             "https://www.imagely.com"

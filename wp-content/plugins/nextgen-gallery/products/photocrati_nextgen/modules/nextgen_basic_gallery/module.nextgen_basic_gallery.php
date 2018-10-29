@@ -16,11 +16,6 @@ define(
     'photocrati-nextgen_basic_slideshow'
 );
 
-define(
-    'NGG_BASIC_GALLERY',
-    'photocrati-nextgen_basic_gallery'
-);
-
 
 class M_NextGen_Basic_Gallery extends C_Base_Module
 {
@@ -34,10 +29,10 @@ class M_NextGen_Basic_Gallery extends C_Base_Module
                     $context = FALSE)
     {
         parent::define(
-            NGG_BASIC_GALLERY,
+            'photocrati-nextgen_basic_gallery',
             'NextGEN Basic Gallery',
             "Provides NextGEN Gallery's basic thumbnail/slideshow integrated gallery",
-            '3.0.13',
+            '0.16',
             'https://www.imagely.com/wordpress-gallery-plugin/nextgen-gallery/',
             'Imagely',
             'https://www.imagely.com'
@@ -157,10 +152,6 @@ class M_NextGen_Basic_Gallery extends C_Base_Module
         add_action('ngg_routes', array(&$this, 'define_routes'));
 
         add_filter('ngg_atp_show_display_type', array($this, 'atp_show_basic_galleries'), 10, 2);
-
-        add_filter('ngg_' . NGG_BASIC_THUMBNAILS . '_template_dirs', array($this, 'filter_thumbnail_view_dir'));
-
-        add_filter('ngg_' . NGG_BASIC_SLIDESHOW . '_template_dirs', array($this, 'filter_slideshow_view_dir'));
 	}
 
     function define_routes($router)
@@ -296,19 +287,6 @@ class M_NextGen_Basic_Gallery extends C_Base_Module
         $renderer = C_Displayed_Gallery_Renderer::get_instance();
         return $renderer->display_images($params, $inner_content);
 	}    
-
-    function filter_thumbnail_view_dir($dirs) 
-    {
-        $dirs['default'] = C_Component_Registry::get_instance()->get_module_dir(NGG_BASIC_GALLERY) . DIRECTORY_SEPARATOR . 'templates/thumbnails';
-        return $dirs;
-    }
-
-    function filter_slideshow_view_dir($dirs) 
-    {
-        $dirs['default'] = C_Component_Registry::get_instance()->get_module_dir(NGG_BASIC_GALLERY) . DIRECTORY_SEPARATOR . 'templates/slideshow';
-        return $dirs;
-    }
-
 }
 
 /**
@@ -368,7 +346,6 @@ class C_NextGen_Basic_Gallery_Installer extends C_Gallery_Display_Installer
 		$this->install_display_type(NGG_BASIC_THUMBNAILS,
 			array(
 				'title'					=>	__('NextGEN Basic Thumbnails', 'nggallery'),
-                'module_id'             =>  NGG_BASIC_GALLERY,      
 				'entity_types'			=>	array('image'),
 				'preview_image_relpath'	=>	'photocrati-nextgen_basic_gallery#thumb_preview.jpg',
 				'default_source'		=>	'galleries',
@@ -384,7 +361,6 @@ class C_NextGen_Basic_Gallery_Installer extends C_Gallery_Display_Installer
 		$this->install_display_type(NGG_BASIC_SLIDESHOW,
 			array(
 				'title'					=>	__('NextGEN Basic Slideshow', 'nggallery'),
-                'module_id'             =>  NGG_BASIC_GALLERY,
 				'entity_types'			=>	array('image'),
 				'preview_image_relpath'	=>	'photocrati-nextgen_basic_gallery#slideshow_preview.jpg',
 				'default_source'		=>	'galleries',

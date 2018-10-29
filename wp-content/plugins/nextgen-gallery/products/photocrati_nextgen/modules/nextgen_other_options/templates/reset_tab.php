@@ -7,7 +7,7 @@
         </td>
         <td>
             <input type="submit"
-                   class="button-primary"
+                   class="button-secondary"
 				   data-confirm="<?php echo $reset_confirmation; ?>"
 				   data-proxy-value="reset"
                    name="action_proxy"

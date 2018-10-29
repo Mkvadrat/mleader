@@ -32,7 +32,7 @@ include_once( nggGallery::graphic_library() );
 $ngg_options=get_option('ngg_options');
 
 $thumb = new ngg_Thumbnail($picture->imagePath, TRUE);
-$thumb->resize(450,350);
+$thumb->resize(350,350);
 // we need the new dimension
 $resizedPreviewInfo = $thumb->newDimensions;
 $thumb->destruct();
@@ -41,10 +41,8 @@ $thumb->destruct();
 $storage            = C_Gallery_Storage::get_instance();
 $thumbnail_manager  = C_Dynamic_Thumbnails_Manager::get_instance();
 $dynamic_size       = $thumbnail_manager->get_size_name(array(
-	'width'     =>  450,
+	'width'     =>  350,
 	'height'    =>  350,
-	// 'width'     =>  300,
-	// 'height'    =>  300,
 
 ));
 //$preview_image		= NGGALLERY_URLPATH . 'nggshow.php?pid=' . $picture->pid . '&amp;width=350&amp;height=350';
@@ -93,7 +91,7 @@ if ($thumbnail_crop_frame != null)
 
 <script type="text/javascript">
 //<![CDATA[	
-	var status = 'edit';
+	var status = 'start';
 	var xT, yT, wT, hT, selectedCoords;
 	var selectedImage = "thumb<?php echo $id ?>";
 
@@ -101,7 +99,7 @@ if ($thumbnail_crop_frame != null)
 	{
 		if (status != 'edit') {
 			jQuery('#actualThumb').hide();
-			jQuery('#previewNewThumb').hide();
+			jQuery('#previewNewThumb').show();
 			status = 'edit';	
 		}
 		
@@ -155,18 +153,17 @@ if ($thumbnail_crop_frame != null)
 //]]>
 </script>
 
-<table align="center">
+<table width="98%" align="center" style="border:1px solid #DADADA">
 	<tr>
-		<td rowspan="3" valign="middle" align="center" id="ngg-overlay-dialog-main">
-			<small><?php esc_html_e('Select the area for the thumbnail from the picture on below.', 'nggallery'); ?></small>
+		<td rowspan="3" valign="middle" align="center" width="350" style="background-color:#DADADA;">
 			<img src="<?php echo nextgen_esc_url( $preview_image ); ?>" alt="" id="imageToEdit" />	
 		</td>
-		<td style="display:none;">
-			<small><?php esc_html_e('Select the area for the thumbnail from the picture on the left.', 'nggallery'); ?></small>
+		<td width="300" style="background-color : #DADADA;">
+			<small style="margin-left:6px; display:block;"><?php esc_html_e('Select the area for the thumbnail from the picture on the left.', 'nggallery'); ?></small>
 		</td>		
 	</tr>
-	<tr style="display:none;">
-		<td align="center">
+	<tr>
+		<td align="center" width="300" height="320">
 			<div id="previewNewThumb" style="display:none;width:<?php echo $WidthHtmlPrev; ?>px;height:<?php echo $HeightHtmlPrev; ?>px;overflow:hidden; margin-left:5px;">
 				<img src="<?php echo nextgen_esc_url( $preview_image ); ?>" id="imageToEditPreview" />
 			</div>
@@ -175,11 +172,13 @@ if ($thumbnail_crop_frame != null)
 			</div>
 		</td>
 	</tr>
+	<tr style="background-color:#DADADA;">
+		<td>
+			<input type="button" name="update" value="<?php esc_attr_e('Update', 'nggallery'); ?>" onclick="updateThumb()" class="button-secondary" style="float:left; margin-left:4px;"/>
+			<div id="thumbMsg" style="color:#FF0000; display : none;font-size:11px; float:right; width:60%; height:2em; line-height:2em;"></div>
+		</td>
+	</tr>
 </table>
-<div id="ngg-overlay-dialog-bottom">
-	<input type="button" name="update" value="<?php esc_attr_e('Update', 'nggallery'); ?>" onclick="updateThumb()" class="button-secondary" />
-	<div id="thumbMsg" ></div>
-</div>
 
 <script type="text/javascript">
 //<![CDATA[

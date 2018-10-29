@@ -22,7 +22,7 @@ class M_NextGen_Data extends C_Base_Module
 			'photocrati-nextgen-data',
 			'NextGEN Data Tier',
 			"Provides a data tier for NextGEN gallery based on the DataMapper module",
-			'3.0.0',
+			'0.16',
 			'https://www.imagely.com/wordpress-gallery-plugin/nextgen-gallery/',
 			'Imagely',
 			'https://www.imagely.com'
@@ -111,8 +111,23 @@ class M_NextGen_Data extends C_Base_Module
 
 		return $order_by;
 	}
-
+	
 	static function strip_html($data, $just_scripts=FALSE)
+	{
+		$retval = $data;
+
+		if (!$just_scripts)
+			$retval = wp_strip_all_tags($retval, TRUE);
+		else {
+			$retval = preg_replace( '@<(script|style)[^>]*?>.*?</\\1>@si', '', $retval );
+			$retval= preg_replace('/[\r\n\t ]+/', ' ', $retval);
+		}
+		$retval = preg_replace("/\son[^=]+=/", '', $retval);
+
+		return $retval;
+	}
+
+	/*static function strip_html($data, $just_scripts=FALSE)
 	{
 		$retval = $data;
 
@@ -129,10 +144,7 @@ class M_NextGen_Data extends C_Base_Module
 			libxml_use_internal_errors(true);
 			libxml_clear_errors();
 
-			$allowed_attributes = array(
-			    '*' => array('id', 'class', 'href', 'name', 'title', 'rel', 'style'),
-                'img' => array('src', 'alt', 'title')
-            );
+			$allowed_attributes = array('id', 'class', 'href', 'name', 'title', 'rel', 'style');
 
 			if (is_object($data))
 			{
@@ -160,20 +172,16 @@ class M_NextGen_Data extends C_Base_Module
 						$item = $data->attributes->item($i);
 						$name = $item->nodeName;
 
-						$allowed = FALSE;
-						foreach ($allowed_attributes as $element_type => $attributes) {
-                            if (($data->tagName == $element_type || $element_type == '*')
-                            &&  in_array($name, $attributes)) {
-                                    $allowed = TRUE;
-                            }
-                        }
-
-                        if (!$allowed)
+						// We only allow these three attributes
+						if (!in_array($name, $allowed_attributes))
 							$data->removeAttribute($name);
 
 						// DO NOT EVER allow href="javascript:...."
-						if (strpos($item->nodeValue, 'javascript:') === 0)
-							$item->nodeValue = '#';
+						if ($name === 'href')
+						{
+							if (strpos($item->nodeValue, 'javascript:') === 0)
+								$item->nodeValue = '#';
+						}
 					}
 				}
 			}
@@ -189,9 +197,6 @@ class M_NextGen_Data extends C_Base_Module
 					$end = '</div>';
 					$start_length = strlen($start);
 					$end_length = strlen($end);
-
-					// Prevent attempted work-arounds using &lt; and &gt; or other html entities
-					$data = html_entity_decode($data);
 
 					// This forces DOMDocument to treat the HTML as UTF-8
 					$meta = '<meta http-equiv="Content-Type" content="charset=utf-8"/>';
@@ -226,6 +231,6 @@ class M_NextGen_Data extends C_Base_Module
 		}
 
 		return $retval;
-	}
+	}*/
 }
 new M_NextGen_Data();

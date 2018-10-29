@@ -1,7 +1,6 @@
 <?php
 
 define('NGG_ATTACH_TO_POST_SLUG', 'nextgen-attach_to_post');
-define('NGG_ATTACH_TO_POST_VERSION', '3.0.0.5');
 
 class M_Attach_To_Post extends C_Base_Module
 {
@@ -26,10 +25,10 @@ class M_Attach_To_Post extends C_Base_Module
 			'photocrati-attach_to_post',
 			'Attach To Post',
 			'Provides the "Attach to Post" interface for displaying galleries and albums',
-			NGG_ATTACH_TO_POST_VERSION,
-			'https://www.imagely.com/wordpress-gallery-plugin/nextgen-gallery/',
-			'Imagely',
-			'https://www.imagely.com',
+			'0.18',
+            'https://www.imagely.com/wordpress-gallery-plugin/nextgen-gallery/',
+            'Imagely',
+            'https://www.imagely.com',
 		    $context
 		);
 
@@ -106,16 +105,17 @@ class M_Attach_To_Post extends C_Base_Module
 		return (strpos($_SERVER['REQUEST_URI'], 'attach_to_post') !== FALSE OR (isset($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'], 'attach_to_post') !== FALSE) OR array_key_exists('attach_to_post', $_REQUEST));
 	}
 
-	function disable_resource_manager($retval)
-	{
-		if (isset($_REQUEST[NGG_ATTACH_TO_POST_SLUG])) $retval = FALSE;
-		return $retval;
-	}
-
 
 	function _register_hooks()
 	{
-        add_action('ngg_routes', array($this, 'define_routes'), 2);
+        add_action('ngg_routes',                      array(&$this, 'define_routes'), 2);
+
+        // We use two hooks here because we need it to execute for both the post-new.php
+        // page and ATP interface
+        add_action('plugins_loaded',        array($this, 'fix_ie11'), 1);
+        add_action('admin_init',            array($this, 'fix_ie11'), PHP_INT_MAX-1);
+        add_action('admin_enqueue_scripts', array($this, 'fix_ie11'), 1);
+        add_action('admin_enqueue_scripts', array($this, 'fix_ie11'), PHP_INT_MAX-1);
 
         add_filter('wpseo_opengraph_image',   array($this, 'hide_preview_image_from_yoast'));
         add_filter('wpseo_twitter_image',     array($this, 'hide_preview_image_from_yoast'));
@@ -131,8 +131,6 @@ class M_Attach_To_Post extends C_Base_Module
 
 		// Admin-only hooks
 		if (is_admin()) {
-			add_filter('run_ngg_resource_manager', array(&$this, 'disable_resource_manager'));
-
 			add_action(
 				'admin_enqueue_scripts',
 				array(&$this, 'enqueue_static_resources'),
@@ -267,11 +265,11 @@ class M_Attach_To_Post extends C_Base_Module
             return;
 
 		$router = C_Router::get_instance();
-		$button_url = $router->get_static_url('photocrati-attach_to_post#igw_button.png');
+		$button_url = $router->get_static_url('photocrati-attach_to_post#atp_button.png');
 		$label		= __('Add Gallery', 'nggallery');
 		$igw_url    = admin_url('/?'.NGG_ATTACH_TO_POST_SLUG.'=1&KeepThis=true&TB_iframe=true&height=600&width=1000');
 
-		echo sprintf('<a href="%s" data-editor="content" class="button ngg-add-gallery thickbox" id="ngg-media-button" class="button" ><img src="%s" style="padding:0 4px 0 0; margin-left: -2px; margin-top:-3px; max-width: 20px;">%s</a>', $igw_url, $button_url, $label);
+		echo sprintf('<a href="%s" data-editor="content" class="button ngg-add-gallery thickbox" id="ngg-media-button" class="button" ><img src="%s" style="padding:0; margin-top:-3px;">%s</a>', $igw_url, $button_url, $label);
 	}
 
 	/**
@@ -304,6 +302,19 @@ class M_Attach_To_Post extends C_Base_Module
         $app->route('/preview',			'I_Attach_To_Post_Controller#preview');
         $app->route('/display_tab_js',	'I_Attach_To_Post_Controller#display_tab_js');
         $app->route('/',				'I_Attach_To_Post_Controller#index');
+    }
+
+    /**
+     * WordPress sets the X-UA-Compatible header to IE=edge. Unfortunately, this causes problems with Plupload,
+     * so we have the send this header
+     */
+    function fix_ie11()
+    {
+        if ((array_search('attach_to_post', array_keys($_REQUEST)) !== FALSE OR strpos($_SERVER['REQUEST_URI'], NGG_ATTACH_TO_POST_SLUG) !== FALSE OR strpos($_SERVER['REQUEST_URI'], 'wp-admin/post.php') !== FALSE OR strpos($_SERVER['REQUEST_URI'], 'wp-admin/post-new.php') !== FALSE)) {
+            if (!headers_sent()) {
+                header('X-UA-Compatible: IE=EmulateIE10');
+            }
+        }
     }
 
 	/**
@@ -342,6 +353,7 @@ class M_Attach_To_Post extends C_Base_Module
 		return $content;
     }
 
+
 	/**
 	 * Enqueues static resources required by the Attach to Post interface
 	 */
@@ -352,10 +364,6 @@ class M_Attach_To_Post extends C_Base_Module
 		// Enqueue resources needed at post/page level
 		if (preg_match("/\/wp-admin\/(post|post-new)\.php$/", $_SERVER['SCRIPT_NAME'])) {
 			$this->_enqueue_tinymce_resources();
-
-			wp_enqueue_script('nextgen_admin_js');
-			wp_enqueue_style('nextgen_admin_css');
-			wp_enqueue_script('frame_event_publisher');
 
 			M_Gallery_Display::enqueue_fontawesome();
 
@@ -369,14 +377,14 @@ class M_Attach_To_Post extends C_Base_Module
 			wp_enqueue_style(
 				'ngg_attach_to_post_dialog',
 				$router->get_static_url('photocrati-attach_to_post#attach_to_post_dialog.css'),
-				array('gritter'),
+				FALSE,
 				NGG_SCRIPT_VERSION
 			);
 
 			wp_enqueue_script(
 				'ngg-igw',
 				$router->get_static_url('photocrati-attach_to_post#igw.js'),
-				array('jquery', 'Base64', 'gritter'),
+				array('jquery', 'Base64'),
 				NGG_PLUGIN_VERSION
 			);
 			wp_localize_script('ngg-igw', 'ngg_igw_i18n', array(
@@ -384,14 +392,12 @@ class M_Attach_To_Post extends C_Base_Module
 				'edit'				=>	__('Click to edit', 'nggallery'),
 				'remove'			=>	__('Click to remove', 'nggallery'),
 			));
-
 		}
 
 		elseif (isset($_REQUEST['attach_to_post']) OR
 		  (isset($_REQUEST['page']) && strpos($_REQUEST['page'], 'nggallery') !== FALSE)) {
 			wp_enqueue_script('iframely', $router->get_static_url('photocrati-attach_to_post#iframely.js'), FALSE, NGG_SCRIPT_VERSION);
 			wp_enqueue_style('iframely',  $router->get_static_url('photocrati-attach_to_post#iframely.css'), FALSE, NGG_SCRIPT_VERSION);
-			wp_enqueue_script('nextgen_admin_js_atp', $router->get_static_url('photocrati-nextgen_admin#nextgen_admin_page.js'), FALSE, NGG_SCRIPT_VERSION);
 		}
 	}
 
@@ -448,13 +454,9 @@ class M_Attach_To_Post extends C_Base_Module
 	 */
 	function add_attach_to_post_tinymce_plugin($plugins)
 	{
-		$router = C_Router::get_instance();
+        $router = C_Router::get_instance();
 		wp_enqueue_script('photocrati_ajax');
-		$plugins[$this->attach_to_post_tinymce_plugin] = add_query_arg(
-			'ver',
-			NGG_ATTACH_TO_POST_VERSION,
-			$router->get_static_url('photocrati-attach_to_post#ngg_attach_to_post_tinymce_plugin.js')
-		);
+		$plugins[$this->attach_to_post_tinymce_plugin] = $router->get_static_url('photocrati-attach_to_post#ngg_attach_to_post_tinymce_plugin.js');
 		return $plugins;
 	}
 
