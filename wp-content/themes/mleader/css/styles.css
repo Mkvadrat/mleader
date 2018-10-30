@@ -1657,6 +1657,7 @@ textarea:focus:-ms-input-placeholder {
 .fancybox-slide > div .form-line-main .container {
   padding: 0;
   overflow: hidden;
+<<<<<<< HEAD
 }
 /*30/10/2018*/
 .product-not-found{
@@ -1666,4 +1667,6 @@ textarea:focus:-ms-input-placeholder {
   line-height: 30px;
   color: #2c2c2c;
   padding-bottom: 20px;
+=======
+>>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
 }
