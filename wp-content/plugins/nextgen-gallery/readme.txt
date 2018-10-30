@@ -2,16 +2,11 @@
 Contributors: photocrati, imagely
 Tags: wordpress gallery plugin, gallery, nextgen, nextgen gallery, photo gallery, image gallery, photography, slideshow, images, photo, photo album, watermark
 Requires at least: 4.0.0
-<<<<<<< HEAD
-Stable tag: 2.2.50
-Tested up to: 4.9.2
-=======
-Stable tag: 3.0.13
+Stable tag: 3.0.16
 Tested up to: 4.9.8
->>>>>>> b726ced9b668bb772eeeca8c25effad8485345c9
 License: GPLv2
 
-The most popular WordPress gallery plugin and one of the most popular plugins of all time with over 22 million downloads.
+The most popular WordPress gallery plugin and one of the most popular plugins of all time with over 23 million downloads.
 
 == Description ==
 
@@ -188,15 +183,30 @@ For more information, feel free to visit the official website for the NextGEN Ga
 
 == Changelog ==
 
-<<<<<<< HEAD
-= V2.2.50 - 02.20.2018 =
-* Secured: Gallery paths and the ability to manage tags
-* Kudos:   ElevenPaths (Telefonica Cybersecurity Unit)
-=======
+= V3.0.16 - 10.24.2018 =
+* Fixed    Fontawesome 4 compatibility
+
+= v3.0.15 - 10.23.2018 =
+* NEW:     Added requirements notification manager
+* Changed: Basic Thumbnails default setting from "[Show slideshow]" to "Show slideshow"
+* Changed: Fixed order_by=rand and 'variations' system not working by storing random results in a transient for 24h
+* Changed: How gallery directories are removed
+* Changed: Improved memory use during thumbnail generation
+* Changed: Manage Albums page now uses GET for editing navigation
+* Changed: Upgrading FontAwesome to 5.0.13
+* Fixed:   Attribute 'target=_blank' not working in lightbox effects
+* Fixed:   Conflict with WP Social Widget
+* Fixed:   Corrected numerous phpdoc problems found by Phan
+* Fixed:   Editing of image attributes from search-galleries page
+* Fixed:   Gritter messages with long texts overlapped their close-notification icon
+* Fixed:   IGW gallery selections not persisting between edits
+* Fixed:   Orphaned entries being created and/or left in wp_postmeta
+* Fixed:   Repeated and missing images in featured images list
+
 = V3.0.13 - 10.11.2018 =
 * Changed: Added settings for basic slideshow
 
-= V3.0.9 - 10.02.2018 =
+= V3.0.9 - 09.25.2018 =
 * NEW:     Added 2.0 template mechanism for basic galleries
 * NEW:     Simple Lightbox is the new default Lightbox
 * Changed: Changed Javascript library and styling for basic slideshow
@@ -245,7 +255,6 @@ For more information, feel free to visit the official website for the NextGEN Ga
 = V2.2.50 - 02.20.2018 =
 * Secured: Gallery paths and the ability to manage tags
 * Kudos:   ElevenPaths (Telefonica cibersecurity Unit)
->>>>>>> b726ced9b668bb772eeeca8c25effad8485345c9
 
 = V2.2.46 - 02.15.2018 =
 * Fixed:   Broken Manage Albums page

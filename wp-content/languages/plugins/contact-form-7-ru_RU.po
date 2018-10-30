@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-03 05:32:30+0000\n"
+"PO-Revision-Date: 2018-10-22 16:25:36+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,14 @@ msgstr ""
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ru\n"
 "Project-Id-Version: Plugins - Contact Form 7 - Stable (latest release)\n"
+
+#: includes/config-validator.php:581
+msgid "It is not allowed to use files outside the wp-content directory."
+msgstr "Запрещается использовать файлы вне каталога wp-content."
+
+#: modules/acceptance.php:251
+msgid "Make this checkbox optional"
+msgstr "Сделать этот чекбокс опциональным"
 
 #: admin/edit-contact-form.php:192
 msgid "Professional Services"

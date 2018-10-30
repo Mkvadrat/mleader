@@ -178,7 +178,9 @@ body {
   line-height: 20px;
   color: #2c2c2c;
 }
-
+.description-category .title strong {
+  font-weight: bold;
+}
 main ul {
   padding-bottom: 30px;
 }
@@ -1623,9 +1625,7 @@ textarea:focus:-ms-input-placeholder {
   padding: 10px;
   max-height: 200px;
 }
-<<<<<<< HEAD
-/*----- 15.10.2018 -----*/
-=======
+
 /*----- 15.10.2018 -----*/
 
 .two_colons {
@@ -1646,4 +1646,15 @@ textarea:focus:-ms-input-placeholder {
   padding-left: 30px;
   width: 70%;
 }
->>>>>>> b726ced9b668bb772eeeca8c25effad8485345c9
+/*----- 26.10.2018 -----*/
+.fancybox-slide > div {
+  padding: 0;
+}
+.fancybox-slide > div .form-line-main {
+  padding: 0;
+  margin: 0;
+}
+.fancybox-slide > div .form-line-main .container {
+  padding: 0;
+  overflow: hidden;
+}

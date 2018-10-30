@@ -167,6 +167,7 @@ class C_NextGen_Basic_Tagcloud_Installer extends C_Gallery_Display_Installer
 {
 	/**
 	 * Installs the display type for NextGEN Basic Tagcloud
+     * @param bool $reset (optional) Unused
 	 */
 	function install($reset = FALSE)
 	{
