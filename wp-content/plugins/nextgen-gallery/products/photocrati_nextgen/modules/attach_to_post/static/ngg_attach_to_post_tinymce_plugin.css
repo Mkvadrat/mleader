@@ -1,0 +1,65 @@
+.nggPlaceholder {
+    text-align: center;
+    background-color: #fdfdfd;
+    border: solid 1px #ddd;
+    border-radius: 3px;
+    height: 230px;
+    padding: 5px;
+    margin: 5px;
+    max-width: 94%;
+    box-shadow: 0 0 3px 1px #EBECED;
+    -webkit-box-shadow: 0 0 3px 1px #EBECED;
+    -moz-box-shadow: 0 0 3px 1px #EBECED;
+    width: 400px;
+}
+
+.nggPlaceholder h3 {
+    margin: 0px !important;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #555;
+    margin-top: 75px !important;
+    letter-spacing: -1px;
+}
+
+.nggPlaceholderButtonRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nggPlaceholderButton:hover {
+    opacity: .8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+<<<<<<< HEAD
+    color: #9fbb1a;
+    cursor: pointer;
+=======
+    color: #76a934;
+>>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
+}
+
+.nggPlaceholderButton {
+    margin: 0;
+    opacity: 1.0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    color: #bbb;
+<<<<<<< HEAD
+    padding: 0;
+    color: rgba(159, 187, 26, 0.7)
+}
+
+.nggPlaceholderButton i {
+    font-size: 1.25em;
+    line-height: 1.25em;
+    width: 1.25em;
+    height: 1.25em;
+}
+
+.nggPlaceholderButton.nggIgwRemove {
+    border-left: 1px solid rgba(204, 204, 204, 0.4);
+=======
+>>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
+}
