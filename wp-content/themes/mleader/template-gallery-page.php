@@ -72,5 +72,4 @@ jQuery(document).ready(function(){
 });
 </script>
 
-
 <?php get_footer(); ?>

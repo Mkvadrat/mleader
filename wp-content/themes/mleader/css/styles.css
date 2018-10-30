@@ -1658,3 +1658,12 @@ textarea:focus:-ms-input-placeholder {
   padding: 0;
   overflow: hidden;
 }
+/*30/10/2018*/
+.product-not-found{
+  width:100% !important;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #2c2c2c;
+  padding-bottom: 20px;
+}
