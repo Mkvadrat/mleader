@@ -77,38 +77,6 @@ class A_NextGen_API_Ajax extends Mixin
         }
         return $response;
     }
-<<<<<<< HEAD
-    function _get_max_upload_size()
-    {
-        static $max_size = -1;
-        if ($max_size < 0) {
-            $post_max_size = $this->_parse_size(ini_get('post_max_size'));
-            if ($post_max_size > 0) {
-                $max_size = $post_max_size;
-            }
-            $upload_max = $this->_parse_size(ini_get('upload_max_filesize'));
-            if ($upload_max > 0 && $upload_max < $max_size) {
-                $max_size = $upload_max;
-            }
-        }
-        return $max_size;
-    }
-    function _parse_size($size)
-    {
-        $unit = preg_replace('/[^bkmgtpezy]/i', '', $size);
-        $size = preg_replace('/[^0-9\\.]/', '', $size);
-        if ($unit) {
-            return round($size * pow(1024, stripos('bkmgtpezy', $unit[0])));
-        } else {
-            return round($size);
-        }
-    }
-    function _get_max_upload_files()
-    {
-        return intval(ini_get('max_file_uploads'));
-    }
-=======
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
     function enqueue_nextgen_api_task_list_action()
     {
         $api = $this->get_nextgen_api();
@@ -177,17 +145,8 @@ class A_NextGen_API_Ajax extends Mixin
                         $handler_delay = defined('NGG_API_JOB_HANDLER_DELAY') ? intval(NGG_API_JOB_HANDLER_DELAY) : 0;
                         $handler_delay = $handler_delay > 0 ? $handler_delay : 30;
                         /* in seconds */
-<<<<<<< HEAD
-                        $handler_maxsize = defined('NGG_API_JOB_HANDLER_MAXSIZE') ? intval(NGG_API_JOB_HANDLER_MAXSIZE) : 0;
-                        $handler_maxsize = $handler_maxsize > 0 ? $handler_maxsize : $this->_get_max_upload_size();
-                        /* in bytes */
-                        $handler_maxfiles = $this->_get_max_upload_files();
-                        $response['result'] = 'ok';
-                        $response['result_object'] = array('job_id' => $job_id, 'job_post_back' => $post_back, 'job_handler_url' => home_url('?photocrati_ajax=1&action=execute_nextgen_api_task_list'), 'job_handler_delay' => $handler_delay, 'job_handler_maxsize' => $handler_maxsize, 'job_handler_maxfiles' => $handler_maxfiles);
-=======
                         $response['result'] = 'ok';
                         $response['result_object'] = array('job_id' => $job_id, 'job_post_back' => $post_back, 'job_handler_url' => home_url('?photocrati_ajax=1&action=execute_nextgen_api_task_list'), 'job_handler_delay' => $handler_delay);
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
                         if (!defined('NGG_API_SUPPRESS_QUICK_EXECUTE') || NGG_API_SUPPRESS_QUICK_EXECUTE == false) {
                             if (!$api->is_execution_locked()) {
                                 $this->_start_locked_execute();
@@ -310,10 +269,6 @@ class C_NextGen_API extends C_Component
     const INFO_EXECUTION_LOCKED = 6004;
     public static $_instances = array();
     var $_start_time;
-    /**
-     * @param bool|string $context
-     * @return C_NextGen_API
-     */
     public static function get_instance($context = false)
     {
         if (!isset(self::$_instances[$context])) {
@@ -530,29 +485,6 @@ class C_NextGen_API extends C_Component
         }
         return $id;
     }
-    function _array_find_by_entry(array $array_target, $entry_key, $entry_value)
-    {
-        foreach ($array_target as $key => $value) {
-            $item = $value;
-            if (isset($item[$entry_key]) && $item[$entry_key] == $entry_value) {
-                return $key;
-            }
-        }
-        return null;
-    }
-    function _array_filter_by_entry(array $array_target, array $array_source, $entry_key)
-    {
-        foreach ($array_source as $key => $value) {
-            $item = $value;
-            if (isset($item[$entry_key])) {
-                $find_key = $this->_array_find_by_entry($array_target, $entry_key, $item[$entry_key]);
-                if ($find_key !== null) {
-                    unset($array_target[$find_key]);
-                }
-            }
-        }
-        return $array_target;
-    }
     // Note: handle_job only worries about processing the job, it does NOT remove finished jobs anymore, the responsibility is on the caller to remove the job when handle_job returns true, this is to allow calling get_job_*() methods after handle_job has been called
     function handle_job($job_id, $job_data, $app_config, $task_list)
     {
@@ -696,10 +628,10 @@ class C_NextGen_API extends C_Component
                                         $images_folder = str_replace(array('\\', '/'), $fs_sep, $images_folder);
                                         $images = $task_object['image_list'];
                                         $result_images = isset($task_result['image_list']) ? $task_result['image_list'] : array();
-                                        $images_todo = array_values($this->_array_filter_by_entry($images, $result_images, 'localId'));
                                         $image_count = count($images);
                                         $result_image_count = count($result_images);
-                                        foreach ($images_todo as $image_index => $image) {
+                                        for ($image_index = $result_image_count; $image_index < $image_count; $image_index++) {
+                                            $image = $images[$image_index];
                                             $image_id = isset($image['id']) ? $image['id'] : null;
                                             $image_filename = isset($image['filename']) ? $image['filename'] : null;
                                             $image_path = isset($image['path']) ? $image['path'] : null;
@@ -751,7 +683,7 @@ class C_NextGen_API extends C_Component
                                                     } catch (E_UploadException $e) {
                                                         $image_error = $e->getMessage . __(' (%1$s).', 'nggallery');
                                                     } catch (E_No_Image_Library_Exception $e) {
-                                                        $image_error = __('No image library present, image uploads will fail (%1$s).', 'nggallery');
+                                                        $error = __('No image library present, image uploads will fail (%1$s).', 'nggallery');
                                                         // no point in continuing if the image library is not present but we don't break here to ensure that all images are processed (otherwise they'd be processed in further fruitless handle_job calls)
                                                     } catch (E_InsufficientWriteAccessException $e) {
                                                         $image_error = __('Inadequate system permissions to write image (%1$s).', 'nggallery');
@@ -984,10 +916,6 @@ class C_NextGen_API_XMLRPC extends C_Component
         parent::define($context);
         $this->implement('I_NextGen_API_XMLRPC');
     }
-    /**
-     * @param bool|string $context
-     * @return C_NextGen_API_XMLRPC
-     */
     public static function get_instance($context = false)
     {
         if (!isset(self::$_instances[$context])) {
@@ -997,7 +925,7 @@ class C_NextGen_API_XMLRPC extends C_Component
     }
     /**
      * Gets the version of NextGEN Gallery installed
-     * @return array
+     * @return string
      */
     function get_version()
     {
@@ -1057,8 +985,7 @@ class C_NextGen_API_XMLRPC extends C_Component
             // his plugin
             $gallery->gid = (string) $gallery->gid;
             // Set other gallery properties
-            $tmp = $image_mapper->select('DISTINCT COUNT(*) as counter')->where(array("galleryid = %d", $gallery->gid))->run_query(FALSE, FALSE, TRUE);
-            $image_counter = array_pop($tmp);
+            $image_counter = array_pop($image_mapper->select('DISTINCT COUNT(*) as counter')->where(array("galleryid = %d", $gallery->gid))->run_query(FALSE, FALSE, TRUE));
             $gallery->counter = $image_counter->counter;
             $gallery->abspath = $storage->get_gallery_abspath($gallery);
         } else {
@@ -1068,9 +995,7 @@ class C_NextGen_API_XMLRPC extends C_Component
     }
     /**
      * Returns a single image object
-     * @param array $args (blog_id, username, password, pid)
-     * @param bool $return_model (optional)
-     * @return object|IXR_Error
+     * @param $args (blog_id, username, password, pid)
      */
     function get_image($args, $return_model = FALSE)
     {
@@ -1111,8 +1036,7 @@ class C_NextGen_API_XMLRPC extends C_Component
     }
     /**
      * Returns a collection of images
-     * @param array $args (blog_id, username, password, gallery_id
-     * @return array|IXR_Error
+     * @param $args (blog_id, username, password, gallery_id
      */
     function get_images($args)
     {
@@ -1149,7 +1073,7 @@ class C_NextGen_API_XMLRPC extends C_Component
      *			  o bool overwrite (optional)
      *			  o int gallery
      *			  o int image_id  (optional)
-     * @return object|IXR_Error
+     * @return image
      */
     function upload_image($args)
     {
@@ -1206,7 +1130,6 @@ class C_NextGen_API_XMLRPC extends C_Component
     /**
      * Edits an image object
      * @param $args (blog_id, username, password, image_id, alttext, description, exclude, other_properties
-     * @return IXR_Error|object
      */
     function edit_image($args)
     {
@@ -1233,8 +1156,7 @@ class C_NextGen_API_XMLRPC extends C_Component
     }
     /**
      * Deletes an existing image from a gallery
-     * @param array $args (blog_id, username, password, image_id)
-     * @return bool
+     * @param $args (blog_id, username, password, image_id)
      */
     function delete_image($args)
     {
@@ -1246,8 +1168,7 @@ class C_NextGen_API_XMLRPC extends C_Component
     }
     /**
      * Creates a new gallery
-     * @param array $args (blog_id, username, password, title)
-     * @return int|IXR_Error
+     * @param $args (blog_id, username, password, title)
      */
     function create_gallery($args)
     {
@@ -1274,8 +1195,7 @@ class C_NextGen_API_XMLRPC extends C_Component
     }
     /**
      * Edits an existing gallery
-     * @param array $args (blog_id, username, password, gallery_id, name, title, description, preview_pic_id)
-     * @return int|bool|IXR_Error
+     * @param $args (blog_id, username, password, gallery_id, name, title, description, preview_pic_id)
      */
     function edit_gallery($args)
     {
@@ -1316,8 +1236,7 @@ class C_NextGen_API_XMLRPC extends C_Component
     }
     /**
      * Returns all galleries
-     * @param array $args (blog_id, username, password)
-     * @return array|IXR_Error
+     * @param $args (blog_id, username, password)
      */
     function get_galleries($args)
     {
@@ -1344,9 +1263,7 @@ class C_NextGen_API_XMLRPC extends C_Component
     }
     /**
      * Gets a single gallery instance
-     * @param array $args (blog_id, username, password, gallery_id)
-     * @param bool $return_model
-     * @return object|bool|IXR_Error
+     * @param $args (blog_id, username, password, gallery_id)
      */
     function get_gallery($args, $return_model = FALSE)
     {
@@ -1373,8 +1290,7 @@ class C_NextGen_API_XMLRPC extends C_Component
     }
     /**
      * Deletes a gallery
-     * @param array $args (blog_id, username, password, gallery_id)
-     * @return bool
+     * @param $args (blog_id, username, password, gallery_id)
      */
     function delete_gallery($args)
     {
@@ -1386,8 +1302,7 @@ class C_NextGen_API_XMLRPC extends C_Component
     }
     /**
      * Creates a new album
-     * @param array $args (blog_id, username, password, title, previewpic, description, galleries
-     * @return int|IXR_Error
+     * @param $args (blog_id, username, password, title, previewpic, description, galleries
      */
     function create_album($args)
     {
@@ -1451,9 +1366,7 @@ class C_NextGen_API_XMLRPC extends C_Component
     }
     /**
      * Gets a single album
-     * @param array $args (blog_id, username, password, album_id)
-     * @param bool $return_model (optional)
-     * @return object|bool|IXR_Error
+     * @param $args (blog_id, username, password, album_id)
      */
     function get_album($args, $return_model = FALSE)
     {
@@ -1486,8 +1399,7 @@ class C_NextGen_API_XMLRPC extends C_Component
     }
     /**
      * Deletes an existing album
-     * @param array $args (blog_id, username, password, album_id)
-     * @return bool
+     * @param $args (blog_id, username, password, album_id)
      */
     function delete_album($args)
     {
@@ -1499,8 +1411,7 @@ class C_NextGen_API_XMLRPC extends C_Component
     }
     /**
      * Edit an existing album
-     * @param array $args (blog_id, username, password, album_id, name, preview pic id, description, galleries)
-     * @return object|IXR_Error
+     * @param $args (blog_id, username, password, album_id, name, preview pic id, description, galleries)
      */
     function edit_album($args)
     {

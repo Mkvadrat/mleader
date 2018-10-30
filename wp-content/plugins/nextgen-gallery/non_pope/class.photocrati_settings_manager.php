@@ -1,7 +1,6 @@
 <?php
 
-if (!class_exists('C_Photocrati_Settings_Manager_Base'))
-{
+if (!class_exists('C_Photocrati_Settings_Manager_Base')) {
 	/**
 	 * Provides a base abstraction for a Settings Manager
 	 * Class C_Settings_Manager_Base
@@ -57,12 +56,11 @@ if (!class_exists('C_Photocrati_Settings_Manager_Base'))
 
 		/**
 		 * Gets the value of a particular setting
-         *
 		 * @param $key
 		 * @param null $default
-		 * @return mixed
+		 * @return null
 		 */
-		function get($key, $default = NULL)
+		function get($key, $default=NULL)
 		{
 			$retval = $default;
 
@@ -73,9 +71,9 @@ if (!class_exists('C_Photocrati_Settings_Manager_Base'))
                 $retval =  $this->_options[$key];
             }
 
-			// In case a stdObject has been passed in as a value, we want to only return scalar values or arrays
-			if (is_object($retval))
-			    $retval = (array) $retval;
+			// In case a stdObject has been passed in as a value, we
+			// want to only return scalar values or arrays
+			if (is_object($retval)) $retval = (array) $retval;
 
 			return $retval;
 		}
@@ -228,10 +226,6 @@ if (!class_exists('C_Photocrati_Global_Settings_Manager')) {
 	class C_Photocrati_Global_Settings_Manager extends C_Photocrati_Settings_Manager_Base
 	{
         static $_instance = NULL;
-
-        /**
-         * @return C_Photocrati_Global_Settings_Manager
-         */
 		public static function get_instance()
 		{
             if (is_null(self::$_instance)) {
@@ -249,10 +243,8 @@ if (!class_exists('C_Photocrati_Global_Settings_Manager')) {
 		function load()
 		{
 			$this->_options = get_site_option(self::$option_name, $this->to_array());
-			if (!$this->_options)
-			    $this->_options = array();
-			else if (is_string($this->_options))
-			    $this->_options = unserialize($this->_options);
+			if (!$this->_options) $this->_options = array();
+			else if (is_string($this->_options)) $this->_options = unserialize($this->_options);
 		}
 
 		function destroy()
@@ -263,15 +255,10 @@ if (!class_exists('C_Photocrati_Global_Settings_Manager')) {
 }
 
 
-if (!class_exists('C_Photocrati_Settings_Manager'))
-{
+if (!class_exists('C_Photocrati_Settings_Manager')) {
 	class C_Photocrati_Settings_Manager extends C_Photocrati_Settings_Manager_Base
 	{
         static $_instance = NULL;
-
-        /**
-         * @return C_Photocrati_Settings_Manager
-         */
         public static function get_instance()
         {
             if (is_null(self::$_instance)) {

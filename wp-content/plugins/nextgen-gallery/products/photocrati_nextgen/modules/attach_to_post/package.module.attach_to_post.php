@@ -21,7 +21,7 @@ class A_Attach_To_Post_Ajax extends Mixin
     }
     /**
      * Returns a list of image sources for the Attach to Post interface
-     * @return array
+     * @return type
      */
     function get_attach_to_post_sources_action()
     {
@@ -250,28 +250,9 @@ class C_Attach_Controller extends C_NextGen_Admin_Page_Controller
     {
         parent::initialize();
         $this->_load_displayed_gallery();
-<<<<<<< HEAD
-        if (!has_action('wp_print_scripts', array($this, 'filter_scripts'))) {
-            add_action('wp_print_scripts', array($this, 'filter_scripts'));
-        }
-        if (!has_action('wp_print_scripts', array($this, 'filter_styles'))) {
-            add_action('wp_print_scripts', array($this, 'filter_styles'));
-        }
-    }
-}
-class Mixin_Attach_To_Post extends Mixin
-{
-    function _load_displayed_gallery()
-    {
-        $mapper = C_Displayed_Gallery_Mapper::get_instance();
-        // Fetch the displayed gallery by ID
-        if ($id = $this->object->param('id')) {
-            $this->object->_displayed_gallery = $mapper->find($id, TRUE);
-=======
         $this->_marked_scripts = array();
         if (did_action('wp_print_scripts')) {
             $this->_handle_scripts();
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
         } else {
             add_action('wp_print_scripts', array($this, '_handle_scripts'), 9999);
         }
@@ -411,16 +392,9 @@ class Mixin_Attach_To_Post extends Mixin
         wp_enqueue_script('photocrati_ajax');
         $this->object->mark_script('photocrati_ajax');
         // Enqueue logic for the Attach to Post interface as a whole
-<<<<<<< HEAD
-        wp_enqueue_script('ngg_attach_to_post_js', $this->get_static_url('photocrati-attach_to_post#attach_to_post.js'), array(), NGG_SCRIPT_VERSION);
-        wp_enqueue_style('ngg_attach_to_post', $this->get_static_url('photocrati-attach_to_post#attach_to_post.css'), array(), NGG_SCRIPT_VERSION);
-        wp_dequeue_script('debug-bar-js');
-        wp_dequeue_style('debug-bar-css');
-=======
         wp_enqueue_script('ngg_attach_to_post', $this->get_static_url('photocrati-attach_to_post#attach_to_post.js'), FALSE, NGG_SCRIPT_VERSION);
         wp_enqueue_style('ngg_attach_to_post', $this->get_static_url('photocrati-attach_to_post#attach_to_post.css'), FALSE, NGG_SCRIPT_VERSION);
         $this->object->mark_script('ngg_attach_to_post');
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
         $this->enqueue_display_tab_js();
         // TODO: for now mark Pro scripts to ensure they are enqueued properly, remove this after Pro upgrade with tagging added
         $display_types = array('photocrati-nextgen_pro_slideshow', 'photocrati-nextgen_pro_horizontal_filmstrip', 'photocrati-nextgen_pro_thumbnail_grid', 'photocrati-nextgen_pro_blog_gallery', 'photocrati-nextgen_pro_film');
@@ -431,8 +405,6 @@ class Mixin_Attach_To_Post extends Mixin
     }
     /**
      * Renders the interface
-     * @param bool $return
-     * @return string
      */
     function index_action($return = FALSE)
     {
@@ -484,8 +456,6 @@ class Mixin_Attach_To_Post extends Mixin
     }
     /**
      * Filter for ngg_before_save_thumbnail
-     * @param stdClass $thumbnail
-     * @return stdClass
      */
     function set_igw_placeholder_text($thumbnail)
     {
@@ -515,7 +485,7 @@ class Mixin_Attach_To_Post extends Mixin
     }
     /**
      * Returns the main tabs displayed on the Attach to Post interface
-     * @return array
+     * @returns array
      */
     function _get_main_tabs()
     {
@@ -543,7 +513,6 @@ class Mixin_Attach_To_Post extends Mixin
      * Renders a NextGen Gallery page in an iframe, suited for the attach to post
      * interface
      * @param string $page
-     * @param null|int $tab_id (optional)
      * @return string
      */
     function _render_ngg_page_in_frame($page, $tab_id = null)
@@ -556,8 +525,9 @@ class Mixin_Attach_To_Post extends Mixin
         return "<iframe name='{$page}' frameBorder='0'{$tab_id} class='ngg-attach-to-post ngg-iframe-page-{$page}' scrolling='no' src='{$frame_url}'></iframe>";
     }
     /**
-     * Renders the display tab for adjusting how images/galleries will be displayed
-     * @return string
+     * Renders the display tab for adjusting how images/galleries will be
+     * displayed
+     * @return type
      */
     function _render_display_tab()
     {
@@ -565,7 +535,7 @@ class Mixin_Attach_To_Post extends Mixin
     }
     /**
      * Renders the tab used primarily for Gallery and Image creation
-     * @return string
+     * @return type
      */
     function _render_create_tab()
     {
@@ -664,7 +634,7 @@ class Mixin_Attach_To_Post_Display_Tab extends Mixin
     }
     /**
      * Renders the display settings tab for the Attach to Post interface
-     * @return array
+     * @return type
      */
     function _render_display_settings_tab()
     {
@@ -735,7 +705,7 @@ class Mixin_Attach_To_Post_Display_Tab extends Mixin
     }
     /**
      * Renders the tab used to preview included images
-     * @return array
+     * @return string
      */
     function _render_preview_tab()
     {

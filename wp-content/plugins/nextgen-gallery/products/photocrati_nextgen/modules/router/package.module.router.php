@@ -18,12 +18,7 @@ class A_Routing_App_Factory extends Mixin
  */
 class C_Http_Response_Controller extends C_Component
 {
-    /** @var C_Http_Response_Controller */
     static $_instance = NULL;
-    /**
-     * @param bool|string $context
-     * @return C_Http_Response_Controller
-     */
     static function get_instance($context = FALSE)
     {
         if (!isset(self::$_instance)) {
@@ -108,9 +103,7 @@ class Mixin_Router extends Mixin
     }
     /**
      * Gets url for the router
-     * @param string $uri (optional) Default = /
-     * @param bool $with_qs (optional) Default = true
-     * @param bool $site_url
+     * @param string $uri
      * @return string
      */
     function get_url($uri = '/', $with_qs = TRUE, $site_url = FALSE)
@@ -144,7 +137,7 @@ class Mixin_Router extends Mixin
     /**
      * Returns a static url
      * @param string $path
-     * @param string|false $module (optional)
+     * @param string $module
      * @return string
      */
     function get_static_url($path, $module = FALSE)
@@ -159,7 +152,7 @@ class Mixin_Router extends Mixin
     }
     /**
      * Gets the routed url
-     * @return string
+     * @returns string
      */
     function get_routed_url()
     {
@@ -190,6 +183,8 @@ class Mixin_Router extends Mixin
     }
     /**
      * Serve request using defined Routing Apps
+     *
+     * @param string|FALSE $request_uri
      */
     function serve_request()
     {
@@ -204,7 +199,7 @@ class Mixin_Router extends Mixin
     }
     /**
      * Gets the querystring of the current request
-     * @return null|bool
+     * @return string
      */
     function get_querystring()
     {
@@ -216,7 +211,6 @@ class Mixin_Router extends Mixin
     }
     /**
      * Gets the request for the router
-     * @param bool $with_params (optional) Default = true
      * @return string
      */
     function get_request_uri($with_params = TRUE)
@@ -272,8 +266,8 @@ class Mixin_Router extends Mixin
     /**
      * Sorts apps.This is needed because we want the most specific app to be
      * executed first
-     * @param C_Routing_App $a
-     * @param C_Routing_App $b
+     * @param C_Routed_App $a
+     * @param C_Routed_App $b
      * @return int
      */
     function _sort_apps($a, $b)
@@ -307,10 +301,6 @@ class C_Router extends C_Component
         parent::initialize();
         $this->_request_method = !empty($_SERVER['REQUEST_METHOD']) ? $_SERVER['REQUEST_METHOD'] : null;
     }
-    /**
-     * @param string|false $context (optional)
-     * @return self
-     */
     static function &get_instance($context = False)
     {
         if (!isset(self::$_instances[$context])) {
@@ -352,7 +342,6 @@ class Mixin_Routing_App extends Mixin
      * @param string $src Original URL
      * @param string $dst Destination URL
      * @param bool $redirect FALSE for internal handling, otherwise the HTTP code to send
-     * @param bool $stop
      */
     function rewrite($src, $dst, $redirect = FALSE, $stop = FALSE)
     {
@@ -382,7 +371,7 @@ class Mixin_Routing_App extends Mixin
     }
     /**
      * Gets an instance of the router
-     * @return C_Router
+     * @return type
      */
     function get_router()
     {
@@ -420,7 +409,7 @@ class Mixin_Routing_App extends Mixin
     }
     /**
      * Sets the application request uri
-     * @param string $uri
+     * @param type $uri
      */
     function set_app_request_uri($uri)
     {
@@ -657,7 +646,7 @@ class Mixin_Routing_App extends Mixin
     /**
      * Adds a placeholder parameter
      * @param string $name
-     * @param string $value
+     * @param stirng $value
      * @param string $source
      */
     function add_placeholder_param($name, $value, $source = NULL)
@@ -819,10 +808,7 @@ class Mixin_Routing_App extends Mixin
      * Sets the value of a particular parameter
      * @param string $key
      * @param mixed $value
-     * @param mixed $id (optional)
-     * @param bool $use_prefix (optional)
-     * @param bool|string $url (optional)
-     * @return string
+     * @param mixed $id
      */
     function set_parameter_value($key, $value, $id = NULL, $use_prefix = FALSE, $url = FALSE)
     {
@@ -863,7 +849,7 @@ class Mixin_Routing_App extends Mixin
      * and returns the full application URL
      * @param string $key
      * @param mixed $id
-     * @return string|array|float|int
+     * @return string
      */
     function remove_parameter($key, $id = NULL, $url = FALSE)
     {
@@ -907,9 +893,7 @@ class Mixin_Routing_App extends Mixin
      * Adds a parameter to the application's request URI
      * @param string $key
      * @param mixed $value
-     * @param mixed $id (optional)
-     * @param bool|string $use_prefix (optional)
-     * @return string
+     * @param mixed $id
      */
     function add_parameter_to_app_request_uri($key, $value, $id = NULL, $use_prefix = FALSE)
     {
@@ -953,10 +937,7 @@ class Mixin_Routing_App extends Mixin
      * Alias for set_parameter_value
      * @param string $key
      * @param mixed $value
-     * @param mixed $id (optional)
-     * @param bool $use_prefix (optional)
-     * @param bool|string $url (optional)
-     * @return string
+     * @param mixed $id
      */
     function set_parameter($key, $value, $id = NULL, $use_prefix = FALSE, $url = FALSE)
     {
@@ -966,10 +947,7 @@ class Mixin_Routing_App extends Mixin
      * Alias for set_parameter_value
      * @param string $key
      * @param mixed $value
-     * @param mixed $id (optional)
-     * @param bool $use_prefix (optional)
-     * @param bool|string $url (optional)
-     * @return string
+     * @param mixed $id
      */
     function set_param($key, $value, $id = NULL, $use_prefix = FALSE, $url = FALSE)
     {
@@ -990,7 +968,7 @@ class Mixin_Routing_App extends Mixin
      * Gets a parameter's matching URI segment
      * @param string $key
      * @param mixed $id
-     * @param mixed $url
+     * @param mixed $default
      * @return mixed
      */
     function get_parameter_segment($key, $id = NULL, $url = FALSE)

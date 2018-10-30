@@ -23,9 +23,7 @@ class A_NextGen_Basic_Singlepic_Controller extends Mixin
     /**
      * Displays the 'singlepic' display type
      *
-     * @param C_Displayed_Gallery
-     * @param bool $return (optional)
-     * @return string
+     * @param stdClass|C_Displayed_Gallery|C_DataMapper_Model $displayed_gallery
      */
     function index_action($displayed_gallery, $return = FALSE)
     {
@@ -34,8 +32,7 @@ class A_NextGen_Basic_Singlepic_Controller extends Mixin
         $display_settings = $displayed_gallery->display_settings;
         // use this over get_included_entities() so we can display images marked 'excluded'
         $displayed_gallery->skip_excluding_globally_excluded_images = TRUE;
-        $entities = $displayed_gallery->get_entities(1, FALSE, FALSE, 'included');
-        $image = array_shift($entities);
+        $image = array_shift($displayed_gallery->get_entities(1, FALSE, FALSE, 'included'));
         if (!$image) {
             return $this->object->render_partial("photocrati-nextgen_gallery_display#no_images_found", array(), $return);
         }
@@ -138,8 +135,6 @@ class A_NextGen_Basic_Singlepic_Controller extends Mixin
     }
     /**
      * Intentionally disable the application of the effect code
-     * @param string $thumbcode Unused
-     * @return string
      */
     function strip_thumbcode($thumbcode)
     {
@@ -153,7 +148,7 @@ class A_NextGen_Basic_Singlepic_Controller extends Mixin
     function enqueue_frontend_resources($displayed_gallery)
     {
         $this->call_parent('enqueue_frontend_resources', $displayed_gallery);
-        wp_enqueue_style('nextgen_basic_singlepic_style', $this->get_static_url('photocrati-nextgen_basic_singlepic#nextgen_basic_singlepic.css'), array(), NGG_SCRIPT_VERSION);
+        wp_enqueue_style('nextgen_basic_singlepic_style', $this->get_static_url('photocrati-nextgen_basic_singlepic#nextgen_basic_singlepic.css'), FALSE, NGG_SCRIPT_VERSION);
         $this->enqueue_ngg_styles();
     }
 }

@@ -152,18 +152,7 @@ class nggAdminPanel{
 	// integrate the menu
 	function add_menu()  {
 
-<<<<<<< HEAD
-		add_menu_page(
-		    __('Gallery', 'nggallery'),
-            _n('Gallery', 'Galleries', 1, 'nggallery'),
-            'NextGEN Gallery overview',
-            NGGFOLDER,
-            array ($this, 'show_menu'),
-            path_join(NGGALLERY_URLPATH, 'admin/images/imagely_icon.png'), 11
-        );
-=======
 		add_menu_page( _n( 'Gallery', 'Galleries', 1, 'nggallery' ), _n( 'Gallery', 'Galleries', 1, 'nggallery' ), 'NextGEN Gallery overview', NGGFOLDER, array (&$this, 'show_menu'), path_join(NGGALLERY_URLPATH, 'admin/images/nextgen_16_color.png') );
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
 	    add_submenu_page( NGGFOLDER , __('Overview', 'nggallery'), __('Overview', 'nggallery'), 'NextGEN Gallery overview', NGGFOLDER, array (&$this, 'show_menu'));
 	    add_submenu_page( NGGFOLDER , __('Manage Galleries', 'nggallery'), __('Manage Galleries', 'nggallery'), 'NextGEN Manage gallery', 'nggallery-manage-gallery', array (&$this, 'show_menu'));
 	    add_submenu_page( NGGFOLDER , _n( 'Manage Albums', 'Albums', 1, 'nggallery' ), _n( 'Manage Albums', 'Manage Albums', 1, 'nggallery' ), 'NextGEN Edit album', 'nggallery-manage-album', array (&$this, 'show_menu'));
@@ -290,14 +279,9 @@ class nggAdminPanel{
 		) );
 		wp_register_script('ngg-progressbar', NGGALLERY_URLPATH .'admin/js/ngg.progressbar.js', array('jquery'), NGG_SCRIPT_VERSION);
 
-<<<<<<< HEAD
-		wp_enqueue_script('wp-color-picker');
-        wp_enqueue_style('imagely-admin-font', 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900', array(), NGG_SCRIPT_VERSION );
-=======
         // Enqueue the new Gritter-based progress bars
         wp_enqueue_style('ngg_progressbar');
         wp_enqueue_script('ngg_progressbar');
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
 
 		switch ($_GET['page']) {
 			case NGGFOLDER :
@@ -309,13 +293,8 @@ class nggAdminPanel{
 				wp_enqueue_script( 'ngg-progressbar' );
 				wp_enqueue_script( 'jquery-ui-dialog' );
 				wp_enqueue_script( 'jquery-ui-sortable' );
-<<<<<<< HEAD
-				wp_register_script('shutter', $router->get_static_url('photocrati-lightbox#shutter/shutter.js'), array(), NGG_SCRIPT_VERSION);
-				wp_localize_script('shutter', 'shutterSettings', array(
-=======
     			wp_register_script('shutter', $router->get_static_url('photocrati-lightbox#shutter/shutter.js'), false, NGG_SCRIPT_VERSION);
     			wp_localize_script('shutter', 'shutterSettings', array(
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
     						'msgLoading' => __('L O A D I N G', 'nggallery'),
     						'msgClose' => __('Click to Close', 'nggallery'),
     						'imageCount' => '1'
@@ -349,15 +328,10 @@ class nggAdminPanel{
 	function load_styles() {
 		global $ngg;
 
-<<<<<<< HEAD
-		wp_register_style( 'nggadmin', NGGALLERY_URLPATH .'admin/css/nggadmin.css', array(), NGG_SCRIPT_VERSION, 'screen' );
-		wp_register_style( 'ngg-jqueryui', NGGALLERY_URLPATH .'admin/css/jquery.ui.css', array(), NGG_SCRIPT_VERSION, 'screen' );
-=======
         // load the icon for the navigation menu
         wp_enqueue_style( 'nggmenu', NGGALLERY_URLPATH .'admin/css/menu.css', false, NGG_SCRIPT_VERSION );
 		wp_register_style( 'nggadmin', NGGALLERY_URLPATH .'admin/css/nggadmin.css', false, NGG_SCRIPT_VERSION, 'screen' );
 		wp_register_style( 'ngg-jqueryui', NGGALLERY_URLPATH .'admin/css/jquery.ui.css', false, NGG_SCRIPT_VERSION, 'screen' );
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
 
         // no need to go on if it's not a plugin page
 		if( !isset($_GET['page']) )
@@ -384,7 +358,7 @@ class nggAdminPanel{
 				wp_enqueue_style( 'nggadmin' );
 			break;
 			case "nggallery-tags" :
-				wp_enqueue_style( 'nggtags', NGGALLERY_URLPATH .'admin/css/tags-admin.css', array(), NGG_SCRIPT_VERSION, 'screen' );
+				wp_enqueue_style( 'nggtags', NGGALLERY_URLPATH .'admin/css/tags-admin.css', false, NGG_SCRIPT_VERSION, 'screen' );
 				break;
 		}
 	}
@@ -495,7 +469,7 @@ class nggAdminPanel{
 	 * Read an array from a remote url
 	 *
 	 * @param string $url
-	 * @return bool|array Array of content
+	 * @return array of the content
 	 */
 	function get_remote_array($url) {
 

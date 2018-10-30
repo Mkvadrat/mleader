@@ -90,9 +90,7 @@
 
 						// Edit button
 						else {
-							// Do not use jQuery's .data() here: it will use cached data
-							window.igw_shortcode = $(e.target).parents('.nggPlaceholder')[0].getAttribute('data-shortcode');
-
+							window.igw_shortcode=  $(e.target).parents('.nggPlaceholder').data('shortcode');
 							self.render_attach_to_post_interface({
 								key: 'shortcode',
 								val: Base64.encode(window.igw_shortcode),

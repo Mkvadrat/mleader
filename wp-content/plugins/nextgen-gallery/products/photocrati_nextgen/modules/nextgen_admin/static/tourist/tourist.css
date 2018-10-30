@@ -36,23 +36,6 @@
   background: #f5f5f5;
   border-radius: 0px 0px 6px 6px;
   box-sizing: content-box;
-<<<<<<< HEAD
-  background: #2a343d;
-  padding: 15px 20px 17px;
-  border-top: 3px solid #9fbb1a;
-}
-.tourist-popover .button-primary {
-    background-color: #9fbb1a;
-    box-shadow: none;
-    text-shadow: none;
-    border: none;
-    padding: 1px 20px;
-    float:right;
-}
-.tourist-popover .button-primary:hover {
-    background-color: #A9C524;
-=======
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
 }
 .tourist-popover .btn-close{
   background: none;

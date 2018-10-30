@@ -40,7 +40,7 @@ class Mixin_CustomPost_DataMapper_Driver extends Mixin
     /**
      * Used to select which fields should be returned. NOT currently used by
      * this implementation of the datamapper driver
-     * @param string $fields
+     * @param type $fields
      * @return C_DataMapper_Driver_Base
      */
     function select($fields = '*')
@@ -50,8 +50,8 @@ class Mixin_CustomPost_DataMapper_Driver extends Mixin
     }
     /**
      * Specifies an order clause
-     * @param string $order_by
-     * @param string $direction
+     * @param type $order_by
+     * @param type $direction
      * @return C_DataMapper_Driver_Base
      */
     function order_by($order_by, $direction = 'ASC')
@@ -70,9 +70,9 @@ class Mixin_CustomPost_DataMapper_Driver extends Mixin
     }
     /**
      * Specifies a limit and optional offset
-     * @param int $max
-     * @param int|bool $offset (optional)
-     * @return object
+     * @param integer $max
+     * @param integer $offset
+     * @return C_DataMapper_Driver_Base
      */
     function limit($max, $offset = FALSE)
     {
@@ -90,7 +90,6 @@ class Mixin_CustomPost_DataMapper_Driver extends Mixin
     /**
      * Specifies a list of columns to group by
      * @param array|string $columns
-     * @return object
      */
     function group_by($columns = array())
     {
@@ -218,9 +217,8 @@ class Mixin_CustomPost_DataMapper_Driver extends Mixin
     }
     /**
      * Destroys/deletes an entity from the database
-     * @param object|C_DataMapper_Model $entity
-     * @param bool $skip_trash (optional) Default = true
-     * @return bool
+     * @param stdObject|C_DataMapper_Model $entity
+     * @return type
      */
     function destroy($entity, $skip_trash = TRUE)
     {
@@ -278,8 +276,8 @@ class Mixin_CustomPost_DataMapper_Driver extends Mixin
     }
     /**
      * Converts an entity to a post
-     * @param object $entity
-     * @return object
+     * @param type $entity
+     * @return type
      */
     function _convert_entity_to_post($entity)
     {
@@ -361,8 +359,7 @@ class Mixin_CustomPost_DataMapper_Driver extends Mixin
     }
     /**
      * Saves an entity to the database
-     * @param object $entity
-     * @return int Post ID
+     * @param stdObject $entity
      */
     function _save_entity($entity)
     {
@@ -396,7 +393,7 @@ class Mixin_CustomPost_DataMapper_Driver extends Mixin
     }
     /**
      * Determines whether the current statement is DELETE
-     * @return bool
+     * @return type
      */
     function is_delete_statement()
     {
@@ -414,9 +411,7 @@ class Mixin_CustomPost_DataMapper_Driver extends Mixin
     }
     /**
      * Runs the query
-     * @param string|bool $sql (optional) Run the specified query
-     * @param object|bool $model (optional)
-     * @param bool $convert_to_entities (optional) Default = true
+     * @param  string $sql optionally run the specified query
      * @return array
      */
     function run_query($sql = FALSE, $model = FALSE, $convert_to_entities = TRUE)
@@ -483,9 +478,8 @@ class Mixin_CustomPost_DataMapper_Driver extends Mixin
     }
     /**
      * Fetches the last row
-     * @param array $conditions (optional)
-     * @param object|bool $model (optional)
-     * @return object
+     * @param array $conditions
+     * @return C_DataMapper_Entity
      */
     function find_last($conditions = array(), $model = FALSE)
     {
@@ -619,7 +613,7 @@ class C_DataMapper_Driver_Base extends C_Component
     /**
      * Determines whether a column is present for the table
      * @param string $column_name
-     * @return bool
+     * @return string
      */
     function has_column($column_name)
     {
@@ -690,9 +684,9 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
     }
     /**
      * Selects which fields to collect from the table.
-     * NOTE: Not protected from SQL injection - DO NOT let your users specify DB columns
+     * NOTE: Not protected from SQL injection - DO NOT let your users
+     * specify DB columns
      * @param string $fields
-     * @return object
      */
     function select($fields = NULL)
     {
@@ -714,7 +708,7 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
     }
     /**
      * Determines if we're going to be executing a DELETE statement
-     * @return bool
+     * @return type
      */
     function is_delete_statement()
     {
@@ -735,7 +729,6 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
      * This method may be used multiple of times to order by more than column
      * @param $order_by
      * @param $direction
-     * @return object
      */
     function order_by($order_by, $direction = 'ASC')
     {
@@ -758,7 +751,6 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
      * Specifies a limit and optional offset
      * @param integer $max
      * @param integer $offset
-     * @return object
      */
     function limit($max, $offset = 0)
     {
@@ -775,7 +767,6 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
     /**
      * Specifics a group by clause for one or more columns
      * @param array|string $columns
-     * @return object
      */
     function group_by($columns = array())
     {
@@ -819,7 +810,7 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
     }
     /**
      * Returns the total number of entities known
-     * @return int
+     * @return type
      */
     function count()
     {
@@ -833,7 +824,6 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
     }
     /**
      * Returns the generated SQL query to be executed
-     * @param bool $no_entities Default = false
      * @return string
      */
     function get_generated_query($no_entities = FALSE)
@@ -867,10 +857,8 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
     }
     /**
      * Run the query
-     * @param string|bool $sql (optional) run the specified SQL
-     * @param object|bool $model (optional)
-     * @param bool $no_entities (optional)
-     * @return array
+     * @param $sql optionally run the specified SQL insteads
+     * return
      */
     function run_query($sql = FALSE, $model = FALSE, $no_entities = FALSE)
     {
@@ -927,8 +915,7 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
     }
     /**
      * Stores the entity
-     * @param object $entity
-     * @return bool|object
+     * @param stdClass $entity
      */
     function _save_entity($entity)
     {
@@ -956,8 +943,9 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
         return $retval;
     }
     /**
-     * Converts an entity to something suitable for inserting into a database column
-     * @param object $entity
+     * Converts an entity to something suitable for inserting into
+     * a database column
+     * @param stdObject $entity
      * @return array
      */
     function _convert_to_table_data($entity)
@@ -972,7 +960,7 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
     }
     /**
      * Destroys/deletes an entity
-     * @param object|C_DataMapper_Model|int $entity
+     * @param stdObject|C_DataMapper_Model|int $entity
      * @return boolean
      */
     function destroy($entity)
@@ -994,7 +982,7 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
     }
     /**
      * Creates a new record in the database
-     * @param object $entity
+     * @param stdObject $entity
      * @return boolean
      */
     function _create($entity)
@@ -1009,8 +997,7 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
     }
     /**
      * Updates a record in the database
-     * @param object $entity
-     * @return int|bool
+     * @param stdObject $entity
      */
     function _update($entity)
     {
@@ -1020,7 +1007,7 @@ class C_CustomTable_DataMapper_Driver_Mixin extends Mixin
     /**
      * Fetches the last row
      * @param array $conditions
-     * @return object
+     * @return C_DataMapper_Entity
      */
     function find_last($conditions = array(), $model = FALSE)
     {
@@ -1236,8 +1223,7 @@ class Mixin_DataMapper_Driver_Base extends Mixin
     /**
      * Finds a partiular entry by id
      * @param int|stdClass|C_DataMapper_Model $entity
-     * @param object|bool $model (optional)
-     * @return null|object
+     * @return C_DataMapper_Entity
      */
     function find($entity, $model = FALSE)
     {
@@ -1258,9 +1244,8 @@ class Mixin_DataMapper_Driver_Base extends Mixin
     }
     /**
      * Fetches the first row
-     * @param array $conditions (optional)
-     * @param object|bool $model (optional)
-     * @return null|object
+     * @param array $conditions
+     * @return C_DataMapper_Entity
      */
     function find_first($conditions = array(), $model = FALSE)
     {
@@ -1273,8 +1258,7 @@ class Mixin_DataMapper_Driver_Base extends Mixin
     }
     /**
      * Queries all rows
-     * @param array $conditions (optional)
-     * @param object|bool $model (optional)
+     * @param array $conditions
      * @return array
      */
     function find_all($conditions = array(), $model = FALSE)
@@ -1303,25 +1287,15 @@ class Mixin_DataMapper_Driver_Base extends Mixin
      *			array("post_title = %s", "Foo"),
      *
      *		)
-     * @param array $conditions (optional)
-     * @return self
      */
     function where_and($conditions = array())
     {
         return $this->object->_where($conditions, 'AND');
     }
-    /**
-     * @param array $conditions (optional)
-     * @return self
-     */
     function where_or($conditions = array())
     {
         return $this->object->where($conditions, 'OR');
     }
-    /**
-     * @param array $conditions (optional)
-     * @return self
-     */
     function where($conditions = array())
     {
         return $this->object->_where($conditions, 'AND');
@@ -1458,8 +1432,8 @@ class Mixin_DataMapper_Driver_Base extends Mixin
     }
     /**
      * Converts a stdObject to an Entity
-     * @param object $stdObject
-     * @return object
+     * @param stdObject $stdObject
+     * @return stdObject
      */
     function _convert_to_entity($stdObject)
     {
@@ -1513,9 +1487,7 @@ class Mixin_DataMapper_Driver_Base extends Mixin
     }
     /**
      * Converts a stdObject entity to a model
-     * @param object $stdObject
-     * @param string|bool $context (optional)
-     * @return object
+     * @param stdObject $stdObject
      */
     function convert_to_model($stdObject, $context = FALSE)
     {
@@ -1531,8 +1503,7 @@ class Mixin_DataMapper_Driver_Base extends Mixin
     }
     /**
      * Creates a new model
-     * @param object|array $properties (optional)
-     * @param string|bool $context (optional)
+     * @param stdClass|array $properties
      * @return C_DataMapper_Model
      */
     function create($properties = array(), $context = FALSE)
@@ -1559,7 +1530,7 @@ class Mixin_DataMapper_Driver_Base extends Mixin
     /**
      * Saves an entity
      * @param stdClass|C_DataMapper_Model $entity
-     * @return bool|int Resulting ID or false upon failure
+     * @return bool
      */
     function save($entity)
     {
@@ -1606,7 +1577,6 @@ class Mixin_DataMapper_Driver_Base extends Mixin
      * Subclasses and adapters should extend this method to provide their
      * implementation. The implementation should make use of the
      * _set_default_value() method
-     * @param object $stdObject
      */
     function set_defaults($stdObject)
     {
@@ -1772,8 +1742,9 @@ class C_DataMapper_Model extends C_Component
     }
     /**
      * Creates a new entity for the specified mapper
-     * @param C_DataMapper_Driver_Base $mapper (optional)
-     * @param array|object|bool $properties (optional)
+     * @param C_DataMapper_Driver_Base $mapper
+     * @param array|stdClass $properties
+     * @param string $context
      */
     function initialize($mapper = NULL, $properties = FALSE)
     {
@@ -1798,9 +1769,7 @@ class C_DataMapper_Model extends C_Component
         return $this->_mapper;
     }
     /**
-     * Gets a property of the model
-     * @param string $property
-     * @return mixed
+     * Gets a   property of the model
      */
     function &__get($property)
     {
@@ -1816,9 +1785,6 @@ class C_DataMapper_Model extends C_Component
     }
     /**
      * Sets a property for the model
-     * @param mixed $property
-     * @param mixed $value
-     * @return mixed $value
      */
     function &__set($property, $value)
     {
@@ -1831,8 +1797,7 @@ class C_DataMapper_Model extends C_Component
     }
     /**
      * Saves the entity
-     * @param array $updated_attributes
-     * @return int|bool Object ID or false upon failure
+     * @param type $updated_attributes
      */
     function save($updated_attributes = array())
     {
@@ -1841,7 +1806,6 @@ class C_DataMapper_Model extends C_Component
     }
     /**
      * Updates the attributes for an object
-     * @param array $array (optional)
      */
     function update_attributes($array = array())
     {
@@ -1868,7 +1832,7 @@ class C_DataMapper_Model extends C_Component
     }
     /**
      * Determines whether the object is new or existing
-     * @return bool
+     * @return type
      */
     function is_new()
     {
@@ -1876,8 +1840,6 @@ class C_DataMapper_Model extends C_Component
     }
     /**
      * Gets/sets the primary key
-     * @param null|int|string $value (optional)
-     * @return mixed
      */
     function id($value = NULL)
     {

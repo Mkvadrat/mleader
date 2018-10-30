@@ -97,72 +97,7 @@ iframe {
 	display: inline-block;
 }
 
-<<<<<<< HEAD
-.display_type_preview label > div {
-    font-size: 12px;
-}
-
-#displayed_tab .select2-chosen {
-	color: #666 !important;
-}
-
-#ngg_page_content #save_displayed_gallery.button {
-	font-weight: 700;
-    height: 50px!important;
-    line-height: 50px!important;
-    padding: 0 30px!important;
-    font-size: 13px;
-}
-
-#save_displayed_gallery:disabled {
-	background: gray !important;
-}
-
-/* 3b. Display Tab: "Customize Display Settings" Subtab */
-
-#display_settings_tab #display_settings_form table tr td:first-child {
-    vertical-align: top;
-    text-align: right;
-    padding-right: 7px;
-    width: 180px;
-}
-
-#display_settings_tab #display_settings_form table td {
-    text-align: left;
-}
-
-#display_settings_tab #display_settings_form table textarea {
-    height: 60px;
-}
-
-#display_settings_tab #display_settings_form textarea,
-#display_settings_tab #display_settings_form input[type=text],
-#display_settings_tab #display_settings_form input[type=number],
-#display_settings_tab #display_settings_form select {
-    width: 157px;
-}
-
-#display_settings_tab #display_settings_form .ngg_slideshow_gallery_width,
-#display_settings_tab #display_settings_form .ngg_slideshow_gallery_height,
-#display_settings_tab #display_settings_form .ngg_thumbnail_dimension_width,
-#display_settings_tab #display_settings_form .ngg_thumbnail_dimension_height {
-    width: 65px !important;
-}
-
-#display_settings_tab #display_settings_form .nextgen_settings_colorpicker {
-    width: 85px !important;
-    text-align: center;
-}
-
-/* 3c. Display Tab: "Sort & Exclude Images" (ie, Preview) Subtab */
-
-h3#preview_tab {
-    margin-bottom: 0;
-}
-
-=======
 /** Display Tab **/
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
 #preview_tab_content {
 	padding: 0.8em 1em;
 }

@@ -21,7 +21,7 @@ class nggSitemaps {
      *
      * @since Version 1.8.0
      * @param array $images
-     * @param int $post_id
+     * @param int $post ID
      * @return array $image list of all founded images
      */
     function add_wpseo_xml_sitemap_images( $images, $post_id )  {
@@ -53,23 +53,20 @@ class nggSitemaps {
     /**
      * Parse the gallery/imagebrowser/slideshow shortcode and return all images into an array
      *
-     * @TODO: replace or remove this function, it's return value isn't even linked to the queries it performs
      * @param string $atts
-     * @return string
+     * @return
      */
     function add_gallery( $atts ) {
 
         global $wpdb;
 
-        $tmp = shortcode_atts(array(
-            'id' => 0
-        ), $atts);
-        extract($tmp);
+        extract(shortcode_atts(array(
+            'id'        => 0
+        ), $atts ));
 
 	    $gallery_mapper = C_Gallery_Mapper::get_instance();
 	    if (!is_numeric($id)) {
-	        $tmp = $gallery_mapper->select()->where(array('name = %s', $id))->limit(1)->run_query();
-		    if (($gallery = array_shift($tmp))) {
+		    if (($gallery = array_shift($gallery_mapper->select()->where(array('name = %s', $id))->limit(1)->run_query()))) {
 			    $id = $gallery->{$gallery->id_field};
 		    }
 		    else $id = NULL;
@@ -98,8 +95,9 @@ class nggSitemaps {
      */
     function add_images( $atts ) {
 
-        $tmp = shortcode_atts(array('id' => 0), $atts );
-        extract($tmp);
+        extract(shortcode_atts(array(
+            'id'        => 0
+        ), $atts ));
 
         // make an array out of the ids (for thumbs shortcode))
         $pids = explode( ',', $id );

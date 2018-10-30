@@ -23,11 +23,7 @@ class M_NggLegacy extends C_Base_Module
 			'photocrati-nextgen-legacy',
 			'NextGEN Legacy',
 			'Embeds the original version of NextGEN 1.9.3 by Alex Rabe',
-<<<<<<< HEAD
-			'3.0.0.1',
-=======
-			'0.27',
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
+			'0.23',
 			'https://www.imagely.com/wordpress-gallery-plugin/nextgen-gallery/',
 			'Imagely',
 			'https://www.imagely.com'

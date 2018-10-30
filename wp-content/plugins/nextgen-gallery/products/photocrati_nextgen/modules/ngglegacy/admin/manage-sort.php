@@ -5,9 +5,6 @@
  *
  */
 
-/**
- * @param int $galleryID
- */
 function nggallery_sortorder($galleryID = 0){
 	global $wpdb, $ngg, $nggdb;
 

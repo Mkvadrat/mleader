@@ -39,6 +39,7 @@ class C_Photocrati_Resource_Manager
 
 	/**
 	 * Determines if the resource manager should perform it's routines for this request
+	 * @return bool
 	 */
 	function validate_request()
 	{
@@ -154,8 +155,6 @@ class C_Photocrati_Resource_Manager
 
 	/**
 	 * When PHP has finished, we output the footer scripts and closing tags
-     * @param bool $in_shutdown
-     * @return string
 	 */
 	function output_buffer($in_shutdown=FALSE)
 	{

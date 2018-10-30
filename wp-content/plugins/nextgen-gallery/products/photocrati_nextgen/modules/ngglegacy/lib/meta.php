@@ -26,9 +26,9 @@ class nggMeta{
 
     /**
      * Parses the nggMeta data only if needed
-     * @param object|int $image_or_id An image object or an image ID
-     * @param bool $onlyEXIF Parse only exif if needed
-     * @return bool
+     * @param int $image path to a image
+     * @param bool $onlyEXIF parse only exif if needed
+     * @return
      */
     function __construct($image_or_id, $onlyEXIF = false)
     {
@@ -108,7 +108,7 @@ class nggMeta{
      * nggMeta::get_EXIF()
      * See also http://trac.wordpress.org/changeset/6313
      *
-     * @return bool|array Structured EXIF data
+     * @return structured EXIF data
      */
     function get_EXIF($object = false) {
 
@@ -217,17 +217,16 @@ class nggMeta{
     /**
      * nggMeta::readIPTC() - IPTC Data Information for EXIF Display
      *
-     * @param mixed $object (optional)
-     * @return null|bool|array
+     * @param mixed $output_tag
+     * @return IPTC-tags
      */
-    function get_IPTC($object = false)
-    {
+    function get_IPTC($object = false) {
 
         if (!$this->iptc_data)
             return false;
 
-        if (!is_array($this->iptc_array))
-        {
+        if (!is_array($this->iptc_array)){
+
             // --------- Set up Array Functions --------- //
             $iptcTags = array (
                 "2#005" => 'title',
@@ -254,8 +253,9 @@ class nggMeta{
 
             $meta = array();
             foreach ($iptcTags as $key => $value) {
-                if (isset($this->iptc_data[$key]))
+                if (isset ( $this->iptc_data[$key] ) )
                     $meta[$value] = trim($this->utf8_encode(implode(", ", $this->iptc_data[$key])));
+
             }
             $this->iptc_array = $meta;
         }
@@ -277,7 +277,7 @@ class nggMeta{
      * code by Pekka Saarinen http://photography-on-the.net
      *
      * @param mixed $filename
-     * @return bool|string XML data
+     * @return XML data
      */
     function extract_XMP( $filename ) {
 
@@ -305,7 +305,7 @@ class nggMeta{
      *
      * @package Taken from http://php.net/manual/en/function.xml-parse-into-struct.php
      * @author Alf Marius Foss Olsen & Alex Rabe
-     * @return bool|array|object XML Array or object
+     * @return XML Array or object
      *
      */
     function get_XMP($object = false) {
@@ -453,7 +453,7 @@ class nggMeta{
      * nggMeta::i8n_name() -  localize the tag name
      *
      * @param mixed $key
-     * @return string Translated $key
+     * @return translated $key
      */
     function i18n_name($key) {
 
@@ -505,7 +505,7 @@ class nggMeta{
 
     /**
      * Return the Timestamp from the image , if possible it's read from exif data
-     * @return string
+     * @return int
      */
 	function get_date_time() {
 
@@ -531,7 +531,7 @@ class nggMeta{
      * Reason : GD manipulation removes that options
      *
      * @since V1.4.0
-     * @return bool|array
+     * @return array
      */
     function get_common_meta() {
         global $wpdb;

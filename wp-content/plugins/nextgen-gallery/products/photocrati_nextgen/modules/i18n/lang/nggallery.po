@@ -2446,11 +2446,7 @@ msgid "Server Settings"
 msgstr ""
 
 #: products/photocrati_nextgen/modules/ngglegacy/admin/overview.php:97
-<<<<<<< HEAD
-msgid "NextGEN Gallery is one of the most popular WordPress plugins of all time with over 23 million downloads."
-=======
 msgid "NextGEN Gallery is one of the most popular WordPress plugins of all time with over 20 million downloads."
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
 msgstr ""
 
 #: products/photocrati_nextgen/modules/ngglegacy/admin/overview.php:97
@@ -3235,11 +3231,7 @@ msgid "https://www.imagely.com/wordpress-gallery-plugin/nextgen-gallery/"
 msgstr ""
 
 #. Description of the plugin/theme
-<<<<<<< HEAD
-msgid "The most popular gallery plugin for WordPress and one of the most popular plugins of all time with over 23 million downloads."
-=======
 msgid "The most popular gallery plugin for WordPress and one of the most popular plugins of all time with over 20 million downloads."
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
 msgstr ""
 
 #. Author of the plugin/theme

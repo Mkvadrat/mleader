@@ -95,30 +95,12 @@ class A_NextGen_AddGallery_Ajax extends Mixin
         $gallery_mapper = C_Gallery_Mapper::get_instance();
         $error = FALSE;
         if ($this->validate_ajax_request('nextgen_upload_image', TRUE)) {
-<<<<<<< HEAD
-            if (!class_exists('DOMDocument')) {
-                $retval['error'] = __("Please ask your hosting provider or system administrator to enable the PHP XML module which is required for image uploads", 'nggallery');
-            } else {
-                // We need to create a gallery
-                if ($gallery_id == 0) {
-                    if (strlen($gallery_name) > 0) {
-                        $gallery = $gallery_mapper->create(array('title' => $gallery_name));
-                        if (!$gallery->save()) {
-                            $retval['error'] = $gallery->get_errors();
-                            $error = TRUE;
-                        } else {
-                            $created_gallery = TRUE;
-                            $gallery_id = $gallery->id();
-                        }
-                    } else {
-=======
             // We need to create a gallery
             if ($gallery_id == 0) {
                 if (strlen($gallery_name) > 0) {
                     $gallery = $gallery_mapper->create(array('title' => $gallery_name));
                     if (!$gallery->save()) {
                         $retval['error'] = $gallery->get_errors();
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
                         $error = TRUE;
                     } else {
                         $created_gallery = TRUE;

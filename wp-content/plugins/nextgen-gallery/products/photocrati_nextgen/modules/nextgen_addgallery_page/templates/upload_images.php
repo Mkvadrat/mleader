@@ -228,7 +228,6 @@
                             if (typeof(response) != 'object') {
                                 try {
                                     response = JSON.parse(info.response);
-                                    if (!response) throw new Error();
                                 }
                                 catch (ex) {
                                     up.trigger('Error', {

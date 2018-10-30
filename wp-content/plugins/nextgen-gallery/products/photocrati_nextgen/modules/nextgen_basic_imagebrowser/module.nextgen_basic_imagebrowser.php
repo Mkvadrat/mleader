@@ -75,7 +75,7 @@ class M_NextGen_Basic_ImageBrowser extends C_Base_Module
             );
         }
 
-		if (!is_admin() && apply_filters('ngg_load_frontend_logic', TRUE, $this->module_id))
+		if (apply_filters('ngg_load_frontend_logic', TRUE, $this->module_id))
 		{
             // Add rendering logic
             $this->get_registry()->add_adapter(
@@ -144,9 +144,8 @@ class M_NextGen_Basic_ImageBrowser extends C_Base_Module
 
 /**
  * Show an image browser. Ngglegacy function
- * @param int $galleryID
+ * @param $galleryID
  * @param string $template
- * @return string
  */
 function nggShowImageBrowser($galleryID, $template = '')
 {
@@ -162,9 +161,8 @@ function nggShowImageBrowser($galleryID, $template = '')
 
 /**
  * Create an image browser from a list of image objects. Ngglegacy function
- * @param array $picturelist
- * @param string $template (optional)
- * @return string
+ * @param $picturelist
+ * @param string $template
  */
 function nggCreateImageBrowser($picturelist, $template = '')
 {

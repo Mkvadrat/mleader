@@ -179,10 +179,6 @@ class C_Security_Manager extends C_Component
         $this->add_mixin('Mixin_Security_Manager');
         $this->add_mixin('Mixin_Security_Manager_Request');
     }
-    /**
-     * @param bool|string $context
-     * @return C_Security_Manager
-     */
     static function get_instance($context = False)
     {
         if (!isset(self::$_instances[$context])) {
@@ -425,10 +421,6 @@ class C_WordPress_Security_Manager extends C_Security_Manager
         $this->add_mixin('Mixin_WordPress_Security_Manager');
         $this->add_mixin('Mixin_WordPress_Security_Manager_Request');
     }
-    /**
-     * @param bool|string $context
-     * @return C_WordPress_Security_Manager
-     */
     static function get_instance($context = False)
     {
         if (!isset(self::$_instances[$context])) {

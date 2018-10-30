@@ -124,9 +124,9 @@ class ExtensibleObject extends PopeHelpers
 
 
     /**
-     * Adds an extension class to the object. The extension provides methods for this class to expose as it's own
+     * Adds an extension class to the object. The extension provides
+     * methods for this class to expose as it's own
      * @param string $class
-     * @return bool
      */
     function add_mixin($class, $instantiate=FALSE)
     {
@@ -207,7 +207,6 @@ class ExtensibleObject extends PopeHelpers
 	/**
 	 * Returns the Mixin which provides the specified method
 	 * @param string $method
-     * @return bool|object
 	 */
 	function get_mixin_providing($method, $return_obj=FALSE)
 	{
@@ -305,7 +304,8 @@ class ExtensibleObject extends PopeHelpers
     /**
      * Wraps a class within an ExtensibleObject class.
      * @param string $klass
-     * @param array $callback Used to tell ExtensibleObject how to instantiate the wrapped class
+     * @param array callback, used to tell ExtensibleObject how to instantiate
+     * the wrapped class
      */
     function wrap($klass, $callback=FALSE, $args=array())
     {
@@ -355,8 +355,10 @@ class ExtensibleObject extends PopeHelpers
         return $retval;
     }
 
+
     /**
      * Provides a means of calling static methods, provided by extensions
+     * @param string $method
      * @return mixed
      */
     static function get_class()
@@ -366,6 +368,7 @@ class ExtensibleObject extends PopeHelpers
         $obj = new $klass(__EXTOBJ_STATIC__);
         return $obj;
     }
+
 
 	/**
 	 * Gets the name of the ExtensibleObject
@@ -582,7 +585,7 @@ class ExtensibleObject extends PopeHelpers
     /**
      * Returns TRUE if the method in particular has been cached
      * @param string $method
-     * @return bool
+     * @return type
      */
     function is_cached($method)
     {
@@ -685,7 +688,7 @@ class ExtensibleObject extends PopeHelpers
     /**
      * Returns get_class_methods() optionally limited by Mixin
      *
-     * @param string|null $name Show functions provided by a mixin
+     * @param string (optional) Only show functions provided by a mixin
      * @return array Results from get_class_methods()
      */
     public function get_instance_methods($name = null)
@@ -754,7 +757,7 @@ class Mixin extends PopeHelpers
 
     /**
      * The name of the method called on the ExtensibleObject
-     * @var string
+     * @var type
      */
     var $method_called;
 

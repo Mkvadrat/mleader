@@ -17,7 +17,7 @@ class nggManageGallery {
 		// GET variables
 		if( isset($_GET['gid']) ) {
 			$this->gid  = (int) $_GET['gid'];
-			$this->gallery = C_Gallery_Mapper::get_instance()->find($this->gid, TRUE);
+			$this->gallery = C_Gallery_Mapper::get_instance()->find($this->gid);
 		}
 		if( isset($_GET['pid']) )
 			$this->pid  = (int) $_GET['pid'];
@@ -345,26 +345,6 @@ class nggManageGallery {
 
 	function render_recover_action_link($id, $picture)
 	{
-<<<<<<< HEAD
-		if (!file_exists($picture->imagePath . '_backup'))
-            return FALSE;
-
-		$url      = wp_nonce_url("admin.php?page=nggallery-manage-gallery&amp;mode=recoverpic&amp;gid={$picture->galleryid}&amp;pid={$picture->pid}", 'ngg_recoverpicture');
-		$title    = esc_attr__('Recover image from backup', 'nggallery');
-		$label    = esc_html__('Recover', 'nggallery');
-        $question = __('Recover', 'nggallery');
-
-		$alttext = empty($picture->alttext) ? $picture->filename : $picture->alttext;
-		$alttext = M_NextGen_Data::strip_html(html_entity_decode($alttext), TRUE);
-		$alttext = htmlentities($alttext, ENT_QUOTES|ENT_HTML401);
-
-        // Event handler is found in nextgen_admin_page.js
-		return "<a href='{$url}'
-                   class='confirmrecover'
-                   data-question='{$question}'
-                   data-text='{$alttext}'
-                   title='{$title}'>{$label}</a>";
-=======
 		if ( !file_exists( $picture->imagePath . '_backup' )) return FALSE;
 
 		$url		= wp_nonce_url("admin.php?page=nggallery-manage-gallery&amp;mode=recoverpic&amp;gid={$picture->galleryid}&amp;pid={$picture->pid}", 'ngg_recoverpicture');
@@ -375,28 +355,10 @@ class nggManageGallery {
 		$onclick	= "javascript:if(!confirm(\"{$confirm}\")) return false";
 
 		return "<a href='{$url}' onclick='{$onclick}' class='confirmrecover' title='{$title}'>{$label}</a>";
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
 	}
 
 	function render_delete_action_link($id, $picture)
 	{
-<<<<<<< HEAD
-		$url      = wp_nonce_url("admin.php?page=nggallery-manage-gallery&amp;mode=delpic&amp;gid={$picture->galleryid}&amp;pid={$picture->pid}", 'ngg_delpicture');
-		$title    = esc_attr__('Delete image', 'nggallery');
-		$label    = esc_html__('Delete', 'nggallery');
-		$question = __('Delete', 'nggallery');
-
-		$alttext = empty($picture->alttext) ? $picture->filename : $picture->alttext;
-		$alttext = M_NextGen_Data::strip_html(html_entity_decode($alttext), TRUE);
-		$alttext = htmlentities($alttext, ENT_QUOTES|ENT_HTML401);
-
-		// Event handler is found in nextgen_admin_page.js
-		return "<a href='{$url}'
-                   class='submitdelete delete'
-                   data-question='{$question}'
-                   data-text='{$alttext}'
-                   title='{$title}'>{$label}</a>";
-=======
 		$url		= wp_nonce_url("admin.php?page=nggallery-manage-gallery&amp;mode=delpic&amp;gid={$picture->galleryid}&amp;pid={$picture->pid}", 'ngg_delpicture');
 		$title		= esc_attr__('Delete image', 'nggallery');
 		$label		= esc_html__('Delete', 'nggallery');
@@ -405,7 +367,6 @@ class nggManageGallery {
 		$onclick	= "javascript:if(!confirm(\"{$confirm}\")) return false;";
 
 		return "<a href='{$url}' onclick='{$onclick}' class='submitdelete delete' title='{$title}'>{$label}</a>";
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
 	}
 
 	function render_image_row_header()
@@ -835,15 +796,12 @@ class nggManageGallery {
 			}
 		}
 
-		if (isset($_POST['updatepictures']))
-		{
-            // Update pictures
-			$success = FALSE;
+		if (isset ($_POST['updatepictures']) )  {
+		// Update pictures
 
 			check_admin_referer('ngg_updategallery');
 
-			if (nggGallery::current_user_can('NextGEN Edit gallery options') && !isset($_GET['s']))
-			{
+			if ( nggGallery::current_user_can( 'NextGEN Edit gallery options' )  && !isset ($_GET['s']) ) {
                 $tags = array('<a>', '<abbr>', '<acronym>', '<address>', '<b>', '<base>', '<basefont>', '<big>', '<blockquote>', '<br>', '<br/>', '<caption>', '<center>', '<cite>', '<code>', '<col>', '<colgroup>', '<dd>', '<del>', '<dfn>', '<dir>', '<div>', '<dl>', '<dt>', '<em>', '<fieldset>', '<font>', '<h1>', '<h2>', '<h3>', '<h4>', '<h5>', '<h6>', '<hr>', '<i>', '<img>', '<ins>', '<label>', '<legend>', '<li>', '<menu>', '<noframes>', '<noscript>', '<ol>', '<optgroup>', '<option>', '<p>', '<pre>', '<q>', '<s>', '<samp>', '<select>', '<small>', '<span>', '<strike>', '<strong>', '<sub>', '<sup>', '<table>', '<tbody>', '<td>', '<tfoot>', '<th>', '<thead>', '<tr>', '<tt>', '<u>', '<ul>');
 				$fields = array('title', 'galdesc');
 				
@@ -855,43 +813,29 @@ class nggManageGallery {
 					$html = strip_tags($html, implode('', $tags));
 					$_POST[$field] = $html;
 				}
-
-				$mapper = C_Gallery_Mapper::get_instance();
 				
 				// Update the gallery
-				if (!$this->gallery)
-				{
-					$this->gallery = $mapper->find($this->gid, TRUE);
-				}
-
-				if ($this->gallery)
-				{
+				$mapper = C_Gallery_Mapper::get_instance();
+				if ($entity = $mapper->find($this->gid)) {
 					foreach ($_POST as $key => $value) {
-						$this->gallery->$key = $value;
+						$entity->$key = $value;
 					}
-					$mapper->save($this->gallery);
-
-					if ($this->gallery->is_invalid())
-					{
-						foreach ($this->gallery->get_errors() as $property => $errors) {
-							foreach ($errors as $error) {
-								nggGallery::show_error($error);
-							}
-						}
-					}
-
-					wp_cache_delete($this->gid, 'ngg_gallery');
-					$success = $this->gallery->is_valid();
+					$mapper->save($entity);
 				}
+
+				if ($entity->path == '../' || FALSE !== strpos($entity->path, '/../'))
+					nggGallery::show_message(sprintf(__('One or more "../" in Gallery paths could be unsafe and NextGen Gallery will not delete this gallery automatically', 'nggallery'), $entity->{$entity->id_field}));
+
+                wp_cache_delete($this->gid, 'ngg_gallery');
+
 			}
 
-            $pictures_updated = $this->update_pictures();
-			if ($success || $pictures_updated >= 1)
-			{
-				// Hook for other plugin to update the fields
-				do_action('ngg_update_gallery', $this->gid, $_POST);
-				nggGallery::show_message(__('Updated successfully', 'nggallery'));
-			}
+			$this->update_pictures();
+
+			//hook for other plugin to update the fields
+			do_action('ngg_update_gallery', $this->gid, $_POST);
+
+			nggGallery::show_message(__('Updated successfully', 'nggallery'));
 		}
 
 		if (isset ($_POST['scanfolder']))  {

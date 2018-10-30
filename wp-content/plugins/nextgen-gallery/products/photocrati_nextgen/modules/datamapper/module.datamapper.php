@@ -177,8 +177,8 @@ class M_DataMapper extends C_Base_Module
 
 	/**
 	 * Adds post_name to the where clause
-	 * @param string $where
-	 * @param WP_Query $wp_query
+	 * @param type $where
+	 * @param type $wp_query
 	 */
 	function add_post_name_where_clauses(&$where, &$wp_query)
 	{
@@ -263,4 +263,5 @@ class C_DataMapper_Installer
 		$this->settings->set_default_value('datamapper_driver', 'custom_post_datamapper');
 	}
 }
+
 new M_DataMapper();

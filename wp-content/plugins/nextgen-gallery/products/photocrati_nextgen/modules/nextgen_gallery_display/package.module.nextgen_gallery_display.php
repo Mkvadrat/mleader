@@ -37,94 +37,6 @@ class A_Display_Settings_Page extends Mixin
         return $this->call_parent('setup');
     }
 }
-class A_Displayed_Gallery_Renderer_Random extends Mixin
-{
-    /**
-     * @param C_Displayed_Gallery $displayed_gallery
-     * @param bool $return
-     * @param mixed $mode
-     * @return string
-     */
-    function render($displayed_gallery, $return = FALSE, $mode = null)
-    {
-        $entity = $displayed_gallery->get_entity();
-        // Duplicated from the parent render() method but it's necessary to have for this code to work
-        if (is_null($displayed_gallery->id())) {
-            $displayed_gallery->id(md5(json_encode($entity)));
-        }
-        if (in_array($displayed_gallery->source, array('random', 'random_images')) && empty($displayed_gallery->entity_ids)) {
-            // Check if the ID selection has been cached
-            $key = C_Photocrati_Transient_Manager::create_key('random_displayed_gallery_entity_ids', $entity);
-            $image_ids = C_Photocrati_Transient_Manager::fetch($key, FALSE);
-            if (empty($image_ids)) {
-                $image_ids = $this->get_random_ids_for_cache($displayed_gallery);
-                // Store our retrieved IDs
-                C_Photocrati_Transient_Manager::update($key, json_encode($image_ids), 86400);
-            } else {
-                // Convert the stored JSON to an array
-                $image_ids = json_decode($image_ids, TRUE);
-            }
-            // Final step: assign the cached IDs to the $displayed_gallery and return control to the parent
-            if (is_array($image_ids)) {
-                $displayed_gallery->entity_ids = $image_ids;
-            }
-        }
-        return $this->call_parent('render', $displayed_gallery, $return, $mode);
-    }
-    public function query_random_ids_for_cache($limit = 10)
-    {
-        global $wpdb;
-        $mod = rand(3, 9);
-        return $wpdb->get_col("SELECT pictures.pid from {$wpdb->nggpictures} pictures\n                    JOIN (SELECT CEIL(MAX(pid) * RAND()) AS pid FROM {$wpdb->nggpictures}) AS x ON pictures.pid >= x.pid\n                    WHERE pictures.pid MOD {$mod} = 0\n                    LIMIT {$limit}");
-    }
-    /**
-     * @param C_Displayed_Gallery $displayed_gallery
-     * @return int[]
-     */
-    public function get_random_ids_for_cache($displayed_gallery)
-    {
-        global $wpdb;
-        $image_ids = array();
-        // Impose a reasonable hard limit
-        if ($displayed_gallery->maximum_entity_count > 500) {
-            $displayed_gallery->maximum_entity_count = 500;
-        }
-        // Some hosts and/or users prefer to not use or choose to disable mySQL's ORDER BY RAND() feature. For them
-        // we provide an alternative where we generate some random numbers and check if they exist as image ID and
-        // continue to do so until our requested cache has filled.
-        if (defined('NGG_DISABLE_ORDER_BY_RAND') && NGG_DISABLE_ORDER_BY_RAND) {
-            // Prevent infinite loops: retrieve the image count and if needed just pull in every image available
-            $total = $wpdb->get_var("SELECT COUNT(`pid`) FROM {$wpdb->nggpictures}");
-            if ($total <= $displayed_gallery->maximum_entity_count) {
-                $image_ids = $wpdb->get_col("SELECT pictures.pid from {$wpdb->nggpictures} pictures LIMIT {$total}");
-            } else {
-                // Start retrieving random ID from the DB and hope they exist; continue looping until our count is full
-                $segments = ceil($displayed_gallery->maximum_entity_count / 4);
-                while (count($image_ids) < $displayed_gallery->maximum_entity_count) {
-                    $newID = $this->query_random_ids_for_cache($segments);
-                    $image_ids = array_merge(array_unique($image_ids), $newID);
-                }
-            }
-            // Prevent overflow
-            if (count($image_ids) > $displayed_gallery->maximum_entity_count) {
-                array_splice($image_ids, $displayed_gallery->maximum_entity_count);
-            }
-            // Give things an extra shake
-            shuffle($image_ids);
-        } else {
-            // Default logic; most users will rely on this method
-            $sql = "SELECT DISTINCT `pid` FROM `{$wpdb->nggpictures}` WHERE `exclude` = 0";
-            if (!empty($displayed_gallery->exclusions)) {
-                $sql .= sprintf(" AND `pid` NOT IN (%s)", implode(',', $displayed_gallery->exclusions));
-            }
-            $sql .= " ORDER BY RAND() LIMIT {$displayed_gallery->maximum_entity_count}";
-            foreach ($wpdb->get_results($sql, ARRAY_N) as $res) {
-                $image_ids[] = reset($res);
-            }
-        }
-        return $image_ids;
-    }
-}
 /**
  * Class A_Displayed_Gallery_Trigger_Element
  * @mixin C_MVC_View
@@ -188,9 +100,9 @@ class A_Gallery_Display_Factory extends Mixin
 {
     /**
      * Instantiates a Display Type
-     * @param array|stdClass|C_DataMapper_Model $properties (optional)
-     * @param C_Display_Type_Mapper $mapper (optional)
-     * @param string|array|FALSE $context (optional)
+     * @param C_DataMapper $mapper
+     * @param array|stdClass|C_DataMapper_Model $properties
+     * @param string|array|FALSE $context
      */
     function display_type($properties = array(), $mapper = FALSE, $context = FALSE)
     {
@@ -198,9 +110,9 @@ class A_Gallery_Display_Factory extends Mixin
     }
     /**
      * Instantiates a Displayed Gallery
-     * @param array|stdClass|C_DataMapper_Model $properties (optional)
-     * @param C_Displayed_Gallery_Mapper $mapper (optional)
-     * @param string|array|FALSE $context (optional)
+     * @param C_DataMapper $mapper
+     * @param array|stdClass|C_DataMapper_Model $properties
+     * @param string|array|FALSE $context
      */
     function displayed_gallery($properties = array(), $mapper = FALSE, $context = FALSE)
     {
@@ -220,7 +132,7 @@ class A_Gallery_Display_View extends Mixin
      * @param string $template_id
      * @param C_MVC_View_Element $root_element
      * @param string $addition_type what kind of addition is being made 'layout', 'decoration', 'style', 'logic' etc.
-     * @return bool|string
+     * @return string|NULL
      */
     function _check_addition_rendering($displayed_gallery, $template_id, $root_element, $addition_type)
     {
@@ -268,8 +180,8 @@ class C_Display_Type extends C_DataMapper_Model
     }
     /**
      * Initializes a display type with properties
-     * @param array|stdClass|C_Display_Type $properties
      * @param FALSE|C_Display_Type_Mapper $mapper
+     * @param array|stdClass|C_Display_Type $properties
      * @param FALSE|string|array $context
      */
     function initialize($properties = array(), $mapper = FALSE, $context = FALSE)
@@ -334,8 +246,9 @@ class Mixin_Display_Type_Validation extends Mixin
 class Mixin_Display_Type_Instance_Methods extends Mixin
 {
     /**
-     * Determines if this display type is compatible with a displayed gallery source
-     * @param stdClass $source
+     * Determines if this display type is compatible with a displayed gallery
+     * source
+     * @param stdClass
      * @return bool
      */
     function is_compatible_with_source($source)
@@ -367,7 +280,7 @@ class C_Display_Type_Controller extends C_MVC_Controller
     }
     /**
      * Gets a singleton of the mapper
-     * @param string|bool $context
+     * @param string|array $context
      * @return C_Display_Type_Controller
      */
     public static function get_instance($context = FALSE)
@@ -386,7 +299,7 @@ class Mixin_Display_Type_Controller extends Mixin
     var $_render_mode;
     /**
      * Enqueues static resources required for lightbox effects
-     * @param object $displayed_gallery
+     * @param type $displayed_gallery
      */
     function enqueue_lightbox_resources($displayed_gallery)
     {
@@ -399,14 +312,13 @@ class Mixin_Display_Type_Controller extends Mixin
     /**
      * This method should be overwritten by other adapters/mixins, and call
      * wp_enqueue_script() / wp_enqueue_style()
-     * @param C_Displayed_Gallery $displayed_gallery
      */
     function enqueue_frontend_resources($displayed_gallery)
     {
         // This script provides common JavaScript among all display types
         wp_enqueue_script('ngg_common');
         // Enqueue the display type library
-        wp_enqueue_script($displayed_gallery->display_type, $this->object->_get_js_lib_url($displayed_gallery), array(), NGG_SCRIPT_VERSION);
+        wp_enqueue_script($displayed_gallery->display_type, $this->object->_get_js_lib_url($displayed_gallery), FALSE, NGG_SCRIPT_VERSION);
         // Add "galleries = {};"
         $this->object->_add_script_data('ngg_common', 'galleries', new stdClass(), TRUE, FALSE);
         // Add "galleries.gallery_1 = {};"
@@ -421,7 +333,7 @@ class Mixin_Display_Type_Controller extends Mixin
     {
         $settings = C_NextGen_Settings::get_instance();
         if ((!is_multisite() || is_multisite() && $settings->wpmuStyle) && $settings->activateCSS) {
-            wp_enqueue_style('nggallery', C_NextGen_Style_Manager::get_instance()->get_selected_stylesheet_url(), array(), NGG_SCRIPT_VERSION);
+            wp_enqueue_style('nggallery', C_NextGen_Style_Manager::get_instance()->get_selected_stylesheet_url(), FALSE, NGG_SCRIPT_VERSION);
         }
     }
     function get_render_mode()
@@ -450,9 +362,6 @@ class Mixin_Display_Type_Controller extends Mixin
     }
     /**
      * Renders the frontend display of the display type
-     * @param C_Displayed_Gallery $displayed_gallery
-     * @param bool $return (optional)
-     * @return string
      */
     function index_action($displayed_gallery, $return = FALSE)
     {
@@ -488,8 +397,7 @@ class Mixin_Display_Type_Controller extends Mixin
     }
     /**
      * Returns the effect HTML code for the displayed gallery
-     * @param object $displayed_gallery
-     * @return string
+     * @param type $displayed_gallery
      */
     function get_effect_code($displayed_gallery)
     {
@@ -515,8 +423,6 @@ class Mixin_Display_Type_Controller extends Mixin
      * @param string $object_name
      * @param mixed $object_value
      * @param bool $define
-     * @param bool $override
-     * @return bool
      */
     function _add_script_data($handle, $object_name, $object_value, $define = TRUE, $override = FALSE)
     {
@@ -689,7 +595,7 @@ class C_Display_Type_Mapper extends C_CustomPost_DataMapper_Driver
     }
     /**
      * Gets a singleton of the mapper
-     * @param string|bool $context
+     * @param string|array $context
      * @return C_Display_Type_Mapper
      */
     public static function get_instance($context = False)
@@ -708,8 +614,6 @@ class Mixin_Display_Type_Mapper extends Mixin
     /**
      * Locates a Display Type by names
      * @param string $name
-     * @param bool $model
-     * @return null|object
      */
     function find_by_name($name, $model = FALSE)
     {
@@ -732,7 +636,6 @@ class Mixin_Display_Type_Mapper extends Mixin
     /**
      * Finds display types used to display specific types of entities
      * @param string|array $entity_type e.g. image, gallery, album
-     * @param bool $model (optional)
      * @return array
      */
     function find_by_entity_type($entity_type, $model = FALSE)
@@ -760,7 +663,6 @@ class Mixin_Display_Type_Mapper extends Mixin
     }
     /**
      * Sets default values needed for display types
-     * @param object $entity (optional)
      */
     function set_defaults($entity)
     {
@@ -809,8 +711,8 @@ class C_Displayed_Gallery extends C_DataMapper_Model
     }
     /**
      * Initializes a display type with properties
-     * @param array|stdClass|C_Displayed_Gallery $properties
      * @param FALSE|C_Displayed_Gallery_Mapper $mapper
+     * @param array|stdClass|C_Displayed_Gallery $properties
      * @param FALSE|string|array $context
      */
     function initialize($properties = array(), $mapper = FALSE, $context = FALSE)
@@ -819,6 +721,7 @@ class C_Displayed_Gallery extends C_DataMapper_Model
             $mapper = $this->get_registry()->get_utility($this->_mapper_interface);
         }
         parent::initialize($mapper, $properties);
+        $this->select_random_variation();
     }
 }
 /**
@@ -870,6 +773,24 @@ class Mixin_Displayed_Gallery_Validation extends Mixin
 }
 class Mixin_Displayed_Gallery_Queries extends Mixin
 {
+    function select_random_variation()
+    {
+        $retval = FALSE;
+        $source_obj = $this->object->get_source();
+        if ($source_obj && $source_obj->has_variations) {
+            $max = 0;
+            if (!defined('NGG_MAX_VARIATIONS')) {
+                $settings = C_Photocrati_Global_Settings_Manager::get_instance();
+                $max = $settings->get('max_variations', 5);
+                define('NGG_MAX_VARIATIONS', $max);
+            } else {
+                $max = NGG_MAX_VARIATIONS;
+            }
+            $this->object->variation = floor(rand(1, $max));
+            $retval = $this->object->variation;
+        }
+        return $retval;
+    }
     function get_entities($limit = FALSE, $offset = FALSE, $id_only = FALSE, $returns = 'included')
     {
         $retval = array();
@@ -1232,7 +1153,7 @@ class Mixin_Displayed_Gallery_Queries extends Mixin
     /**
      * Returns the total number of entities in this displayed gallery
      * @param string $returns
-     * @return int
+     * @returns int
      */
     function get_entity_count($returns = 'included')
     {
@@ -1487,7 +1408,6 @@ class Mixin_Displayed_Gallery_Instance_Methods extends Mixin
     /**
      * Applies the values of a transient to this object
      * @param string $transient_id
-     * @return bool
      */
     function apply_transient($transient_id = NULL)
     {
@@ -1558,6 +1478,7 @@ class C_Displayed_Gallery_Mapper extends C_CustomPost_DataMapper_Driver
     }
     /**
      * Initializes the mapper
+     * @param string|array|FALSE $context
      */
     function initialize()
     {
@@ -1565,7 +1486,7 @@ class C_Displayed_Gallery_Mapper extends C_CustomPost_DataMapper_Driver
     }
     /**
      * Gets a singleton of the mapper
-     * @param string|bool $context
+     * @param string|array $context
      * @return C_Displayed_Gallery_Mapper
      */
     public static function get_instance($context = False)
@@ -1593,7 +1514,7 @@ class Mixin_Displayed_Gallery_Defaults extends Mixin
     }
     /**
      * Sets defaults needed for the entity
-     * @param object $entity
+     * @param type $entity
      */
     function set_defaults($entity)
     {
@@ -1635,7 +1556,7 @@ class C_Displayed_Gallery_Renderer extends C_Component
     static $_instances = array();
     /**
      * Returns an instance of the class
-     * @param bool|string $context
+     * @param mixed $context
      * @return C_Displayed_Gallery_Renderer
      */
     static function get_instance($context = FALSE)
@@ -1780,16 +1701,7 @@ class Mixin_Displayed_Gallery_Renderer extends Mixin
      * [ngg_images image_ids='8' display_type='photocrati-nextgen_basic_singlepic']
      *
      * To retrieve a tag cloud
-<<<<<<< HEAD
-     * [ngg tagcloud=yes display_type='photocrati-nextgen_basic_tagcloud']
-     *
-     * @param array $params
-     * @param null|string $inner_content (optional)
-     * @param bool|null $mode (optional)
-     * @return string
-=======
      * [ngg_images tagcloud=yes display_type='photocrati-nextgen_basic_tagcloud']
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
      */
     function display_images($params, $inner_content = NULL, $mode = NULL)
     {
@@ -1829,10 +1741,7 @@ class Mixin_Displayed_Gallery_Renderer extends Mixin
     }
     /**
      * Renders a displayed gallery on the frontend
-     * @param C_Displayed_Gallery $displayed_gallery
-     * @param bool $return
-     * @param string|null $mode (optional)
-     * @return string
+     * @param C_Displayed_Gallery|stdClass $displayed_gallery
      */
     function render($displayed_gallery, $return = FALSE, $mode = null)
     {
@@ -1846,8 +1755,16 @@ class Mixin_Displayed_Gallery_Renderer extends Mixin
         if ($mode == null) {
             $mode = 'normal';
         }
-        if (is_null($displayed_gallery->id())) {
-            $displayed_gallery->id(md5(json_encode($displayed_gallery->get_entity())));
+        if (apply_filters('ngg_cache_displayed_galleries', FALSE)) {
+            // Save the displayed gallery as a transient if it hasn't already. Allows for ajax operations
+            // to add or modify the gallery without losing a retrievable ID
+            if (!$displayed_gallery->apply_transient()) {
+                $displayed_gallery->to_transient();
+            }
+        } else {
+            if (is_null($displayed_gallery->id())) {
+                $displayed_gallery->id(md5(json_encode($displayed_gallery->get_entity())));
+            }
         }
         // Get the display type controller
         $controller = $this->get_registry()->get_utility('I_Display_Type_Controller', $displayed_gallery->display_type);
@@ -1926,16 +1843,6 @@ class Mixin_Displayed_Gallery_Renderer extends Mixin
         }
         return $retval;
     }
-<<<<<<< HEAD
-    /**
-     * @return bool
-     */
-    function is_rest_request()
-    {
-        return strpos($_SERVER['REQUEST_URI'], 'wp-json') !== FALSE;
-    }
-=======
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
 }
 class C_Displayed_Gallery_Source_Manager
 {
@@ -1944,9 +1851,6 @@ class C_Displayed_Gallery_Source_Manager
     private $_registered_defaults = array();
     /* @var C_Displayed_Gallery_Source_Manager */
     static $_instance = NULL;
-    /**
-     * @return C_Displayed_Gallery_Source_Manager
-     */
     static function get_instance()
     {
         if (!isset(self::$_instance)) {
@@ -1989,6 +1893,7 @@ class C_Displayed_Gallery_Source_Manager
         $random->title = __('Random Images', 'nggallery');
         $random->aliases = array('random', 'random_image');
         $random->returns = array('image');
+        $random->has_variations = TRUE;
         $this->register($random->name, $random);
         // Recent Images
         $recent = new stdClass();
@@ -2019,6 +1924,9 @@ class C_Displayed_Gallery_Source_Manager
         }
         if (!isset($object->aliases)) {
             $object->aliases = array();
+        }
+        if (!isset($object->has_variations)) {
+            $object->has_variations = FALSE;
         }
         // Add internal reference
         $this->_sources[$name] = $object;
@@ -2140,7 +2048,7 @@ abstract class C_Displayed_Gallery_Trigger
     }
     function get_css_class()
     {
-        return 'far fa-circle';
+        return 'fa fa-circle';
     }
     function get_attributes()
     {
@@ -2440,7 +2348,7 @@ class Mixin_Display_Type_Form extends Mixin
     /**
      * Returns the name of the display type. Sub-class should override
      * @throws Exception
-     * @return string
+     * @returns string
      */
     function get_display_type_name()
     {
@@ -2460,7 +2368,7 @@ class Mixin_Display_Type_Form extends Mixin
     }
     /**
      * Returns the title of the form, which is the title of the display type
-     * @return string
+     * @returns string
      */
     function get_title()
     {

@@ -140,7 +140,7 @@ class nggGallery {
 	/**
 	 * nggGallery::graphic_library() - switch between GD and ImageMagick
 	 *
-	 * @return string Path to the selected library
+	 * @return path to the selected library
 	 */
 	static function graphic_library() {
 

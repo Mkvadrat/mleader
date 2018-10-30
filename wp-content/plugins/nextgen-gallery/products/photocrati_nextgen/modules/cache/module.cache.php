@@ -32,9 +32,6 @@ class M_Cache extends C_Base_Module
         $this->get_registry()->add_utility('I_Cache', 'C_Cache');
     }
 
-    /**
-     * @return array
-     */
     function get_type_list()
     {
         return array(

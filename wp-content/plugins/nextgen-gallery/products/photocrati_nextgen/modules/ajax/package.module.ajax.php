@@ -14,7 +14,6 @@ class C_Ajax_Controller extends C_MVC_Controller
     function index_action($return = FALSE)
     {
         $retval = NULL;
-        define('DOING_AJAX', TRUE);
         // Inform the MVC framework what type of content we're returning
         $this->set_content_type('json');
         // Start an output buffer to avoid displaying any PHP warnings/errors
@@ -48,7 +47,7 @@ class C_Ajax_Controller extends C_MVC_Controller
     }
     /**
      * Returns an instance of this class
-     * @param string|bool $context
+     * @param string $context
      * @return C_Ajax_Controller
      */
     static function get_instance($context = FALSE)

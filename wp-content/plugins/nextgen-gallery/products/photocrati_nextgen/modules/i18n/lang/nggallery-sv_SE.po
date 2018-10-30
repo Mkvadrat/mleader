@@ -2431,13 +2431,8 @@ msgid "Server Settings"
 msgstr "Serverinställningar"
 
 #: products/photocrati_nextgen/modules/ngglegacy/admin/overview.php:97
-<<<<<<< HEAD
-msgid "NextGEN Gallery is one of the most popular WordPress plugins of all time with over 23 million downloads."
-msgstr "NextGEN Gallery är en av de mest populära WordPress-tilläggen genom tiderna med över 22 miljoner nedladdningar."
-=======
 msgid "NextGEN Gallery is one of the most popular WordPress plugins of all time with over 20 million downloads."
 msgstr "NextGEN Gallery är en av de mest populära WordPress-tilläggen genom tiderna med över 20 miljoner nedladdningar."
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
 
 # Missed by NextGEN, translated string is displayed.
 #: products/photocrati_nextgen/modules/ngglegacy/admin/overview.php:97
@@ -3227,13 +3222,8 @@ msgid "https://www.imagely.com/wordpress-gallery-plugin/nextgen-gallery/"
 msgstr "https://www.imagely.com/wordpress-gallery-plugin/nextgen-gallery/"
 
 #. Description of the plugin/theme
-<<<<<<< HEAD
-msgid "The most popular gallery plugin for WordPress and one of the most popular plugins of all time with over 23 million downloads."
-msgstr "Det mest populära galleri-tillägget för WordPress och ett av de mest populära tillägg genom tiderna med över 23 miljoner nedladdningar."
-=======
 msgid "The most popular gallery plugin for WordPress and one of the most popular plugins of all time with over 20 million downloads."
 msgstr "Det mest populära galleri-tillägget för WordPress och ett av de mest populära tillägg genom tiderna med över 20 miljoner nedladdningar."
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
 
 #. Author of the plugin/theme
 msgid "Imagely"
