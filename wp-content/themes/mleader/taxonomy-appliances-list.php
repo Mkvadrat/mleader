@@ -48,6 +48,7 @@ get_header();
 
                         <ul class="description-category">
                             <?php if($appliances_list){ ?>
+                            
                             <?php foreach($appliances_list as $list){ ?>
                             <?php $images = get_field('product_group_image_appliances_single', $list->ID); ?>
                             <li>
@@ -63,7 +64,7 @@ get_header();
                                         <?php } ?>
                                     </span>
                                     <span class="title"><?php echo $list->post_title; ?><br>
-                                    <strong><?php echo getPrice($list->post_title); ?></strong></span>
+                                    <strong><?php echo getPrice($list->ID, get_post_meta( $list->ID, 'sku_product_appliances_single', $single = true ),  get_queried_object()->term_id); ?></strong></span>
                                 </a>
                             </li>
                             <?php } ?>

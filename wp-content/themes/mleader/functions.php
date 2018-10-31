@@ -418,7 +418,7 @@ function dimox_breadcrumbs() {
 	
 		echo $wrap_before;
 		if ($show_home_link) echo $home_link;
-	  
+		
 		if ( is_category() ) {
 			$cat = get_category(get_query_var('cat'), false);
 			if ($cat->parent != 0) {
@@ -459,15 +459,11 @@ function dimox_breadcrumbs() {
 			//Категории (для single.php)
 			if ($show_home_link) echo $sep;
 			if ( get_post_type() != 'post' ) {
-			if( get_post_type() == 'our-services' ){			
+				
+			if( get_post_type() == 'appliances'){			
 				printf($link, $home_url, $post_type->labels->singular_name);
 				
 				if ($show_current) echo $before . get_the_title() . $after;
-			}else if(get_post_type() == 'projects'){
-				$term = getRubricByID(get_the_ID());
-										
-				printf($link, $home_url . $term[0]->slug . '/', $term[0]->name);
-				if ($show_current) echo $sep . $before . get_the_title() . $after;
 			}else{
 				$post_type = get_post_type_object(get_post_type());
 				$slug = $post_type->rewrite;
@@ -490,14 +486,16 @@ function dimox_breadcrumbs() {
 			// custom post type
 		} elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
 			//Категории (для category.php)
-			if(get_post_type() == 'projects'){		
+			$term_name = get_term( get_queried_object()->term_id, 'appliances-list' );
+			
+			if(get_post_type() == 'appliances' || $term_name->taxonomy == 'appliances-list'){
 				$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 				
-				if ( get_query_var('paged') ) {		
-					echo $sep . sprintf($link, get_category_link($term->term_id), $term->name) . $sep . $before . sprintf($text['page'], get_query_var('paged')) . $after;
-				} else {
-					if ($show_current) echo $sep . $before . $term->name . $after;
-				}
+				$page = get_post('755');
+				
+				echo $sep . '<li><a href="'.get_page_link( $page->ID).'">' . $page->post_title . '</a></li>' . $after ;
+
+				if ($show_current) echo $sep . $before . $term->name . $after;
 			}else{
 				$post_type = get_post_type_object(get_post_type());	  
 				if ( get_query_var('paged') ) {
@@ -574,23 +572,103 @@ function dimox_breadcrumbs() {
 ********************************************************************ПАРСИНГ ТОВАРОВ************************************************************************
 ***********************************************************************************************************************************************************
 ***********************************************************************************************************************************************************/
-function getPrice($title){
-	if (extension_loaded('curl')) {
-		$data = array();
-					
-		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, 'http://mleader.loc/export.xml');
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		$content = curl_exec($ch);
-		curl_close($ch);
+function getPrice($product_id, $sku, $category_id){
+	global $wpdb;
 	
-		$doc = new SimpleXMLElement($content);
+	$ext_data = $wpdb->get_var( $wpdb->prepare("SELECT meta_value FROM $wpdb->termmeta WHERE meta_key = %s AND term_id = %s" , $product_id . '_appliances_list', $category_id));
 	
-		if($doc->tovar->naimenovanie == $title){
-			return $doc->tovar->cena1 . ' руб.';
-		}else{
-			return 'Цена отсутствует';
+	$uns_data = unserialize($ext_data);
+
+	if(empty($uns_data['price']) || date('d.m.Y') != $uns_data['date']){
+		$my_db_result = array();
+		$path = WP_EXPORT;			
+		$content = file_get_contents_curl($path);
+		$doc = simplexml_load_string($content);
+		$json_string = json_encode($doc);    
+		$result_array = json_decode($json_string, TRUE);
+		foreach ($result_array as $a) {
+			foreach($a as $b){
+				if(isset($b['artikul']) && isset($b['cena1'])){
+					if(!empty($uns_data['price']) && $b['cena1'] != $uns_data['price']){
+						if($sku == $b['artikul']){
+							$price = $b['cena1'];
+							$my_db_result['artikul'] = $b['artikul'];
+							$my_db_result['cvet'] = $b['cvet'];
+							$my_db_result['mat'] = $b['mat'];
+							$my_db_result['proizvoditel'] = $b['proizvoditel'];
+							$my_db_result['price'] = $b['cena1'];
+							$my_db_result['opisanie1'] = $b['opisanie1'];
+							$my_db_result['opisanie2'] = $b['opisanie2'];
+							$my_db_result['opisanie3'] = $b['opisanie3'];
+							$my_db_result['opisanie4'] = $b['opisanie4'];
+							$my_db_result['opisanie5'] = $b['opisanie5'];
+							$my_db_result['opisanie6'] = $b['opisanie6'];
+							$my_db_result['opisanie7'] = $b['opisanie7'];
+							$my_db_result['opisanie8'] = $b['opisanie8'];
+							$my_db_result['opisanie9'] = $b['opisanie9'];
+							$my_db_result['opisanie10'] = $b['opisanie10'];
+							$my_db_result['opisanie11'] = $b['opisanie11'];
+							$my_db_result['opisanie12'] = $b['opisanie12'];
+							$my_db_result['opisanie13'] = $b['opisanie13'];
+							$my_db_result['opisanie14'] = $b['opisanie14'];
+							$my_db_result['opisanie15'] = $b['opisanie15'];
+							$my_db_result['opisanie_html'] = $b['opisanie_html'];
+							$my_db_result['date'] = date('d.m.Y');
+							$db_ins = serialize($my_db_result);
+							$wpdb->get_var( $wpdb->prepare("UPDATE $wpdb->termmeta SET term_id = %s, meta_key = %s, meta_value = %s WHERE meta_key = %s AND term_id = %s", $category_id, $product_id . '_appliances_list', $db_ins, $product_id . '_appliances_list', $category_id));
+						}
+					}
+					if(empty($uns_data['price'])){
+						if($sku == $b['artikul']){
+							$price = $b['cena1'];
+							$my_db_result['artikul'] = $b['artikul'];
+							$my_db_result['cvet'] = $b['cvet'];
+							$my_db_result['mat'] = $b['mat'];
+							$my_db_result['proizvoditel'] = $b['proizvoditel'];
+							$my_db_result['price'] = $b['cena1'];
+							$my_db_result['opisanie1'] = $b['opisanie1'];
+							$my_db_result['opisanie2'] = $b['opisanie2'];
+							$my_db_result['opisanie3'] = $b['opisanie3'];
+							$my_db_result['opisanie4'] = $b['opisanie4'];
+							$my_db_result['opisanie5'] = $b['opisanie5'];
+							$my_db_result['opisanie6'] = $b['opisanie6'];
+							$my_db_result['opisanie7'] = $b['opisanie7'];
+							$my_db_result['opisanie8'] = $b['opisanie8'];
+							$my_db_result['opisanie9'] = $b['opisanie9'];
+							$my_db_result['opisanie10'] = $b['opisanie10'];
+							$my_db_result['opisanie11'] = $b['opisanie11'];
+							$my_db_result['opisanie12'] = $b['opisanie12'];
+							$my_db_result['opisanie13'] = $b['opisanie13'];
+							$my_db_result['opisanie14'] = $b['opisanie14'];
+							$my_db_result['opisanie15'] = $b['opisanie15'];
+							$my_db_result['opisanie_html'] = $b['opisanie_html'];
+							$my_db_result['date'] = date('d.m.Y');
+							$db_ins = serialize($my_db_result);
+							$wpdb->get_var( $wpdb->prepare("INSERT INTO $wpdb->termmeta (term_id, meta_key, meta_value) VALUES (%s, %s, %s)", $category_id, $product_id . '_appliances_list', $db_ins));
+						}
+					}
+				}
+			}
 		}
 	}
+			
+	if($uns_data['price']){
+		return $uns_data['price'] . ' руб.';
+	}else{
+		return $price . ' руб.';
+	}
+}
 
+function file_get_contents_curl($url){
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_AUTOREFERER, TRUE);
+	curl_setopt($ch, CURLOPT_HEADER, 0);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
+	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 3);
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+	$data = curl_exec($ch);
+	curl_close($ch);
+	return $data;
 }

@@ -37,6 +37,9 @@ define('DB_CHARSET', 'utf8mb4');
 /** Схема сопоставления. Не меняйте, если не уверены. */
 define('DB_COLLATE', '');
 
+//папка загрузки xml
+define('WP_EXPORT', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-export/export.xml');
+
 /**#@+
  * Уникальные ключи и соли для аутентификации.
  *
