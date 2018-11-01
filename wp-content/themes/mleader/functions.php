@@ -581,7 +581,7 @@ function getPrice($product_id, $sku, $category_id){
 
 	if(empty($uns_data['price']) || date('d.m.Y') != $uns_data['date']){
 		$my_db_result = array();
-		$path = WP_EXPORT;			
+		$path = WP_EXPORT;
 		$content = file_get_contents_curl($path);
 		$doc = simplexml_load_string($content);
 		$json_string = json_encode($doc);    
@@ -657,6 +657,16 @@ function getPrice($product_id, $sku, $category_id){
 	}else{
 		return $price . ' руб.';
 	}
+}
+
+function getData($product_id, $category_id){
+	var_dump($product_id);
+	var_dump($category_id);
+	$ext_data = $wpdb->get_var( $wpdb->prepare("SELECT meta_value FROM $wpdb->termmeta WHERE meta_key = %s AND term_id = %s" , $product_id . '_appliances_list', $category_id));
+	
+	$uns_data = unserialize($ext_data);
+	
+	return $uns_data;
 }
 
 function file_get_contents_curl($url){

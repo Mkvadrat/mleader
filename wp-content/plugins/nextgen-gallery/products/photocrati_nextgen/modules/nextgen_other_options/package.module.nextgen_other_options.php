@@ -118,9 +118,9 @@ class A_Image_Options_Form extends Mixin
         return array(__('Categories', 'nggallery') => 'category', __('Tags', 'nggallery') => 'tags');
     }
     /**
-     * Tries to create the gallery storage directory if it doesn't exist
-     * already
-     * @return string
+     * Tries to create the gallery storage directory if it doesn't exist already
+     * @param null|string $gallerypath (optional)
+     * @return bool|string
      */
     function _create_gallery_storage_dir($gallerypath = NULL)
     {
@@ -136,7 +136,7 @@ class A_Image_Options_Form extends Mixin
         }
         return $retval;
     }
-    /*
+    /**
      * Renders the form
      */
     function render()
@@ -154,30 +154,18 @@ class A_Image_Options_Form extends Mixin
             // Update the gallery path. Moves all images to the new location
             if (isset($image_options['gallerypath']) && (!is_multisite() || get_current_blog_id() == 1)) {
                 $fs = C_Fs::get_instance();
-                $original_dir = $fs->get_abspath($this->object->get_model()->get('gallerypath'));
-                $new_dir = $fs->get_abspath($image_options['gallerypath']);
+                $root = $fs->get_document_root('galleries');
                 $image_options['gallerypath'] = $fs->add_trailing_slash($image_options['gallerypath']);
-                // Note: the below file move is disabled because it's quite unreliable as it doesn't perform any checks
-                //       For instance changing gallery path from /wp-content to /wp-content/gallery would attempt a recursive copy and then delete ALL files under wp-content, which would be disastreus
-                #				// If the gallery path has changed...
-                #				if ($original_dir != $new_dir) {
-                #                    // Try creating the new directory
-                #                    if ($this->object->_create_gallery_storage_dir($new_dir) AND is_writable($new_dir)) {
-                #					    // Try moving files
-                #						$this->object->recursive_copy($original_dir, $new_dir);
-                #						$this->object->recursive_delete($original_dir);
-                #						// Update gallery paths
-                #						$mapper = $this->get_registry()->get_utility('I_Gallery_Mapper');
-                #						foreach ($mapper->find_all() as $gallery) {
-                #							$gallery->path = $image_options['gallerypath'] . $gallery->name;
-                #							$mapper->save($gallery);
-                #						}
-                #					}
-                #					else {
-                #						$this->get_model()->add_error("Unable to change gallery path. Insufficient filesystem permissions");
-                #						$save = FALSE;
-                #					}
-                #				}
+                $gallery_abspath = $fs->get_absolute_path($fs->join_paths($root, $image_options['gallerypath']));
+                if ($gallery_abspath[0] != DIRECTORY_SEPARATOR) {
+                    $gallery_abspath = DIRECTORY_SEPARATOR . $gallery_abspath;
+                }
+                if (strpos($gallery_abspath, $root) === FALSE) {
+                    $this->object->get_model()->add_error(sprintf(__("Gallery path must be located in %s", 'nggallery'), $root), 'gallerypath');
+                    $storage = C_Gallery_Storage::get_instance();
+                    $image_options['gallerypath'] = trailingslashit($storage->get_upload_relpath());
+                    unset($storage);
+                }
             } elseif (isset($image_options['gallerypath'])) {
                 unset($image_options['gallerypath']);
             }
@@ -362,7 +350,7 @@ class A_Other_Options_Controller extends Mixin
     {
         $this->call_parent('enqueue_backend_resources');
         wp_enqueue_script('nextgen_settings_page', $this->get_static_url('photocrati-nextgen_other_options#nextgen_settings_page.js'), array('jquery-ui-accordion', 'jquery-ui-tooltip', 'wp-color-picker', 'jquery.nextgen_radio_toggle'), NGG_SCRIPT_VERSION);
-        wp_enqueue_style('nextgen_settings_page', $this->get_static_url('photocrati-nextgen_other_options#nextgen_settings_page.css'), FALSE, NGG_SCRIPT_VERSION);
+        wp_enqueue_style('nextgen_settings_page', $this->get_static_url('photocrati-nextgen_other_options#nextgen_settings_page.css'), array(), NGG_SCRIPT_VERSION);
     }
     function get_page_title()
     {
@@ -375,7 +363,7 @@ class A_Other_Options_Controller extends Mixin
 }
 /**
  * Class A_Other_Options_Page
- * @mixin C_Page_Manager
+ * @mixin C_NextGen_Admin_Page_Manager
  * @adapts I_Page_Manager
  */
 class A_Other_Options_Page extends Mixin
@@ -399,7 +387,7 @@ class A_Reset_Form extends Mixin
     }
     function render()
     {
-        return $this->object->render_partial('photocrati-nextgen_other_options#reset_tab', array('reset_value' => __('Reset all options to default settings', 'nggallery'), 'reset_warning' => __('Replace all existing options and gallery options with their default settings', 'nggallery'), 'reset_label' => __('Reset settings', 'nggallery'), 'reset_confirmation' => __("Reset all options to default settings?\n\nChoose [Cancel] to Stop, [OK] to proceed.", 'nggallery')), TRUE);
+        return $this->object->render_partial('photocrati-nextgen_other_options#reset_tab', array('reset_value' => __('Reset all options', 'nggallery'), 'reset_warning' => __('Replace all existing options and gallery options with their default settings', 'nggallery'), 'reset_label' => __('Reset settings', 'nggallery'), 'reset_confirmation' => __("Reset all options to default settings?\n\nChoose [Cancel] to Stop, [OK] to proceed.", 'nggallery')), TRUE);
     }
     function reset_action()
     {
@@ -597,11 +585,9 @@ class A_Watermarking_Ajax_Actions extends Mixin
             $sizeinfo = array('quality' => 100, 'height' => 250, 'crop' => FALSE, 'watermark' => TRUE);
             $size = $imagegen->get_size_name($sizeinfo);
             $thumbnail_url = $storage->get_image_url($image, $size);
-            // Temporarily update the watermark options. Generate a new image based
-            // on these settings
+            // Temporarily update the watermark options. Generate a new image based on these settings
             if ($watermark_options = $this->param('watermark_options')) {
-                $watermark_options['wmFont'] = trim($watermark_options['wmFont']);
-                $settings->set($watermark_options);
+                $settings->set('wmFont', trim($watermark_options['wmFont']));
                 $storage->generate_image_size($image, $size);
                 $thumbnail_url = $storage->get_image_url($image, $size);
                 $settings->load();
@@ -655,7 +641,7 @@ class A_Watermarks_Form extends Mixin
     }
     /**
      * Renders the fields for a watermark source (image, text)
-     * @return string
+     * @return array
      */
     function _get_watermark_source_fields()
     {
@@ -730,6 +716,10 @@ class C_Settings_Model extends C_Component
      */
     var $wrapper = NULL;
     static $_instances = array();
+    /**
+     * @param bool|string $context
+     * @return C_Settings_Model
+     */
     static function get_instance($context = FALSE)
     {
         if (!isset(self::$_instances[$context])) {

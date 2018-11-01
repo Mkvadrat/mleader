@@ -59,7 +59,7 @@ get_header();
                                         <?php foreach($images as $image){ ?>
                                             <?php $i++; ?>
                                             <?php if($i > 1) break;  ?>
-                                            <img src="<?php echo $image['product_image_appliances_single']; ?>; ?>">
+                                            <img src="<?php echo $image['product_image_appliances_single']; ?>">
                                         <?php } ?>
                                         <?php } ?>
                                     </span>

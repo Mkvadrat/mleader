@@ -20,13 +20,22 @@ get_header();
                     <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
                     
                     <div class="grey-padding-block">
-                        <p class="h1-title">LEX EDM 040 BL Электрическая духовка</p>
+                        <p class="h1-title"><?php echo the_title(); ?></p>
                         <div class="two_colons">
+                            <?php $images = get_field('product_group_image_appliances_single', $list->ID); ?>
                             <div class="img">
-                                <img src="/wp-content/uploads/2018/10/1.jpg" alt="">
-                                <img src="/wp-content/uploads/2018/10/2.jpg" alt="">
+                                <?php if($images){ ?>
+                                <?php foreach($images as $image){ ?>
+                                <img src="<?php echo $image['product_image_appliances_single']; ?>" alt="">
+                                <?php } ?>
+                                <?php } ?>
                             </div>
                             <div>
+                                <?php
+                                    $term = get_the_terms(get_the_ID(), 'appliances-list');
+
+                                    $data = getData(get_the_ID(), $term[0]->term_id);
+                                ?>
                                 <p class="h2-title">Описание</p>
                                 <p>Артикул — 2126156,</p>
                                 <p>Цвет — Чёрный,</p>
