@@ -459,17 +459,20 @@ function dimox_breadcrumbs() {
 			//Категории (для single.php)
 			if ($show_home_link) echo $sep;
 			if ( get_post_type() != 'post' ) {
-				
-			if( get_post_type() == 'appliances'){			
-				printf($link, $home_url, $post_type->labels->singular_name);
-				
-				if ($show_current) echo $before . get_the_title() . $after;
-			}else{
-				$post_type = get_post_type_object(get_post_type());
-				$slug = $post_type->rewrite;
-				printf($link, $home_url . $slug['slug'] . '/', $post_type->labels->singular_name);
-				if ($show_current) echo $sep . $before . get_the_title() . $after;
-			}
+				if( get_post_type() == 'appliances'){
+					$page = get_post('755');
+					
+					$term = get_the_terms(get_the_ID(), 'appliances-list');
+					
+					echo '<li><a href="'.get_page_link($page->ID).'">' . $page->post_title . '</a></li>' . $after . $sep . $before .'<li><a href="'.get_term_link($term[0]->term_id, 'appliances-list').'">' . $term[0]->name . '</a></li>' ;
+					
+					if ($show_current) echo $sep . $before . get_the_title() . $after;
+				}else{
+					$post_type = get_post_type_object(get_post_type());
+					$slug = $post_type->rewrite;
+					printf($link, $home_url . $slug['slug'] . '/', $post_type->labels->singular_name);
+					if ($show_current) echo $sep . $before . get_the_title() . $after;
+				}
 			} else {
 				$cat = get_the_category(); $cat = $cat[0];
 				$cats = get_category_parents($cat, TRUE, $sep);
@@ -482,7 +485,6 @@ function dimox_breadcrumbs() {
 					if ($show_current) echo $before . get_the_title() . $after;
 				}
 			}
-	
 			// custom post type
 		} elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
 			//Категории (для category.php)
@@ -493,7 +495,7 @@ function dimox_breadcrumbs() {
 				
 				$page = get_post('755');
 				
-				echo $sep . '<li><a href="'.get_page_link( $page->ID).'">' . $page->post_title . '</a></li>' . $after ;
+				echo $sep . '<li><a href="'.get_page_link($page->ID).'">' . $page->post_title . '</a></li>' . $after ;
 
 				if ($show_current) echo $sep . $before . $term->name . $after;
 			}else{
@@ -575,11 +577,15 @@ function dimox_breadcrumbs() {
 function getPrice($product_id, $sku, $category_id){
 	global $wpdb;
 	
+	date_default_timezone_set('UTC');
+	
+	$date = (string)date('d.m.Y');
+	
 	$ext_data = $wpdb->get_var( $wpdb->prepare("SELECT meta_value FROM $wpdb->termmeta WHERE meta_key = %s AND term_id = %s" , $product_id . '_appliances_list', $category_id));
 	
 	$uns_data = unserialize($ext_data);
 
-	if(empty($uns_data['price']) || date('d.m.Y') != $uns_data['date']){
+	if(empty($uns_data['price']) || $date != $uns_data['date']){
 		$my_db_result = array();
 		$path = WP_EXPORT;
 		$content = file_get_contents_curl($path);
@@ -589,7 +595,7 @@ function getPrice($product_id, $sku, $category_id){
 		foreach ($result_array as $a) {
 			foreach($a as $b){
 				if(isset($b['artikul']) && isset($b['cena1'])){
-					if(!empty($uns_data['price']) && $b['cena1'] != $uns_data['price']){
+					if(!empty($ext_data) &&  $uns_data['price'] != $b['cena1'] || $date != $uns_data['date']){
 						if($sku == $b['artikul']){
 							$price = $b['cena1'];
 							$my_db_result['artikul'] = $b['artikul'];
@@ -613,12 +619,12 @@ function getPrice($product_id, $sku, $category_id){
 							$my_db_result['opisanie14'] = $b['opisanie14'];
 							$my_db_result['opisanie15'] = $b['opisanie15'];
 							$my_db_result['opisanie_html'] = $b['opisanie_html'];
-							$my_db_result['date'] = date('d.m.Y');
+							$my_db_result['date'] = $date;
 							$db_ins = serialize($my_db_result);
 							$wpdb->get_var( $wpdb->prepare("UPDATE $wpdb->termmeta SET term_id = %s, meta_key = %s, meta_value = %s WHERE meta_key = %s AND term_id = %s", $category_id, $product_id . '_appliances_list', $db_ins, $product_id . '_appliances_list', $category_id));
 						}
 					}
-					if(empty($uns_data['price'])){
+					if(empty($ext_data)){
 						if($sku == $b['artikul']){
 							$price = $b['cena1'];
 							$my_db_result['artikul'] = $b['artikul'];
@@ -642,7 +648,7 @@ function getPrice($product_id, $sku, $category_id){
 							$my_db_result['opisanie14'] = $b['opisanie14'];
 							$my_db_result['opisanie15'] = $b['opisanie15'];
 							$my_db_result['opisanie_html'] = $b['opisanie_html'];
-							$my_db_result['date'] = date('d.m.Y');
+							$my_db_result['date'] = $date;
 							$db_ins = serialize($my_db_result);
 							$wpdb->get_var( $wpdb->prepare("INSERT INTO $wpdb->termmeta (term_id, meta_key, meta_value) VALUES (%s, %s, %s)", $category_id, $product_id . '_appliances_list', $db_ins));
 						}
@@ -660,9 +666,9 @@ function getPrice($product_id, $sku, $category_id){
 }
 
 function getData($product_id, $category_id){
-	var_dump($product_id);
-	var_dump($category_id);
-	$ext_data = $wpdb->get_var( $wpdb->prepare("SELECT meta_value FROM $wpdb->termmeta WHERE meta_key = %s AND term_id = %s" , $product_id . '_appliances_list', $category_id));
+	global $wpdb;
+	
+	$ext_data = $wpdb->get_var( $wpdb->prepare("SELECT meta_value FROM $wpdb->termmeta WHERE meta_key = %s" , $product_id . '_appliances_list'));
 	
 	$uns_data = unserialize($ext_data);
 	
