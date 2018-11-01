@@ -3,7 +3,7 @@
 <ul class="description-category">
 <?php foreach ( $images as $image ){ ?>
     <li>
-        <a data-fancybox="gallery" href="<?php echo $image->imageURL; ?>">
+        <a data-fancybox="gallery" data-caption="<?php echo $image->alttext; ?>" href="<?php echo $image->imageURL; ?>">
             <span class="block-photo">
                 <img src="<?php echo $image->imageURL; ?>">
             </span>

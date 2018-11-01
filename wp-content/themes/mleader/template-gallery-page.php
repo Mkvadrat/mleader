@@ -38,7 +38,7 @@ get_header();
                                     <li>
                                         <a href="<?php echo nextgen_esc_url($image->imageURL); ?>" class="fancybox" rel="group">
                                             <span class="block-photo">
-                                                <img src="<?php echo nextgen_esc_url($image->imageURL); ?>" alt="">
+                                                <img src="<?php echo nextgen_esc_url($image->imageURL); ?>" alt="<?php echo esc_attr($image->alttext); ?>">
                                             </span>
                                             <span class="title"><?php echo esc_attr($image->alttext); ?></span>
                                         </a>
