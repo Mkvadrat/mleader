@@ -33,50 +33,97 @@ get_header();
                             <div>
                                 <?php
                                     $term = get_the_terms(get_the_ID(), 'appliances-list');
-
+                                    
                                     $data = getData(get_the_ID(), $term[0]->term_id);
                                 ?>
+                                <?php if($data){?>
                                 <p class="h2-title">Описание</p>
-                                <p>Артикул — 2126156,</p>
-                                <p>Цвет — Чёрный,</p>
-                                <p>Материал — Стекло,</p>
-                                <p>Производитель — LEX,</p>
-                                <p>Цена: <span class="h2-title">12,990.00 руб.</span></p>
-                                <p>Механические ручки, объем 60 л, 4 функции (традиционный, нижний нагрев, верхний нагрев, подсветка), традиционная очистка, в комплекте 1 решетка и 1 противень</p>
-                                <p class="h3-title">Общие характеристики</p>
-                                <p>Духовка : электрическая, статическая.</p>
-                                <p>Объём : 62 л.</p>
-                                <p>Энергопотребление : класс А.</p>
-                                <p>Мощность подключения : 2,2 кВт.</p>
-                                <p>Максимальная температура: 250 °C.</p>
-                                <p>Цвет : черный.</p>
-                                <p>Гриль : есть.</p>
-                                <p>Конвекция : нет.</p>
-                                <p>Тангенциальное охлаждение : есть.</p>
-                                <p>Количество режимов : 4.</p>
-                                <p>Режимы приготовления  : нижний нагрев, верхний и нижний нагрев, верхний нагрев, подсветка.</p>
-                                <p class="h3-title">Управление</p>
-                                <p>Переключатели : поворотные, не утапливаемые.<br/>
-                                Таймер : нет.<br/>
-                                Дисплей : нет.<br/>
-                                Цвет панели : черный.<br/>
-                                Материал панели : закаленное стекло.</p>
-                                <p class="h3-title">Дополнительно</p>
-                                <p>Тип внутреннего стекла : панорамное, легкосъёмное.<br/>
-                                Тип направляющих : рельефные.<br/>
-                                Число стекол дверцы : 2.<br/>
-                                Очистка духовки : гидролизная (эмаль лёгкой очистки).</p>
-                                <p class="h3-title">Другие функции и особенности</p>
-                                <p>подсветка камеры, защитное отключение, цельнометаллические регуляторы.</p>
-                                <p class="h3-title">Комплектация</p>
-                                <p>Решётка : 1.<br/>
-                                Противень : 1 (глубокий).<br/>
-                                Шнур электропитания : длиной 100 см (без вилки).</p>
-                                <p class="h3-title">Размеры</p>
-                                <p>Размеры прибора (ВхШхГ) : 595 х 595 x 530 мм.<br/>
-                                Размеры ниши для встраивания (ВхШхГ) : 585х560х560 мм.
-                                </p>
-                                <p>ГАРАНТИЯ 36,6 месяцев.</p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['artikul'])){?>
+                                <p>Артикул — <?php echo $data['artikul']; ?>,</p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['cvet'])){?>
+                                <p>Цвет — <?php echo $data['cvet']; ?>,</p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['mat'])){?>
+                                <p>Материал — <?php echo $data['mat']; ?>,</p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['proizvoditel'])){?>
+                                <p>Производитель — <?php echo $data['proizvoditel']; ?>,</p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['price'])){?>
+                                <p>Цена: <span class="h2-title"><?php echo $data['price']; ?> руб.</span></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie1'])){?>
+                                <p><?php echo $data['opisanie1']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie2'])){?>
+                                <p><?php echo $data['opisanie2']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie3'])){?>
+                                <p><?php echo $data['opisanie3']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie4'])){?>
+                                <p><?php echo $data['opisanie4']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie5'])){?>
+                                <p><?php echo $data['opisanie5']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie6'])){?>
+                                <p><?php echo $data['opisanie6']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie7'])){?>
+                                <p><?php echo $data['opisanie7']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie8'])){?>
+                                <p><?php echo $data['opisanie8']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie9'])){?>
+                                <p><?php echo $data['opisanie9']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie10'])){?>
+                                <p><?php echo $data['opisanie10']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie11'])){?>
+                                <p><?php echo $data['opisanie4']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie12'])){?>
+                                <p><?php echo $data['opisanie12']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie13'])){?>
+                                <p><?php echo $data['opisanie13']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie14'])){?>
+                                <p><?php echo $data['opisanie14']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie15'])){?>
+                                <p><?php echo $data['opisanie15']; ?></p>
+                                <?php } ?>
+                                
+                                <?php if(!empty($data['opisanie_html'])){?>
+                                <?php $descr = html_entity_decode($data['opisanie_html'], ENT_QUOTES, 'UTF-8'); ?>
+                                <?php echo $data['opisanie_html']; ?>
+                                <?php } ?>
                             </div>
                         </div>
 
