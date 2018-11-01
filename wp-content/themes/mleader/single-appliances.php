@@ -22,23 +22,24 @@ get_header();
                     <div class="grey-padding-block">
                         <p class="h1-title"><?php echo the_title(); ?></p>
                         <div class="two_colons">
-                            <?php $images = get_field('product_group_image_appliances_single', $list->ID); ?>
+                            <?php
+                                $term = get_the_terms(get_the_ID(), 'appliances-list');
+                                
+                                $data = getData(get_the_ID(), $term[0]->term_id);
+                            ?>
                             <div class="img">
-                                <?php if($images){ ?>
-                                <?php foreach($images as $image){ ?>
-                                <img src="<?php echo $image['product_image_appliances_single']; ?>" alt="">
+                                <?php if($data['images']){ ?>
+                                <?php if(is_array($data['images'])){ ?>
+                                <?php foreach($data['images'] as $image){ ?>
+                                    <img src="<?php echo $image; ?>" alt="">
+                                <?php } ?>
+                                <?php }else{ ?>
+                                    <img src="<?php echo $data['images']; ?>" alt="">
                                 <?php } ?>
                                 <?php } ?>
                             </div>
                             <div>
-                                <?php
-                                    $term = get_the_terms(get_the_ID(), 'appliances-list');
-                                    
-                                    $data = getData(get_the_ID(), $term[0]->term_id);
-                                ?>
-                                <?php if($data){?>
                                 <p class="h2-title">Описание</p>
-                                <?php } ?>
                                 
                                 <?php if(!empty($data['artikul'])){?>
                                 <p>Артикул — <?php echo $data['artikul']; ?>,</p>

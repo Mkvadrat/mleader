@@ -48,23 +48,25 @@ get_header();
 
                         <ul class="description-category">
                             <?php if($appliances_list){ ?>
-                            
                             <?php foreach($appliances_list as $list){ ?>
-                            <?php $images = get_field('product_group_image_appliances_single', $list->ID); ?>
+                            <?php $data = getImport($list->ID, get_post_meta( $list->ID, 'sku_product_appliances_single', $single = true ),  get_queried_object()->term_id); ?>
+                            <?php //$images = get_field('product_group_image_appliances_single', $list->ID); ?>
                             <li>
                                 <a href="<?php echo get_permalink($list->ID);?>">
                                     <span class="block-photo">
-                                        <?php if($images) { ?>
-                                        <?php $i = 0; ?>
-                                        <?php foreach($images as $image){ ?>
-                                            <?php $i++; ?>
-                                            <?php if($i > 1) break;  ?>
-                                            <img src="<?php echo $image['product_image_appliances_single']; ?>">
+                                        <?php if($data['images']){ ?>
+                                        <?php if(is_array($data['images'])){ ?>
+                                            <img src="<?php echo $data['images'][0]; ?>" alt="">
+                                        <?php }else{ ?>
+                                            <img src="<?php echo $data['images']; ?>" alt="">
                                         <?php } ?>
                                         <?php } ?>
                                     </span>
                                     <span class="title"><?php echo $list->post_title; ?><br>
-                                    <strong><?php echo getPrice($list->ID, get_post_meta( $list->ID, 'sku_product_appliances_single', $single = true ),  get_queried_object()->term_id); ?></strong></span>
+                                    <?php if($data['price']){ ?>
+                                        <strong><?php echo $data['price']; ?> руб.</strong>
+                                    <?php } ?>
+                                    </span>
                                 </a>
                             </li>
                             <?php } ?>
