@@ -574,7 +574,7 @@ function dimox_breadcrumbs() {
 ********************************************************************ПАРСИНГ ТОВАРОВ************************************************************************
 ***********************************************************************************************************************************************************
 ***********************************************************************************************************************************************************/
-function getPrice($product_id, $sku, $category_id){
+function getImport($product_id, $sku, $category_id){
 	global $wpdb;
 	
 	date_default_timezone_set('UTC');
@@ -619,6 +619,7 @@ function getPrice($product_id, $sku, $category_id){
 							$my_db_result['opisanie14'] = $b['opisanie14'];
 							$my_db_result['opisanie15'] = $b['opisanie15'];
 							$my_db_result['opisanie_html'] = $b['opisanie_html'];
+							$my_db_result['images'] = $b['images']['image'];
 							$my_db_result['date'] = $date;
 							$db_ins = serialize($my_db_result);
 							$wpdb->get_var( $wpdb->prepare("UPDATE $wpdb->termmeta SET term_id = %s, meta_key = %s, meta_value = %s WHERE meta_key = %s AND term_id = %s", $category_id, $product_id . '_appliances_list', $db_ins, $product_id . '_appliances_list', $category_id));
@@ -648,6 +649,7 @@ function getPrice($product_id, $sku, $category_id){
 							$my_db_result['opisanie14'] = $b['opisanie14'];
 							$my_db_result['opisanie15'] = $b['opisanie15'];
 							$my_db_result['opisanie_html'] = $b['opisanie_html'];
+							$my_db_result['images'] = $b['images']['image'];
 							$my_db_result['date'] = $date;
 							$db_ins = serialize($my_db_result);
 							$wpdb->get_var( $wpdb->prepare("INSERT INTO $wpdb->termmeta (term_id, meta_key, meta_value) VALUES (%s, %s, %s)", $category_id, $product_id . '_appliances_list', $db_ins));
@@ -657,12 +659,8 @@ function getPrice($product_id, $sku, $category_id){
 			}
 		}
 	}
-			
-	if($uns_data['price']){
-		return $uns_data['price'] . ' руб.';
-	}else{
-		return $price . ' руб.';
-	}
+	
+	return getData($product_id, $category_id);
 }
 
 function getData($product_id, $category_id){
