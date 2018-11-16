@@ -1,0 +1,3909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1066]]></column_2>
+		<column_3><![CDATA[580]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, óë. Ãîðáà÷¸âîé]]></column_11>
+		<column_12><![CDATA[62]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[Ïîä ðåìîíò]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[Èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[Â ñîáñòâåííîñòè]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[1]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/580 (8).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[3100000.0000]]></column_41>
+		<column_42><![CDATA[45802.9717]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-11-14]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[2]]></column_57>
+		<column_58><![CDATA[2018-11-14 11:01:06]]></column_58>
+		<column_59><![CDATA[2018-11-14 11:02:38]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1065]]></column_2>
+		<column_3><![CDATA[579]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[3]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, óë. Øêîëüíàÿ]]></column_11>
+		<column_12><![CDATA[44]]></column_12>
+		<column_13><![CDATA[21]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[13]]></column_15>
+		<column_16><![CDATA[16]]></column_16>
+		<column_17><![CDATA[Ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[1]]></column_18>
+		<column_19><![CDATA[Îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[1]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/579 (11).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[5250000.0000]]></column_41>
+		<column_42><![CDATA[77569.5488]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-11-12]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[3]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[4]]></column_57>
+		<column_58><![CDATA[2018-11-12 16:53:02]]></column_58>
+		<column_59><![CDATA[2018-11-12 16:54:58]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1063]]></column_2>
+		<column_3><![CDATA[578]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, óë. ßëòèíñêàÿ 3]]></column_11>
+		<column_12><![CDATA[36]]></column_12>
+		<column_13><![CDATA[18]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[5]]></column_15>
+		<column_16><![CDATA[5]]></column_16>
+		<column_17><![CDATA[Ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[1]]></column_18>
+		<column_19><![CDATA[Æèëîå]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[1]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/578 (9).jpeg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[2950000.0000]]></column_41>
+		<column_42><![CDATA[43586.6988]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-11-08]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[1]]></column_57>
+		<column_58><![CDATA[2018-11-08 16:09:14]]></column_58>
+		<column_59><![CDATA[2018-11-08 16:10:10]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1062]]></column_2>
+		<column_3><![CDATA[163]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà óë. 60 ëåò ÑÑÑÐ]]></column_11>
+		<column_12><![CDATA[63]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[1]]></column_15>
+		<column_16><![CDATA[3]]></column_16>
+		<column_17><![CDATA[åñòü]]></column_17>
+		<column_18><![CDATA[2]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[åñòü]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[åñòü]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[åñòü]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[2]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/163 (14).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[95000.0000]]></column_41>
+		<column_42><![CDATA[95000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-11-06]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[19]]></column_57>
+		<column_58><![CDATA[2018-11-06 17:35:10]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1061]]></column_2>
+		<column_3><![CDATA[360]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, óë.Ñóäàêñêàÿ, ÃÑÊ ¹2]]></column_11>
+		<column_12><![CDATA[21]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[0]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/360 (4).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[350000.0000]]></column_41>
+		<column_42><![CDATA[5171.3033]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-11-06]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[16]]></column_57>
+		<column_58><![CDATA[2018-11-06 11:35:51]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1060]]></column_2>
+		<column_3><![CDATA[418]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà óë. 60 ëåò ÑÑÑÐ]]></column_11>
+		<column_12><![CDATA[39]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[3]]></column_15>
+		<column_16><![CDATA[3]]></column_16>
+		<column_17><![CDATA[åñòü]]></column_17>
+		<column_18><![CDATA[1]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[åñòü]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[åñòü]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[1]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/418 (6).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[65000.0000]]></column_41>
+		<column_42><![CDATA[65000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-11-05]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[25]]></column_57>
+		<column_58><![CDATA[2018-11-05 11:37:52]]></column_58>
+		<column_59><![CDATA[2018-11-05 11:54:13]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1059]]></column_2>
+		<column_3><![CDATA[258]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, óë.Ïåðåêîïñêàÿ]]></column_11>
+		<column_12><![CDATA[26]]></column_12>
+		<column_13><![CDATA[16]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[11]]></column_15>
+		<column_16><![CDATA[14]]></column_16>
+		<column_17><![CDATA[åñòü]]></column_17>
+		<column_18><![CDATA[1]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[åñòü]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/258 (23).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[3700000.0000]]></column_41>
+		<column_42><![CDATA[54668.0630]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-11-02]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[53]]></column_57>
+		<column_58><![CDATA[2018-11-02 15:08:25]]></column_58>
+		<column_59><![CDATA[2018-11-02 15:15:46]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1058]]></column_2>
+		<column_3><![CDATA[412]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, óë. Ïåðåêîïñêàÿ, 4Â]]></column_11>
+		<column_12><![CDATA[38]]></column_12>
+		<column_13><![CDATA[17]]></column_13>
+		<column_14><![CDATA[13]]></column_14>
+		<column_15><![CDATA[12]]></column_15>
+		<column_16><![CDATA[14]]></column_16>
+		<column_17><![CDATA[åñòü]]></column_17>
+		<column_18><![CDATA[1]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[åñòü]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[1]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/412 (4).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[4700000.0000]]></column_41>
+		<column_42><![CDATA[69443.2151]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-11-01]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[44]]></column_57>
+		<column_58><![CDATA[2018-11-01 11:11:30]]></column_58>
+		<column_59><![CDATA[2018-11-02 15:27:23]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1057]]></column_2>
+		<column_3><![CDATA[443]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, óë.Ëåíèíà]]></column_11>
+		<column_12><![CDATA[30]]></column_12>
+		<column_13><![CDATA[17]]></column_13>
+		<column_14><![CDATA[6,4]]></column_14>
+		<column_15><![CDATA[1]]></column_15>
+		<column_16><![CDATA[1]]></column_16>
+		<column_17><![CDATA[åñòü]]></column_17>
+		<column_18><![CDATA[1]]></column_18>
+		<column_19><![CDATA[õîðîøåå]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[0]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/443 (22).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[2750000.0000]]></column_41>
+		<column_42><![CDATA[40631.6684]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-31]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[60]]></column_57>
+		<column_58><![CDATA[2018-10-31 14:25:30]]></column_58>
+		<column_59><![CDATA[2018-10-31 14:26:36]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1056]]></column_2>
+		<column_3><![CDATA[363]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[3]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, 16 êì Ñóäàêñêîãî øîññå]]></column_11>
+		<column_12><![CDATA[31]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[1]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[1]]></column_18>
+		<column_19><![CDATA[ïîä ðåêîíñòðóêöèþ]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[âåäåíèå ñàäîâîäñòâà]]></column_22>
+		<column_23><![CDATA[åñòü]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[4]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/363 (8).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[900000.0000]]></column_41>
+		<column_42><![CDATA[13297.6369]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-29]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[3]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[21]]></column_57>
+		<column_58><![CDATA[2018-10-29 16:58:10]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1055]]></column_2>
+		<column_3><![CDATA[372]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ ]]></column_11>
+		<column_12><![CDATA[148]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[7]]></column_15>
+		<column_16><![CDATA[9]]></column_16>
+		<column_17><![CDATA[åñòü]]></column_17>
+		<column_18><![CDATA[2]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[åñòü]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[åñòü]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[2]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/372 (14).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[270000.0000]]></column_41>
+		<column_42><![CDATA[270000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-29]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[55]]></column_57>
+		<column_58><![CDATA[2018-10-29 10:22:24]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1054]]></column_2>
+		<column_3><![CDATA[577]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, óë. Ïåðåêîïñêàÿ]]></column_11>
+		<column_12><![CDATA[175]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[2]]></column_16>
+		<column_17><![CDATA[Ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[Îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[Èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[Â ñîáñòâåííîñòè]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[åñòü]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[åñòü]]></column_27>
+		<column_28><![CDATA[4]]></column_28>
+		<column_29><![CDATA[6]]></column_29>
+		<column_30><![CDATA[4]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[0]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/577 (18).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[400000.0000]]></column_41>
+		<column_42><![CDATA[400000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-26]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[41]]></column_57>
+		<column_58><![CDATA[2018-10-26 14:42:48]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1053]]></column_2>
+		<column_3><![CDATA[499]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ñ.Ëó÷èñòîå, ã.Àëóøòà]]></column_11>
+		<column_12><![CDATA[66]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[1]]></column_15>
+		<column_16><![CDATA[1]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[åñòü]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[åñòü]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[åñòü]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[10]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/499 (14).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[3500000.0000]]></column_41>
+		<column_42><![CDATA[51713.0325]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-25]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[92]]></column_57>
+		<column_58><![CDATA[2018-10-25 17:12:45]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1052]]></column_2>
+		<column_3><![CDATA[252]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, óë.Ïëàòàíîâàÿ]]></column_11>
+		<column_12><![CDATA[372]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ïîä ðåìîíò]]></column_19>
+		<column_20><![CDATA[+7 (978) 081-11-02]]></column_20>
+		<column_21><![CDATA[Òàòüÿíà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[â ñîáñòâåííîñòè ôèç. ëèöà]]></column_23>
+		<column_24><![CDATA[â íàëè÷èè]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[â íàëè÷èè]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[0]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/252 (26).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[250000.0000]]></column_41>
+		<column_42><![CDATA[250000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-25]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[65]]></column_57>
+		<column_58><![CDATA[2018-10-25 15:27:59]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1051]]></column_2>
+		<column_3><![CDATA[321]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, óë.Ïëàòàíîâàÿ]]></column_11>
+		<column_12><![CDATA[50]]></column_12>
+		<column_13><![CDATA[28]]></column_13>
+		<column_14><![CDATA[8,6]]></column_14>
+		<column_15><![CDATA[2]]></column_15>
+		<column_16><![CDATA[5]]></column_16>
+		<column_17><![CDATA[åñòü]]></column_17>
+		<column_18><![CDATA[2]]></column_18>
+		<column_19><![CDATA[õîðîøåå]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[1]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[0]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/321 (1).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[77250.0000]]></column_41>
+		<column_42><![CDATA[77250.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-25]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[40]]></column_57>
+		<column_58><![CDATA[2018-10-25 14:53:49]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1050]]></column_2>
+		<column_3><![CDATA[227]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà]]></column_11>
+		<column_12><![CDATA[244]]></column_12>
+		<column_13><![CDATA[79]]></column_13>
+		<column_14><![CDATA[68,5]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[2]]></column_16>
+		<column_17><![CDATA[åñòü]]></column_17>
+		<column_18><![CDATA[4]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[åñòü]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[åñòü]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[åñòü]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[6,4]]></column_29>
+		<column_30><![CDATA[3]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/227 (4).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[26000000.0000]]></column_41>
+		<column_42><![CDATA[384153.9559]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-24]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[40]]></column_57>
+		<column_58><![CDATA[2018-10-24 16:51:57]]></column_58>
+		<column_59><![CDATA[2018-10-24 17:10:27]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1049]]></column_2>
+		<column_3><![CDATA[575]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, óë. Ëåíèíà 52]]></column_11>
+		<column_12><![CDATA[18]]></column_12>
+		<column_13><![CDATA[18]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[3]]></column_15>
+		<column_16><![CDATA[4]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[1]]></column_18>
+		<column_19><![CDATA[Æèëîå]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[Â ñîáñòâåííîñòè]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[1]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[0]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/575 (2).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[1630000.0000]]></column_41>
+		<column_42><![CDATA[24083.4980]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-24]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[41]]></column_57>
+		<column_58><![CDATA[2018-10-24 14:46:12]]></column_58>
+		<column_59><![CDATA[2018-11-08 12:52:39]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1048]]></column_2>
+		<column_3><![CDATA[576]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, óë. Êðàñíîàðìåéñêàÿ,15Æ]]></column_11>
+		<column_12><![CDATA[137]]></column_12>
+		<column_13><![CDATA[92]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[4]]></column_15>
+		<column_16><![CDATA[5]]></column_16>
+		<column_17><![CDATA[åñòü]]></column_17>
+		<column_18><![CDATA[4]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[åñòü]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/576 (10).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[15000000.0000]]></column_41>
+		<column_42><![CDATA[221627.2823]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-17]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[6]]></column_57>
+		<column_58><![CDATA[2018-10-17 15:17:37]]></column_58>
+		<column_59><![CDATA[2018-11-02 16:25:20]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1047]]></column_2>
+		<column_3><![CDATA[574]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, ñ.Ðûáà÷üå ]]></column_11>
+		<column_12><![CDATA[290]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[4]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[7]]></column_18>
+		<column_19><![CDATA[ïîä âíóòðåííþþ îòäåëêó]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç.ëèöà]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[åñòü]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[3]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/574 (45).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[300000.0000]]></column_41>
+		<column_42><![CDATA[300000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-16]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[133]]></column_57>
+		<column_58><![CDATA[2018-10-16 09:59:08]]></column_58>
+		<column_59><![CDATA[2018-10-16 10:25:01]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1046]]></column_2>
+		<column_3><![CDATA[573]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, ìêðí. Âîåííûé ãîðîäîê]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèçëèöà]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[5]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/573 (9).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[2700000.0000]]></column_41>
+		<column_42><![CDATA[39892.9108]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-15]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[6]]></column_57>
+		<column_58><![CDATA[2018-10-15 15:00:44]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1045]]></column_2>
+		<column_3><![CDATA[572]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ñ.Ìàëûé Ìàÿê, ã.Àëóøòà]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[ãîñòèíè÷íîå îáñëóæèâàíèå]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèçëèöà]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[â äîñòóïíîñòè]]></column_25>
+		<column_26><![CDATA[ðÿäîì]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[8 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/572 (10).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[5500000.0000]]></column_41>
+		<column_42><![CDATA[81263.3368]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-15]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[168]]></column_57>
+		<column_58><![CDATA[2018-10-15 14:34:51]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1043]]></column_2>
+		<column_3><![CDATA[571]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ ]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç.ëèöà]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[23]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[0]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/571 (5).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[2500000.0000]]></column_41>
+		<column_42><![CDATA[36937.8804]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-15]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[143]]></column_57>
+		<column_58><![CDATA[2018-10-15 14:07:22]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1041]]></column_2>
+		<column_3><![CDATA[570]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, ñ. Íèæííÿ Êóòóçîâêà]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç.ëèöà]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[â äîñòóïíîñòè]]></column_25>
+		<column_26><![CDATA[â äîñòóïíîñòè]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[25 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/570 (14).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[3600000.0000]]></column_41>
+		<column_42><![CDATA[53190.5477]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-15]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[164]]></column_57>
+		<column_58><![CDATA[2018-10-15 12:10:35]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1040]]></column_2>
+		<column_3><![CDATA[71]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, óë.Ãîðüêîãî]]></column_11>
+		<column_12><![CDATA[65]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[4]]></column_15>
+		<column_16><![CDATA[5]]></column_16>
+		<column_17><![CDATA[ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[2]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[+7 978 081-11-02]]></column_20>
+		<column_21><![CDATA[Òàòüÿíà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[â ñîáñòâåííîñòè ôèç. ëèöà]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/71 (25).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[8500000.0000]]></column_41>
+		<column_42><![CDATA[125588.7933]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-12]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[25]]></column_57>
+		<column_58><![CDATA[2018-10-12 17:30:01]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1039]]></column_2>
+		<column_3><![CDATA[569]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ ]]></column_11>
+		<column_12><![CDATA[35]]></column_12>
+		<column_13><![CDATA[18]]></column_13>
+		<column_14><![CDATA[6]]></column_14>
+		<column_15><![CDATA[5]]></column_15>
+		<column_16><![CDATA[5]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[1]]></column_18>
+		<column_19><![CDATA[Æèëîå]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[Â ñîáñòâåííîñòè]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/569 (11).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[2000000.0000]]></column_41>
+		<column_42><![CDATA[29550.3043]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-12]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[51]]></column_57>
+		<column_58><![CDATA[2018-10-12 13:20:55]]></column_58>
+		<column_59><![CDATA[2018-10-12 13:23:48]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1038]]></column_2>
+		<column_3><![CDATA[568]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, ï.Ñåìèäâîðüå]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç.ëèöà]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[25 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[0]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/568 (10).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[200000.0000]]></column_41>
+		<column_42><![CDATA[200000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-12]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[35]]></column_57>
+		<column_58><![CDATA[2018-10-12 11:04:50]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1036]]></column_2>
+		<column_3><![CDATA[567]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, ñ. Ðûáà÷üå]]></column_11>
+		<column_12><![CDATA[184]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[3]]></column_16>
+		<column_17><![CDATA[Ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[Èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[Â ñîáñòâåííîñòè]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[åñòü]]></column_27>
+		<column_28><![CDATA[12]]></column_28>
+		<column_29><![CDATA[3.7]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/567 (8).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[12700000.0000]]></column_41>
+		<column_42><![CDATA[187644.4323]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-11]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[122]]></column_57>
+		<column_58><![CDATA[2018-10-11 10:11:06]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1035]]></column_2>
+		<column_3><![CDATA[287]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.ßëòà, ïãò.Ãóðçóô]]></column_11>
+		<column_12><![CDATA[144]]></column_12>
+		<column_13><![CDATA[88]]></column_13>
+		<column_14><![CDATA[15,5]]></column_14>
+		<column_15><![CDATA[4]]></column_15>
+		<column_16><![CDATA[9]]></column_16>
+		<column_17><![CDATA[ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[3]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[+7 978 081-11-02]]></column_20>
+		<column_21><![CDATA[Òàòüÿíà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[2]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/287 (3).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[325000.0000]]></column_41>
+		<column_42><![CDATA[325000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-11]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[55]]></column_57>
+		<column_58><![CDATA[2018-10-11 10:07:46]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1034]]></column_2>
+		<column_3><![CDATA[497]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, Âåðõíÿÿ Êóòóçîâêêà]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[Èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[Â ñîáñòâåííîñòè]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[20]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[0]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/497 (3).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[150000.0000]]></column_41>
+		<column_42><![CDATA[150000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-09]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[82]]></column_57>
+		<column_58><![CDATA[2018-10-09 14:37:01]]></column_58>
+		<column_59><![CDATA[2018-10-26 14:37:17]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1033]]></column_2>
+		<column_3><![CDATA[205]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[Àëóøòà, óë. 60 ëåò ÑÑÑÐ]]></column_11>
+		<column_12><![CDATA[82]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[5,8]]></column_14>
+		<column_15><![CDATA[2]]></column_15>
+		<column_16><![CDATA[5]]></column_16>
+		<column_17><![CDATA[ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[3]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[+7 978 888 16 18]]></column_20>
+		<column_21><![CDATA[Åëåíà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/205 (11).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[4800000.0000]]></column_41>
+		<column_42><![CDATA[70920.7303]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-09]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[82]]></column_57>
+		<column_58><![CDATA[2018-10-09 12:26:32]]></column_58>
+		<column_59><![CDATA[2018-10-16 16:40:26]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1032]]></column_2>
+		<column_3><![CDATA[104]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. ßëòà, ï. Ëèâàäèÿ]]></column_11>
+		<column_12><![CDATA[902]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[5]]></column_16>
+		<column_17><![CDATA[ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[+7 978 888 16 18]]></column_20>
+		<column_21><![CDATA[Åëåíà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[10,4]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/104 (30).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[2000000.0000]]></column_41>
+		<column_42><![CDATA[2000000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-09]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[87]]></column_57>
+		<column_58><![CDATA[2018-10-09 12:07:52]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1031]]></column_2>
+		<column_3><![CDATA[85]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, óë.60 ëåò ÑÑÑÐ]]></column_11>
+		<column_12><![CDATA[106]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[14]]></column_15>
+		<column_16><![CDATA[14]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[2]]></column_18>
+		<column_19><![CDATA[ïîä ÷èñòîâóþ îòäåëêó]]></column_19>
+		<column_20><![CDATA[+7 978 081-11-02]]></column_20>
+		<column_21><![CDATA[Òàòüÿíà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/85 (4).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[75000.0000]]></column_41>
+		<column_42><![CDATA[75000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-08]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[26]]></column_57>
+		<column_58><![CDATA[2018-10-08 10:49:50]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1030]]></column_2>
+		<column_3><![CDATA[563]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, ñ. Ìàëûé Ìàÿê]]></column_11>
+		<column_12><![CDATA[265]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[3]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[Ïîä îòäåëêó]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[Èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[Â ñîáñòâåííîñòè]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[åñòü]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[åñòü]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[9.5]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/563 (15).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[15950000.0000]]></column_41>
+		<column_42><![CDATA[235663.6768]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-08]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[123]]></column_57>
+		<column_58><![CDATA[2018-10-08 10:01:52]]></column_58>
+		<column_59><![CDATA[2018-10-23 12:42:42]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1028]]></column_2>
+		<column_3><![CDATA[502]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, ñ. Âåðõííÿ Êóòóçîâêà]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç.ëèöà]]></column_23>
+		<column_24><![CDATA[ïî ãðàíèöå]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ðÿäîì]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[6 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/502 (3).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[1100000.0000]]></column_41>
+		<column_42><![CDATA[16252.6674]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-05]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[70]]></column_57>
+		<column_58><![CDATA[2018-10-05 13:05:15]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1027]]></column_2>
+		<column_3><![CDATA[436]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ ]]></column_11>
+		<column_12><![CDATA[62]]></column_12>
+		<column_13><![CDATA[40]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[1]]></column_15>
+		<column_16><![CDATA[5]]></column_16>
+		<column_17><![CDATA[Ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[3]]></column_18>
+		<column_19><![CDATA[Æèëîå]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[1]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[0]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/436 (11).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[4900000.0000]]></column_41>
+		<column_42><![CDATA[72398.2455]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-05]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[61]]></column_57>
+		<column_58><![CDATA[2018-10-05 11:31:06]]></column_58>
+		<column_59><![CDATA[2018-10-05 11:33:15]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1026]]></column_2>
+		<column_3><![CDATA[170]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[3]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ìàëûé ìàÿê ]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç.ëèöà]]></column_23>
+		<column_24><![CDATA[ïî ãðàíèöå]]></column_24>
+		<column_25><![CDATA[â äîñòóïíîñòè]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[11 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/170 (10).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[2500000.0000]]></column_41>
+		<column_42><![CDATA[36937.8804]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-05]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[3]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[40]]></column_57>
+		<column_58><![CDATA[2018-10-05 10:27:55]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1024]]></column_2>
+		<column_3><![CDATA[474]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[3]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, óë.Ëåíèíà]]></column_11>
+		<column_12><![CDATA[43]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[6,6]]></column_14>
+		<column_15><![CDATA[2]]></column_15>
+		<column_16><![CDATA[4]]></column_16>
+		<column_17><![CDATA[ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[2]]></column_18>
+		<column_19><![CDATA[íîðìàëüíîå æèëîå]]></column_19>
+		<column_20><![CDATA[+7 978 081-11-02]]></column_20>
+		<column_21><![CDATA[Òàòüÿíà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/474 (9).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[3200000.0000]]></column_41>
+		<column_42><![CDATA[47280.4869]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-04]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[3]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[81]]></column_57>
+		<column_58><![CDATA[2018-10-04 15:01:12]]></column_58>
+		<column_59><![CDATA[2018-11-06 10:18:37]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1023]]></column_2>
+		<column_3><![CDATA[566]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ ]]></column_11>
+		<column_12><![CDATA[35]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[1]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[Èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[Â ñîáñòâåííîñòè]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[â äîñòóïíîñòè]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[8]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/566 (5).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[6900000.0000]]></column_41>
+		<column_42><![CDATA[101948.5498]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-04]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[119]]></column_57>
+		<column_58><![CDATA[2018-10-04 13:46:38]]></column_58>
+		<column_59><![CDATA[2018-10-17 16:30:57]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1022]]></column_2>
+		<column_3><![CDATA[161]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[5]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, ïãò Ïàðòåíèò]]></column_11>
+		<column_12><![CDATA[51]]></column_12>
+		<column_13><![CDATA[32]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[3]]></column_15>
+		<column_16><![CDATA[5]]></column_16>
+		<column_17><![CDATA[Ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[2]]></column_18>
+		<column_19><![CDATA[Æèëîå]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/161 (2).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[3100000.0000]]></column_41>
+		<column_42><![CDATA[45802.9717]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-10-02]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[999]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[82]]></column_57>
+		<column_58><![CDATA[2018-10-02 13:09:48]]></column_58>
+		<column_59><![CDATA[2018-10-24 09:23:02]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1020]]></column_2>
+		<column_3><![CDATA[49]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ñ.Ëàâðîâîå, ã.Àëóøòà]]></column_11>
+		<column_12><![CDATA[39]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[1]]></column_15>
+		<column_16><![CDATA[1]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[åñòü]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[12]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[0]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/49 (18).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[10500000.0000]]></column_41>
+		<column_42><![CDATA[155139.0976]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-27]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[114]]></column_57>
+		<column_58><![CDATA[2018-09-27 17:55:33]]></column_58>
+		<column_59><![CDATA[2018-09-27 17:56:29]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1019]]></column_2>
+		<column_3><![CDATA[288]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, óë. Ïàðòèçàíñêàÿ, 7]]></column_11>
+		<column_12><![CDATA[135]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[2]]></column_15>
+		<column_16><![CDATA[2]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[åñòü]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[åñòü]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[åñòü]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[0]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/288 (3).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[350000.0000]]></column_41>
+		<column_42><![CDATA[350000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-27]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[84]]></column_57>
+		<column_58><![CDATA[2018-09-27 17:44:07]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1018]]></column_2>
+		<column_3><![CDATA[415]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà]]></column_11>
+		<column_12><![CDATA[53]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[1]]></column_15>
+		<column_16><![CDATA[1]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[2]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[ ]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[åñòü]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[åñòü]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[åñòü]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[6,8]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/415 (13).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[13650000.0000]]></column_41>
+		<column_42><![CDATA[201680.8269]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-27]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[103]]></column_57>
+		<column_58><![CDATA[2018-09-27 14:49:22]]></column_58>
+		<column_59><![CDATA[2018-09-27 17:37:23]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1016]]></column_2>
+		<column_3><![CDATA[565]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, óë. Íàáåðåæíàÿ]]></column_11>
+		<column_12><![CDATA[94]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[3]]></column_15>
+		<column_16><![CDATA[3]]></column_16>
+		<column_17><![CDATA[Ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[3]]></column_18>
+		<column_19><![CDATA[Îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[2]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[0]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/565 (12).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[150000.0000]]></column_41>
+		<column_42><![CDATA[150000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-27]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[86]]></column_57>
+		<column_58><![CDATA[2018-09-27 11:12:35]]></column_58>
+		<column_59><![CDATA[2018-09-27 15:06:27]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1015]]></column_2>
+		<column_3><![CDATA[564]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, óë. Á. Õìåëüíèöêîãî]]></column_11>
+		<column_12><![CDATA[37]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[2]]></column_15>
+		<column_16><![CDATA[9]]></column_16>
+		<column_17><![CDATA[Ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[1]]></column_18>
+		<column_19><![CDATA[Îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[1]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/564 (2).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[59000.0000]]></column_41>
+		<column_42><![CDATA[59000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-26]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[34]]></column_57>
+		<column_58><![CDATA[2018-09-26 16:47:52]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1014]]></column_2>
+		<column_3><![CDATA[557]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ñ.Ìàëûé Ìàÿê, ã.Àëóøòà]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç.ëèöà]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[8 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[0]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/557 (21).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[1300000.0000]]></column_41>
+		<column_42><![CDATA[19207.6978]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-24]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[75]]></column_57>
+		<column_58><![CDATA[2018-09-24 10:09:49]]></column_58>
+		<column_59><![CDATA[2018-09-24 10:11:14]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1013]]></column_2>
+		<column_3><![CDATA[557]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ñ.Ìàëûé Ìàÿê, ã.Àëóøòà]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç.ëèöà]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[8 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[0]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[ ]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[1300000.0000]]></column_41>
+		<column_42><![CDATA[19207.6978]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-24]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[1]]></column_57>
+		<column_58><![CDATA[2018-09-24 10:09:48]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1012]]></column_2>
+		<column_3><![CDATA[551]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[5]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[Àëóøòà, ñ. Ìàëûé ìàÿê]]></column_11>
+		<column_12><![CDATA[31]]></column_12>
+		<column_13><![CDATA[18]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[5]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[5]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[ ]]></column_20>
+		<column_21><![CDATA[ ]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/551 (2).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[1750000.0000]]></column_41>
+		<column_42><![CDATA[25856.5163]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-21]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[999]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[107]]></column_57>
+		<column_58><![CDATA[2018-09-21 17:04:15]]></column_58>
+		<column_59><![CDATA[2018-11-08 12:52:01]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1009]]></column_2>
+		<column_3><![CDATA[562]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ ]]></column_11>
+		<column_12><![CDATA[427]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[3]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[Ïîä îòäåëêó]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[Â ñîáñòâåííîñòè]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[â äîñòóïíîñòè]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[åñòü]]></column_27>
+		<column_28><![CDATA[15]]></column_28>
+		<column_29><![CDATA[2]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[0]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/562 (12).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[38000000.0000]]></column_41>
+		<column_42><![CDATA[561455.7817]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-19]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[100]]></column_57>
+		<column_58><![CDATA[2018-09-19 10:27:59]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1008]]></column_2>
+		<column_3><![CDATA[561]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, óë.60 ëåò ÑÑÑÐ]]></column_11>
+		<column_12><![CDATA[34]]></column_12>
+		<column_13><![CDATA[18]]></column_13>
+		<column_14><![CDATA[8,9]]></column_14>
+		<column_15><![CDATA[9]]></column_15>
+		<column_16><![CDATA[9]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[1]]></column_18>
+		<column_19><![CDATA[õîðîøåå]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/561 (49).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[2200000.0000]]></column_41>
+		<column_42><![CDATA[32505.3347]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-18]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[131]]></column_57>
+		<column_58><![CDATA[2018-09-18 16:53:34]]></column_58>
+		<column_59><![CDATA[2018-09-19 13:37:51]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1007]]></column_2>
+		<column_3><![CDATA[560]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[]]></column_8>
+		<column_9><![CDATA[]]></column_9>
+		<column_10><![CDATA[]]></column_10>
+		<column_11><![CDATA[]]></column_11>
+		<column_12><![CDATA[]]></column_12>
+		<column_13><![CDATA[]]></column_13>
+		<column_14><![CDATA[]]></column_14>
+		<column_15><![CDATA[]]></column_15>
+		<column_16><![CDATA[]]></column_16>
+		<column_17><![CDATA[]]></column_17>
+		<column_18><![CDATA[]]></column_18>
+		<column_19><![CDATA[]]></column_19>
+		<column_20><![CDATA[]]></column_20>
+		<column_21><![CDATA[]]></column_21>
+		<column_22><![CDATA[]]></column_22>
+		<column_23><![CDATA[]]></column_23>
+		<column_24><![CDATA[]]></column_24>
+		<column_25><![CDATA[]]></column_25>
+		<column_26><![CDATA[]]></column_26>
+		<column_27><![CDATA[]]></column_27>
+		<column_28><![CDATA[]]></column_28>
+		<column_29><![CDATA[]]></column_29>
+		<column_30><![CDATA[]]></column_30>
+		<column_31><![CDATA[]]></column_31>
+		<column_32><![CDATA[]]></column_32>
+		<column_33><![CDATA[]]></column_33>
+		<column_34><![CDATA[]]></column_34>
+		<column_35><![CDATA[]]></column_35>
+		<column_36><![CDATA[]]></column_36>
+		<column_37><![CDATA[]]></column_37>
+		<column_38><![CDATA[]]></column_38>
+		<column_39><![CDATA[]]></column_39>
+		<column_40><![CDATA[]]></column_40>
+		<column_41><![CDATA[]]></column_41>
+		<column_42><![CDATA[]]></column_42>
+		<column_43><![CDATA[]]></column_43>
+		<column_44><![CDATA[]]></column_44>
+		<column_45><![CDATA[]]></column_45>
+		<column_46><![CDATA[]]></column_46>
+		<column_47><![CDATA[]]></column_47>
+		<column_48><![CDATA[]]></column_48>
+		<column_49><![CDATA[]]></column_49>
+		<column_50><![CDATA[]]></column_50>
+		<column_51><![CDATA[]]></column_51>
+		<column_52><![CDATA[]]></column_52>
+		<column_53><![CDATA[]]></column_53>
+		<column_54><![CDATA[]]></column_54>
+		<column_55><![CDATA[]]></column_55>
+		<column_56><![CDATA[]]></column_56>
+		<column_57><![CDATA[]]></column_57>
+		<column_58><![CDATA[]]></column_58>
+		<column_59><![CDATA[]]></column_59>
+		<column_60><![CDATA[]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[edit]]></column_1>
+		<column_2><![CDATA[1005]]></column_2>
+		<column_3><![CDATA[31]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, 4 ìêð.]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç.ëèöà]]></column_23>
+		<column_24><![CDATA[ðÿäîì]]></column_24>
+		<column_25><![CDATA[â äîñòóïíîñòè]]></column_25>
+		<column_26><![CDATA[â äîñòóïíîñòè]]></column_26>
+		<column_27><![CDATA[â äîñòóïíîñòè]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[5 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[0]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/31 (2).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[2000000.0000]]></column_41>
+		<column_42><![CDATA[29550.3043]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-18]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[59]]></column_57>
+		<column_58><![CDATA[2018-09-18 13:23:03]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1002]]></column_2>
+		<column_3><![CDATA[27]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, ï.Ðîçîâûé]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[Èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç.ëèöà]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[8 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/27 (2).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[2600000.0000]]></column_41>
+		<column_42><![CDATA[38415.3956]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-18]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[180]]></column_57>
+		<column_58><![CDATA[2018-09-18 11:37:08]]></column_58>
+		<column_59><![CDATA[2018-09-18 11:39:03]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[1000]]></column_2>
+		<column_3><![CDATA[262]]></column_3>
+		<column_4><![CDATA[1]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, ï.Óòåñ]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç.ëèöà]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[6 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[0]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/262 (2).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[5000000.0000]]></column_41>
+		<column_42><![CDATA[73875.7608]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-18]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[66]]></column_57>
+		<column_58><![CDATA[2018-09-18 10:22:37]]></column_58>
+		<column_59><![CDATA[2018-09-18 10:27:52]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[999]]></column_2>
+		<column_3><![CDATA[406]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ñ.Ìàëûé Ìàÿê, ã.Àëóøòà]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[8 978 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[Èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç.ëèöà]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[15 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[0]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/406 (9).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[4800000.0000]]></column_41>
+		<column_42><![CDATA[70920.7303]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-17]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[69]]></column_57>
+		<column_58><![CDATA[2018-09-17 15:44:37]]></column_58>
+		<column_59><![CDATA[2018-09-17 15:47:38]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[998]]></column_2>
+		<column_3><![CDATA[86]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, ï.Ëàçóðíûé ]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[âåäåíèå ñàäîâîäñòâà]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç.ëèöà]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[6 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[0]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/86 (14).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[4000000.0000]]></column_41>
+		<column_42><![CDATA[59100.6086]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-17]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[127]]></column_57>
+		<column_58><![CDATA[2018-09-17 14:32:49]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[997]]></column_2>
+		<column_3><![CDATA[491]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[3]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã. Àëóøòà, ñ. Ëàâðîâîå]]></column_11>
+		<column_12><![CDATA[122]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[1]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[4]]></column_18>
+		<column_19><![CDATA[Æèëîå]]></column_19>
+		<column_20><![CDATA[+79788718100]]></column_20>
+		<column_21><![CDATA[Àíäðåé]]></column_21>
+		<column_22><![CDATA[Èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[Â ñîáñòâåííîñòè]]></column_23>
+		<column_24><![CDATA[åñòü]]></column_24>
+		<column_25><![CDATA[åñòü]]></column_25>
+		<column_26><![CDATA[åñòü]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[20]]></column_29>
+		<column_30><![CDATA[1]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/491 (45).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[13000000.0000]]></column_41>
+		<column_42><![CDATA[192076.9780]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-17]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[3]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[136]]></column_57>
+		<column_58><![CDATA[2018-09-17 12:41:51]]></column_58>
+		<column_59><![CDATA[2018-10-17 16:23:16]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[995]]></column_2>
+		<column_3><![CDATA[294]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, ñ. Çàïðóäíîå]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèç. ëèöà]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[12 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[0]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/294 (7).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[3150000.0000]]></column_41>
+		<column_42><![CDATA[46541.7293]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-14]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[133]]></column_57>
+		<column_58><![CDATA[2018-09-14 11:15:12]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[994]]></column_2>
+		<column_3><![CDATA[480]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, óë.Ïëàòàíîâàÿ]]></column_11>
+		<column_12><![CDATA[44]]></column_12>
+		<column_13><![CDATA[29]]></column_13>
+		<column_14><![CDATA[5,9]]></column_14>
+		<column_15><![CDATA[2]]></column_15>
+		<column_16><![CDATA[5]]></column_16>
+		<column_17><![CDATA[åñòü]]></column_17>
+		<column_18><![CDATA[2]]></column_18>
+		<column_19><![CDATA[õîðîøåå]]></column_19>
+		<column_20><![CDATA[8 (978) 026 42 66]]></column_20>
+		<column_21><![CDATA[Àííà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[0]]></column_32>
+		<column_33><![CDATA[0]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/480 (5).JPG]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[110000.0000]]></column_41>
+		<column_42><![CDATA[110000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-13]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[91]]></column_57>
+		<column_58><![CDATA[2018-09-13 16:48:47]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[992]]></column_2>
+		<column_3><![CDATA[22]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, ñ. Ìàëûé Ìàÿê]]></column_11>
+		<column_12><![CDATA[0]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ ]]></column_19>
+		<column_20><![CDATA[+7 (978) 843-02-98]]></column_20>
+		<column_21><![CDATA[Àëåêñåé]]></column_21>
+		<column_22><![CDATA[èíäèâèäóàëüíîå æèëèùíîå ñòðîèòåëüñòâî]]></column_22>
+		<column_23><![CDATA[÷àñòíàÿ ñîáñòâåííîñòü ôèçëèöà]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[7 ñîòîê]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[0]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/22 (1).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[1800000.0000]]></column_41>
+		<column_42><![CDATA[26595.2739]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-13]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[78]]></column_57>
+		<column_58><![CDATA[2018-09-13 16:06:44]]></column_58>
+		<column_59><![CDATA[2018-09-13 16:09:13]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[990]]></column_2>
+		<column_3><![CDATA[68]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ã.Àëóøòà, ñ.Ëàçóðíîå]]></column_11>
+		<column_12><![CDATA[270]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[60 ì.êâ.]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[3]]></column_16>
+		<column_17><![CDATA[÷àñòè÷íî]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[+7 978 888 16 18]]></column_20>
+		<column_21><![CDATA[Åëåíà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[7]]></column_28>
+		<column_29><![CDATA[3 ñîòêè]]></column_29>
+		<column_30><![CDATA[7]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/68 (2).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[390000.0000]]></column_41>
+		<column_42><![CDATA[390000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-13]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[252]]></column_57>
+		<column_58><![CDATA[2018-09-13 11:47:28]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[989]]></column_2>
+		<column_3><![CDATA[107]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ïãò. Ãóðçóô]]></column_11>
+		<column_12><![CDATA[92]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[4]]></column_15>
+		<column_16><![CDATA[7]]></column_16>
+		<column_17><![CDATA[ñ ìåáåëüþ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[îòëè÷íîå]]></column_19>
+		<column_20><![CDATA[+7 978 888 16 18]]></column_20>
+		<column_21><![CDATA[Åëåíà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[ ]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/107 (2).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[12500000.0000]]></column_41>
+		<column_42><![CDATA[184689.4019]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-12]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[83]]></column_57>
+		<column_58><![CDATA[2018-09-12 14:17:20]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[4]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[988]]></column_2>
+		<column_3><![CDATA[37]]></column_3>
+		<column_4><![CDATA[0]]></column_4>
+		<column_5><![CDATA[ ]]></column_5>
+		<column_6><![CDATA[2]]></column_6>
+		<column_7><![CDATA[ ]]></column_7>
+		<column_8><![CDATA[ ]]></column_8>
+		<column_9><![CDATA[ ]]></column_9>
+		<column_10><![CDATA[ ]]></column_10>
+		<column_11><![CDATA[ïãò. Ãóðçóô]]></column_11>
+		<column_12><![CDATA[250]]></column_12>
+		<column_13><![CDATA[0]]></column_13>
+		<column_14><![CDATA[ ]]></column_14>
+		<column_15><![CDATA[0]]></column_15>
+		<column_16><![CDATA[0]]></column_16>
+		<column_17><![CDATA[ ]]></column_17>
+		<column_18><![CDATA[0]]></column_18>
+		<column_19><![CDATA[ïîä îòäåëêó]]></column_19>
+		<column_20><![CDATA[+7 978 888 16 18]]></column_20>
+		<column_21><![CDATA[Åëåíà]]></column_21>
+		<column_22><![CDATA[ ]]></column_22>
+		<column_23><![CDATA[ ]]></column_23>
+		<column_24><![CDATA[ ]]></column_24>
+		<column_25><![CDATA[ ]]></column_25>
+		<column_26><![CDATA[ ]]></column_26>
+		<column_27><![CDATA[ ]]></column_27>
+		<column_28><![CDATA[ ]]></column_28>
+		<column_29><![CDATA[6,5 ñîòêè]]></column_29>
+		<column_30><![CDATA[ ]]></column_30>
+		<column_31><![CDATA[1]]></column_31>
+		<column_32><![CDATA[1]]></column_32>
+		<column_33><![CDATA[1]]></column_33>
+		<column_34><![CDATA[1]]></column_34>
+		<column_35><![CDATA[1]]></column_35>
+		<column_36><![CDATA[6]]></column_36>
+		<column_37><![CDATA[catalog/37 (1).jpg]]></column_37>
+		<column_38><![CDATA[0]]></column_38>
+		<column_39><![CDATA[1]]></column_39>
+		<column_40><![CDATA[0.0000]]></column_40>
+		<column_41><![CDATA[900000.0000]]></column_41>
+		<column_42><![CDATA[900000.0000]]></column_42>
+		<column_43><![CDATA[ ]]></column_43>
+		<column_44><![CDATA[0]]></column_44>
+		<column_45><![CDATA[0]]></column_45>
+		<column_46><![CDATA[2018-09-12]]></column_46>
+		<column_47><![CDATA[0.00000000]]></column_47>
+		<column_48><![CDATA[1]]></column_48>
+		<column_49><![CDATA[0.00000000]]></column_49>
+		<column_50><![CDATA[0.00000000]]></column_50>
+		<column_51><![CDATA[0.00000000]]></column_51>
+		<column_52><![CDATA[1]]></column_52>
+		<column_53><![CDATA[1]]></column_53>
+		<column_54><![CDATA[1]]></column_54>
+		<column_55><![CDATA[2]]></column_55>
+		<column_56><![CDATA[1]]></column_56>
+		<column_57><![CDATA[137]]></column_57>
+		<column_58><![CDATA[2018-09-12 13:40:34]]></column_58>
+		<column_59><![CDATA[0000-00-00 00:00:00]]></column_59>
+		<column_60><![CDATA[5]]></column_60>
+	</node>
+	<node>
+		<column_1><![CDATA[ edit]]></column_1>
+		<column_2><![CDATA[987]]></column_2>
+		<column_3><![CDATA[319]]></column_3>
+		<column_4><![CDATA[]]></column_4>
+		<column_5><![CDATA[]]></column_5>
+		<column_6><![CDATA[]]></column_6>
+		<column_7><![CDATA[]]></column_7>
+		<column_8><![CDATA[]]></column_8>
+		<column_9><![CDATA[]]></column_9>
+		<column_10><![CDATA[]]></column_10>
+		<column_11><![CDATA[]]></column_11>
+		<column_12><![CDATA[]]></column_12>
+		<column_13><![CDATA[]]></column_13>
+		<column_14><![CDATA[]]></column_14>
+		<column_15><![CDATA[]]></column_15>
+		<column_16><![CDATA[]]></column_16>
+		<column_17><![CDATA[]]></column_17>
+		<column_18><![CDATA[]]></column_18>
+		<column_19><![CDATA[]]></column_19>
+		<column_20><![CDATA[]]></column_20>
+		<column_21><![CDATA[]]></column_21>
+		<column_22><![CDATA[]]></column_22>
+		<column_23><![CDATA[]]></column_23>
+		<column_24><![CDATA[]]></column_24>
+		<column_25><![CDATA[]]></column_25>
+		<column_26><![CDATA[]]></column_26>
+		<column_27><![CDATA[]]></column_27>
+		<column_28><![CDATA[]]></column_28>
+		<column_29><![CDATA[]]></column_29>
+		<column_30><![CDATA[]]></column_30>
+		<column_31><![CDATA[]]></column_31>
+		<column_32><![CDATA[]]></column_32>
+		<column_33><![CDATA[]]></column_33>
+		<column_34><![CDATA[]]></column_34>
+		<column_35><![CDATA[]]></column_35>
+		<column_36><![CDATA[]]></column_36>
+		<column_37><![CDATA[]]></column_37>
+		<column_38><![CDATA[]]></column_38>
+		<column_39><![CDATA[]]></column_39>
+		<column_40><![CDATA[]]></column_40>
+		<column_41><![CDATA[]]></column_41>
+		<column_42><![CDATA[]]></column_42>
+		<column_43><![CDATA[]]></column_43>
+		<column_44><![CDATA[]]></column_44>
+		<column_45><![CDATA[]]></column_45>
+		<column_46><![CDATA[]]></column_46>
+		<column_47><![CDATA[]]></column_47>
+		<column_48><![CDATA[]]></column_48>
+		<column_49><![CDATA[]]></column_49>
+		<column_50><![CDATA[]]></column_50>
+		<column_51><![CDATA[]]></column_51>
+		<column_52><![CDATA[]]></column_52>
+		<column_53><![CDATA[]]></column_53>
+		<column_54><![CDATA[]]></column_54>
+		<column_55><![CDATA[]]></column_55>
+		<column_56><![CDATA[]]></column_56>
+		<column_57><![CDATA[]]></column_57>
+		<column_58><![CDATA[]]></column_58>
+		<column_59><![CDATA[]]></column_59>
+		<column_60><![CDATA[]]></column_60>
+	</node>
+</data>

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Contact Form 7 - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-10-22 16:25:36+0000\n"
+"PO-Revision-Date: 2018-11-12 07:00:17+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -413,9 +413,9 @@ msgstr "Проверить конфигурацию"
 #: admin/admin.php:412
 msgid "Validate %s Contact Form Now"
 msgid_plural "Validate %s Contact Forms Now"
-msgstr[0] "Проверить сейчас %s Форму Контактов"
-msgstr[1] "Проверить сейчас %s Формы Контактов"
-msgstr[2] "Проверить сейчас %s Форм Контактов"
+msgstr[0] "Проверить сейчас %s контактную форму"
+msgstr[1] "Проверить сейчас %s контактные формы"
+msgstr[2] "Проверить сейчас %s контактных форм"
 
 #: admin/admin.php:212
 msgid "You are not allowed to validate configuration."
@@ -1428,7 +1428,7 @@ msgstr "Редактировать контактную форму"
 msgid "Contact"
 msgstr "Contact Form 7"
 
-#. #-#-#-#-#  contact-form-7-code.pot (Contact Form 7 5.0.4)  #-#-#-#-#
+#. #-#-#-#-#  contact-form-7-code.pot (Contact Form 7 5.0.5)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
 #: admin/admin.php:21 modules/flamingo.php:170
 msgid "Contact Form 7"

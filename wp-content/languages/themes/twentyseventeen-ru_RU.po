@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Seventeen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-11-16 10:20:10+0000\n"
+"PO-Revision-Date: 2018-11-04 19:03:56+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,11 +23,11 @@ msgstr "Twenty Seventeen"
 msgid "Footer"
 msgstr "Подвал"
 
-#: functions.php:326
+#: functions.php:329
 msgid "Add widgets here to appear in your sidebar on blog posts and archive pages."
 msgstr "Добавить виджеты, которые появятся на боковой панели в записях блога и страницах архива."
 
-#: functions.php:324 sidebar.php:18
+#: functions.php:327 sidebar.php:18
 msgid "Blog Sidebar"
 msgstr "Боковая панель блога"
 
@@ -36,26 +36,26 @@ msgstr "Боковая панель блога"
 msgid "Scroll down to content"
 msgstr "Перейти к содержимому"
 
-#: functions.php:167
+#: functions.php:170
 msgctxt "Theme starter content"
 msgid "Coffee"
 msgstr "Кофе"
 
-#: functions.php:163
+#: functions.php:166
 msgctxt "Theme starter content"
 msgid "Sandwich"
 msgstr "Сэндвич"
 
-#: functions.php:159
+#: functions.php:162
 msgctxt "Theme starter content"
 msgid "Espresso"
 msgstr "Эспрессо"
 
-#: inc/custom-header.php:126
+#: inc/custom-header.php:128
 msgid "Pause background video"
 msgstr "Приостановить фоновое видео"
 
-#: inc/custom-header.php:125
+#: inc/custom-header.php:127
 msgid "Play background video"
 msgstr "Проиграть фоновое видео"
 
@@ -63,7 +63,7 @@ msgstr "Проиграть фоновое видео"
 msgid "Front Page Section %1$s Placeholder"
 msgstr "Заполнитель %1$s раздела главной страницы"
 
-#: inc/customizer.php:99
+#: inc/customizer.php:109
 msgid "When the two-column layout is assigned, the page title is in one column and content is in the other."
 msgstr "При назначении разметки в два столбца, название страницы размещается в первом столбце, а содержимое в другом."
 
@@ -106,68 +106,68 @@ msgstr "Пожалуйста, определите имя файла для SVG 
 msgid "Please define default parameters in the form of an array."
 msgstr "Пожалуйста, определите параметры по умолчанию в форме массива."
 
-#: inc/customizer.php:131
+#: inc/customizer.php:143
 msgid "Select pages to feature in each area from the dropdowns. Add an image to a section by setting a featured image in the page editor. Empty sections will not be displayed."
 msgstr "Выберите избранные страницы для каждой области из выпадающих списков. Добавьте изображение в раздел установив избранное изображение в редакторе страницы. Пустые разделы не будут показаны."
 
 #. translators: %d is the front page section number
-#: inc/customizer.php:130
+#: inc/customizer.php:142
 msgid "Front Page Section %d Content"
 msgstr "Содержимое %d раздела главной страницы"
 
-#: inc/customizer.php:102 inc/customizer.php:158
+#: inc/customizer.php:112 inc/customizer.php:171
 msgid "Two Column"
 msgstr "Два столбца"
 
-#: inc/customizer.php:101 inc/customizer.php:157
+#: inc/customizer.php:111 inc/customizer.php:170
 msgid "One Column"
 msgstr "Один столбец"
 
-#: inc/customizer.php:96
+#: inc/customizer.php:106
 msgid "Page Layout"
 msgstr "Разметка страницы"
 
-#: inc/customizer.php:81
+#: inc/customizer.php:89
 msgid "Theme Options"
 msgstr "Настройки темы"
 
-#: inc/customizer.php:59
+#: inc/customizer.php:64
 msgid "Custom"
 msgstr "Пользовательская"
 
-#: inc/customizer.php:57
+#: inc/customizer.php:62
 msgid "Light"
 msgstr "Светлая"
 
-#: inc/customizer.php:55
+#: inc/customizer.php:60
 msgid "Color Scheme"
 msgstr "Цветовая схема"
 
-#: inc/custom-header.php:54
+#: inc/custom-header.php:56
 msgid "Default Header Image"
 msgstr "Изображение заголовка по умолчанию"
 
-#: functions.php:348
+#: functions.php:351
 msgid "Footer 2"
 msgstr "Подвал 2"
 
-#: functions.php:338 functions.php:350
+#: functions.php:341 functions.php:353
 msgid "Add widgets here to appear in your footer."
 msgstr "Добавьте сюда виджеты для отображения в подвале сайта."
 
-#: functions.php:336
+#: functions.php:339
 msgid "Footer 1"
 msgstr "Подвал 1"
 
 #. Translators: If there are characters in your language that are not supported
 #. by Libre Franklin, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:277
+#: functions.php:280
 msgctxt "Libre Franklin font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:64 functions.php:191
+#: functions.php:64 functions.php:194
 #: template-parts/navigation/navigation-top.php:12
 msgid "Top Menu"
 msgstr "Верхнее меню"
@@ -221,10 +221,10 @@ msgstr "Искать:"
 
 #: search.php:19
 msgid "Search Results for: %s"
-msgstr "Результаты поиска: %s"
+msgstr "Результаты поиска для: %s"
 
 #. translators: %s: Name of current post
-#: functions.php:378 template-parts/page/content-front-page-panels.php:45
+#: functions.php:381 template-parts/page/content-front-page-panels.php:45
 #: template-parts/page/content-front-page.php:42
 #: template-parts/post/content-audio.php:84
 #: template-parts/post/content-gallery.php:71
@@ -233,11 +233,11 @@ msgstr "Результаты поиска: %s"
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "Читать далее<span class=\"screen-reader-text\"> «%s»</span>"
 
-#: inc/customizer.php:58
+#: inc/customizer.php:63
 msgid "Dark"
 msgstr "Тёмная"
 
-#: inc/back-compat.php:39 inc/back-compat.php:52 inc/back-compat.php:68
+#: inc/back-compat.php:39 inc/back-compat.php:52 inc/back-compat.php:70
 msgid "Twenty Seventeen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
 msgstr "Тема Twenty Seventeen требует WordPress версии 4.7 или выше. У вас версия %s. Пожалуйста, обновите WordPress и попробуйте ещё раз."
 
@@ -262,15 +262,15 @@ msgstr "Меню"
 msgid "Skip to content"
 msgstr "Перейти к содержимому"
 
-#: functions.php:467
+#: functions.php:470
 msgid "Collapse child menu"
 msgstr "Свернуть дочернее меню"
 
-#: functions.php:466
+#: functions.php:469
 msgid "Expand child menu"
 msgstr "Раскрыть дочернее меню"
 
-#: functions.php:65 functions.php:202
+#: functions.php:65 functions.php:205
 msgid "Social Links Menu"
 msgstr "Меню социальных ссылок"
 
