@@ -50,6 +50,7 @@ get_header();
                             <?php if($appliances_list){ ?>
                             
                             <?php foreach($appliances_list as $list){ ?>
+                            <?php $data = getImport($list->ID, get_post_meta( $list->ID, 'sku_product_appliances_single', $single = true ),  get_queried_object()->term_id); ?>
                             <?php $images = get_field('image_group_product_appliances_single', $list->ID); ?>
                             <li>
                                 <a href="<?php echo get_permalink($list->ID);?>">
@@ -64,7 +65,10 @@ get_header();
                                         <?php } ?>
                                     </span>
                                     <span class="title"><?php echo $list->post_title; ?><br>
-                                    <strong><?php echo getImport($list->ID, get_post_meta( $list->ID, 'sku_product_appliances_single', $single = true ),  get_queried_object()->term_id); ?></strong></span>
+                                    <?php if($data['price']){ ?>
+                                        <strong><?php echo $data['price']; ?> руб.</strong>
+                                    <?php } ?>
+                                    </span>
                                 </a>
                             </li>
                             <?php } ?>

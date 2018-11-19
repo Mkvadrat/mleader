@@ -27,7 +27,7 @@ get_header();
                                 <?php if($images){ ?>
                                 <?php foreach($images as $image){ ?>
                                 <?php if(!empty($images)) ?>
-                                <img src="<?php echo $image['image_product_appliances_single'] ? $image['image_product_appliances_single'] : '/wp-content/themes/mleader/images/placeholder.png'; ?>" alt="">
+                                <a data-fancybox="gallery" href="<?php echo $image['image_product_appliances_single'] ? $image['image_product_appliances_single'] : '/wp-content/themes/mleader/images/placeholder.png'; ?>"><img src="<?php echo $image['image_product_appliances_single'] ? $image['image_product_appliances_single'] : '/wp-content/themes/mleader/images/placeholder.png'; ?>" alt=""></a>
                                 <?php } ?>
                                 <?php } ?>
                             </div>
