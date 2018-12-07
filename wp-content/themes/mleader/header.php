@@ -136,9 +136,9 @@ Version: 1.0
                                     <div class="col-md-12">
                                         <div id="main-form" class="form-block">
                                             <?php
-                                                $forms_a = get_field('contact_form_header_main_page');
+                                                $forms_a = getMeta('contact_form_header_main_page');
                                                 if($forms_a){
-                                                    echo do_shortcode('[contact-form-7 id=" ' . $forms_a->ID . ' "]'); 
+                                                    echo do_shortcode('[contact-form-7 id=" ' . $forms_a . ' "]'); 
                                                 }
                                             ?>
                                         </div>

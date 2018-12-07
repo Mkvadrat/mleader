@@ -41,7 +41,7 @@ get_header();
 						
                         <p class="button-wrap button-wrap-last">
 							<a class="button backward" href="javascript:void(0)">Назад</a>
-							<a class="button" href="#">Задать вопрос</a>
+                            <a href="#callback" class="button fancybox">Задать вопрос</a>
                         </p>
                     </div>
                 </div>

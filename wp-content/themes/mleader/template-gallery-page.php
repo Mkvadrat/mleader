@@ -29,7 +29,7 @@ get_header();
                         
                         <p class="button-wrap">
                             <a class="button backward back" href="javascript:void(0)">Назад</a>
-                            <a class="button" href="#">Задать вопрос</a>
+                            <a href="#callback" class="button fancybox">Задать вопрос</a>
                         </p>
                         <!-- <p><a class="get-more back" href="javascript:void(0)">Назад к списку материалов</a></p> -->
                     </div>
