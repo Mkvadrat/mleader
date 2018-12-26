@@ -1657,7 +1657,6 @@ textarea:focus:-ms-input-placeholder {
 .fancybox-slide > div .form-line-main .container {
   padding: 0;
   overflow: hidden;
-<<<<<<< HEAD
 }
 /*30/10/2018*/
 .product-not-found{
@@ -1667,6 +1666,39 @@ textarea:focus:-ms-input-placeholder {
   line-height: 30px;
   color: #2c2c2c;
   padding-bottom: 20px;
-=======
->>>>>>> aedd11f9c43d222f1ceddef3f64c520a14f82793
+}
+
+.paggination {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 10px 0 40px;
+}
+
+.paggination li:before {
+  display: none;
+}
+
+.paggination li>* {
+  padding: 0 10px;
+  color: #8d2f2f;
+  text-decoration: none;
+}
+
+.paggination li {
+  padding: 0 0 0 5px;
+}
+.paggination .current {
+  color: #2c2c2c;
+  font-size: 18px;
+}
+
+.paggination li a {
+  transition: .3s;
+}
+
+.paggination li a:hover {
+  font-size: 16px;
 }
