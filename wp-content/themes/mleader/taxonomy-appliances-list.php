@@ -60,7 +60,7 @@ get_header();
                                         <?php foreach($images as $image){ ?>
                                             <?php $i++; ?>
                                             <?php if($i > 1) break;  ?>
-                                            <img src="<?php echo $image['image_product_appliances_single'] ? $image['image_product_appliances_single'] : '/wp-content/themes/mleader/images/placeholder.png'; ?>" alt="">
+                                            <img src="<?php echo $image['image_product_appliances_single'] ? $image['image_product_appliances_single'] : '/wp-content/themes/mleader/images/placeholder.jpg'; ?>" alt="">
                                         <?php } ?>
                                         <?php } ?>
                                     </span>

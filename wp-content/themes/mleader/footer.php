@@ -125,6 +125,10 @@ Version: 1.0
 
 <?php wp_footer(); ?>
 
+<?php echo getMeta('yandex_metrik_main_page'); ?>
+
+<?php echo getMeta('google_metrik_main_page'); ?>
+
 </body>
 </html>
 
