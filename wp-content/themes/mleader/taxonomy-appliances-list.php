@@ -40,7 +40,9 @@ get_header();
                                 ),
                                     'post_type' => 'appliances',
                                     'posts_per_page' => $GLOBALS['wp_query']->query_vars['posts_per_page'],
-                                    'paged'          => $current_page
+                                    'paged'          => $current_page,
+                                    'orderby'     => 'date',
+                                    'order'       => 'DESC',
                             );
                 
                             $appliances_list = get_posts( $args );
